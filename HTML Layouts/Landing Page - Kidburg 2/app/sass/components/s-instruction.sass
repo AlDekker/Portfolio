@@ -1,0 +1,77 @@
+/** Section Instruction **/
+.instruction
+  &__row 
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -20px
+  &__col 
+    flex: 1 1 50%
+    padding: 0 20px
+    @media screen and ( max-width: 768px )
+      flex-basis: 100%
+      &:not(:last-child)
+        margin-bottom: 60px
+  &__text, &__title 
+    max-width: 60%
+    @media screen and ( max-width: 1200px )
+      max-width: none
+    @media screen and ( max-width: 520px )
+      text-align: center
+  &__text
+    b, strong, span
+      white-space: nowrap
+  &__title 
+    @media screen and ( max-width: 768px )
+      margin-bottom: 20px
+  &__button
+    margin-top: 20px
+    @media screen and ( max-width: 768px )
+      margin-top: 10px
+    @media screen and ( max-width: 520px )
+      width: 100%
+
+/** Steps **/
+.steps 
+  margin: 0
+  padding: 0
+  list-style-type: none
+  @media screen and ( max-width: 768px )
+    margin-left: 15px
+  &__item 
+    position: relative
+    padding-left: 40px
+    display: flex
+    align-items: flex-start
+    min-height: 42px
+    &:not(:last-child)
+      margin-bottom: 40px
+    &::before 
+      content: attr(data-steps-number)
+      position: absolute
+      top: -30px
+      left: 0
+      font-family: $title-font
+      font-weight: 700 
+      font-size: 48px
+      background-image: $g-orange
+      background-clip: text
+      text-fill-color: transparent
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      color: $theme-color-2 
+    @media screen and ( max-width: 520px )
+      padding-left: 35px
+      &:not(:last-child)
+        margin-bottom: 30px
+      &::before
+        top: 50%
+        transform: translateY(-50%)
+        height: 48px 
+        line-height: .55
+
+  @media screen and ( max-width: 768px )
+    font-size: 15px
+    
+
+  
+      

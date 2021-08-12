@@ -1,0 +1,15 @@
+@import 'components/vars.css';
+@import 'components/fonts.css';
+@import 'components/main.css';
+
+@import 'components/logo.css';
+@import 'components/menu.css';
+
+@import 'components/header.css';
+@import 'components/content.css';
+@import 'components/footer.css';
+
+@import 'components/share.css';
+@import 'components/quote.css';
+@import 'components/article.css';
+

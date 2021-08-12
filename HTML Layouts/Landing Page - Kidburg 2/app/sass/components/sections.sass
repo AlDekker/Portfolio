@@ -1,0 +1,104 @@
+/** Sections **/
+.section 
+  position: relative
+  padding: 120px 0 40px
+  z-index: 2
+  @media screen and ( max-width: 768px )
+    padding-top: 60px
+  &--waves
+    padding-top: 313px !important
+    padding-bottom: 335px !important
+    background: url(../img/waves.svg) no-repeat center 0/cover
+    .section__content
+      background-color: $g-vio
+    & + .section
+      z-index: 3
+      position: relative
+      top: -100px
+      margin-bottom: -110px
+      @media screen and ( max-width: 520px )
+        top: -150px
+        margin-bottom: -150px
+    @media ( min-width: 2200px )
+      background: $g-vio
+      padding-top: 120px
+      padding-bottom: 120px
+    @media screen and ( max-width: 768px )
+      background-position: 66% 0
+    @media screen and ( max-width: 520px )
+      padding-top: 210px !important
+      background-position: 34% 0
+  &--waves-top
+    padding-top: 313px !important
+    background: url(../img/waves-top.svg) no-repeat center 0/cover
+    .section__content
+      background-color: $g-vio
+    @media ( min-width: 3500px )
+      padding-top: 630px !important
+    @media screen and ( max-width: 768px )
+      padding-top: 400px !important
+      background-position: 66% 0
+    @media screen and ( max-width: 520px )
+      padding-top: 210px !important
+      background-position: 34% 0
+  
+  &--dark
+    color: $white
+
+  &--attention 
+    .section__title
+      background-image: $g-green
+      background-clip: text
+      text-fill-color: transparent
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      color: $theme-color-3
+
+
+
+
+
+.section__title
+  margin-top: 0
+  margin-bottom: 30px
+  font-family: $title-font
+  font-size: 46px
+  &--half 
+    @media screen and ( max-width: 768px )
+      max-width: 40% !important
+  @media screen and ( max-width: 998px )
+    font-size: 40px
+    max-width: none
+  @media screen and ( max-width: 520px )
+    font-size: 30px
+    margin-bottom: 20px
+
+.section__subtitle
+  margin-top: 0
+  margin-bottom: 30px
+  font-family: $title-font
+  font-size: 24px
+  @media screen and ( max-width: 998px )
+    font-size: 24px
+  @media screen and ( max-width: 520px )
+    font-size: 18px
+
+.section__text 
+  font-size: 24px
+  @media screen and ( max-width: 998px )
+    font-size: 20px
+  @media screen and ( max-width: 520px )
+    font-size: 15px
+    line-height: 1.2
+
+
+
+ 
+
+
+
+
+
+
+
+

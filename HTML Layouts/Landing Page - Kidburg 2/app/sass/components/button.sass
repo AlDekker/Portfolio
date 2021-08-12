@@ -1,0 +1,75 @@
+/** Button **/
+.button
+  display: inline-block
+  position: relative
+  max-width: 100%
+  min-width: 200px
+  min-height: 60px
+  padding: 16px 20px 24px
+  border: none
+  border-radius: 30px
+  background: $g-green
+  font-family: $title-font
+  font-weight: 700
+  font-size: $f-size
+  line-height: 1.2
+  color: $white
+  text-transform: uppercase
+  text-decoration: none
+  text-align: center
+  transition: all .25s ease
+  cursor: pointer
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border-radius: inherit
+    background: $g-green
+    opacity: .2
+    transform: rotate(-9.47deg)
+    transition: all .25s ease
+  &:hover, &:focus
+    opacity: .8
+  &:hover, &:focus:hover  
+    &::before
+      transform: rotate(0)
+
+  @media screen and ( max-width: 575px )
+    &::before
+      transform: rotate(-5deg)
+  @media screen and ( max-width: 520px )
+    min-height: 30px
+    padding: 9px 15px 18px
+    font-size: 16px
+
+  
+.button-alt 
+  display: inline-block
+  position: relative
+  max-width: 100%
+  min-width: 200px
+  min-height: 60px
+  padding: 16px 20px 24px
+  border: 1px solid $theme-color-2
+  border-radius: 30px
+  background: transparent
+  font-family: $title-font
+  font-weight: 700
+  font-size: $f-size
+  line-height: 1.2
+  color: $white
+  text-transform: uppercase
+  text-decoration: none
+  text-align: center
+  transition: all .25s ease
+  cursor: pointer
+  &:hover, &:focus
+    opacity: .8
+  @media screen and ( max-width: 520px )
+    min-height: 30px
+    padding: 9px 15px 18px
+    font-size: 16px
+

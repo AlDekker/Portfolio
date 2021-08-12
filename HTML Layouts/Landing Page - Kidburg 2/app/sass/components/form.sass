@@ -1,0 +1,78 @@
+/** Form **/
+.form__fieldset
+  border: none
+  padding: 0
+  margin: 0 0 40px
+  display: grid 
+  grid-template-columns: 1fr 1fr
+  grid-gap: 35px
+  @media screen and ( max-width: 768px )
+    grid-template-columns: 1fr
+  @media screen and ( max-width: 575px )
+    grid-gap: 20px
+
+
+/* Custom radio */
+.form__radio
+  font-size: 24px
+  cursor: pointer
+  @media screen and ( max-width: 520px )
+    font-size: 15px
+
+.form__radio-input
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  padding: 0
+  overflow: hidden
+  border: 0 none
+  clip-path: inset(100%)
+  clip: rect(0 0 0 0)
+  white-space: nowrap
+
+.form__radio > span
+  display: inline-block
+  position: relative
+  padding-left: 50px
+  @media screen and ( max-width: 520px )
+    padding-left: 28px
+
+
+.form__radio > span::before
+  content: ''
+  position: absolute
+  top: 50%
+  left: 0
+  width: 30px
+  height: 30px
+  background-image: url(../img/radio.svg)
+  background-repeat: no-repeat
+  background-position: 0 0
+  transform: translateY(-50%)
+  font-size: inherit
+  @media screen and ( max-width: 520px )
+    width: 17px
+    height: 17px
+    background-size: contain
+
+.form__radio-input:checked + span::before
+  background-image: url(../img/radio-checked.svg)
+.form__radio-input:checked + span 
+  font-weight: 700
+
+.form__radio-input:focus + span::before
+  outline: 3px solid $theme-color-2
+  outline-offset: 2px
+
+.form__radio-input:focus:not(:focus-visible) + span::before
+  outline: none
+
+/** Buttons **/
+.form__next 
+  @media screen and ( max-width: 998px )
+    margin-top: 30px
+  @media screen and ( max-width: 998px )
+    margin-top: 0
+  @media screen and ( max-width: 575px )
+    width: 100%

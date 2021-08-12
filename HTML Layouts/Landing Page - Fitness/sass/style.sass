@@ -1,0 +1,664 @@
+@import "vars"
+@import "libs"
+@import "fonts"
+
+*, *:before, *:after
+  box-sizing: border-box
+
+a,a:hover, a:focus, a:active, 
+button, button:focus, button:active, 
+input, select, textarea
+  outline: none !important
+
+a
+  text-decoration: none  
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6
+  margin: 0
+
+ul, li
+  margin: 0
+  padding: 0
+  list-style-type: none
+
+body, html 
+  height: 100%  
+
+body
+  position: relative
+  margin: 0
+  padding: 0
+  min-width: 320px
+  font-family: $default-font
+  color: $text-color
+  line-height: 1.5
+  font-size: $f-size
+  overflow-x: hidden
+  &.no-scroll
+    overflow: hidden
+/*Press the footer to the bottom*/
+.wrapper 
+  display: flex
+  flex-direction: column
+  height: 100%
+.content 
+  flex: 1 0 auto
+  background-color: #f1f4f6
+.footer 
+  flex: 0 0 auto
+  
+/**/  
+
+.img-bg 
+  background-repeat: no-repeat
+  background-size: cover 
+  background-position: center
+.img-responsive
+  max-width: 100% 
+  height: auto
+
+.container
+  max-width: $container-size
+  height: auto
+  margin: 0 auto
+  padding: 0 $container-padding
+
+.row
+  display: flex
+
+.d-none 
+  display: none !important
+
+.logo
+  display: block
+  &__img 
+    max-width: 100%
+    height: auto
+
+.button
+  display: inline-block
+  position: relative
+  padding: 18px 28px
+  border: none
+  border-radius: none
+  font-size: 14px 
+  font-weight: 700
+  line-height: 1 
+  text-transform: uppercase
+  text-decoration: none
+  text-align: center
+  letter-spacing: 1.4px
+  vertical-align: middle
+  cursor: pointer
+  color: $white
+  background-color: $theme-color
+  outline: none
+  transition: all .25s ease
+  &:hover, &:focus
+    text-decoration: none
+    color: #fff 
+  &:hover 
+    background-color: lighten($theme-color, 6%)
+  &:active
+    background-color: darken($theme-color, 6%)
+  &--transparent
+    padding: 15px 18px
+    background-color: transparent
+    border: 2px solid $white
+    font-size: 12px
+    letter-spacing: 1.2px
+    &:hover 
+      background-color: lighten(transparent, 6%)
+      border-color: lighten($white, 6%)
+    &:active
+      background-color: darken(transparent, 6%)
+      border-color: darken($white, 6%)
+
+.social
+  &__title
+    display: inline-block
+    color: $white
+    font-family: "Open Sans"
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+    margin-right: 15px
+  &__list 
+    display: inline-flex
+    align-items: center 
+  &__item
+    cursor: pointer
+    &:not(:last-child)
+      margin-right: 15px 
+    .fa 
+      font-size: 16px
+      color: $white
+      transition: all .25s ease
+    &:hover 
+      .fa 
+        color: $theme-color
+    
+.header
+  position: relative
+  width: 100%
+  height: 100vh 
+  min-height: 900px
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  &::before 
+    content: ''
+    position: absolute
+    top: 0 
+    left: 0 
+    width: 100%
+    height: 100%
+    background-color: #000 
+    opacity: .3
+    z-index: 2
+  &__top
+    position: absolute
+    width: 100%
+    top: 0 
+    left: 0
+    padding: 18px 35px
+    z-index: 50
+  &__logo 
+    margin-right: $gutter
+  &__user
+    margin-right: $gutter/2
+
+  &__content
+    position: relative
+    padding-top: 150px
+    z-index: 10
+  &__title
+    position: relative
+    left: -5px 
+    color: $white
+    font-size: 70px
+    font-weight: 700
+    line-height: 1.2
+    text-transform: uppercase
+    span
+      display: block
+      color: $theme-color
+  &__descr
+    color: $white
+    font-size: 14px
+    font-weight: 400
+    line-height: 30px
+    letter-spacing: 1.4px
+    margin-top: 10px
+    margin-bottom: 60px
+  .hamburger
+    display: none
+.top-line
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__col
+    display: flex
+    align-items: center
+    justify-content: space-between  
+
+.menu 
+  &__list 
+    display: flex
+  &__item
+    a 
+      color: $white
+      font-size: 12px
+      font-weight: 700
+      line-height: 30px
+      text-transform: uppercase
+      letter-spacing: 1.2px
+      transition: all .25s ease
+    &:not(:last-child)
+      margin-right: $gutter/2
+    &:hover 
+      a 
+        opacity: .8
+
+.mobile-menu
+  display: none
+  position: absolute
+  top: 0 
+  left: 0
+  width: 100% 
+  height: 100%
+  background-color: rgba($black, .9)
+  text-align: center
+  flex-direction: column 
+  justify-content: center
+  transition: all .5s ease
+  padding: 100px 0 $gutter
+  overflow-y: auto
+  z-index: 50
+  &.active
+    display: flex
+
+  &__logo
+    margin-bottom: $gutter 
+  &__list
+    overflow-y: scroll
+    &:not(:last-child)
+      margin-bottom: $gutter/2
+
+  &__item 
+    display: block
+    transition: all .25s ease
+    a
+      display: block
+      width: 100%
+      font-size: 18px
+      color: $white
+      font-weight: 700
+      text-transform: uppercase
+      padding: 8px 0
+      transition: all .25s ease
+    &:hover 
+      a 
+        color: $theme-color
+  &__social
+      padding-top: $gutter/2
+      margin-top: $gutter/2
+      border-top: 1px solid rgba(#fff, .1) 
+
+  @media (min-width: 992px)
+    display: none !important
+
+.hamburger
+  position: relative
+  z-index: 999
+  &__btn 
+    position: relative
+    display: flex
+    align-items: center 
+    text-align: center
+    width: 30px
+    height: 30px
+    cursor: pointer 
+    outline: none
+    z-index: 1
+    transform: translateY()
+    & > span, & > span::before, & > span::after
+      display: block
+      position: absolute
+      width: 100%
+      height: 2px
+      background: #fff
+    & > span::before, & > span::after
+      content: ''
+    & > span::before
+      top: -8px
+    & > span::after
+      top: 8px
+    &:focus 
+      outline: none
+    &:hover
+      opacity: .5
+  
+  &__btn
+    & > span 
+      transition: background 0s 0.3s
+      &::before, &::after
+        transition: top 0.3s 0.3s, transform 0.3s 0s  
+    &.active
+      & > span 
+        background: none
+        &::before, &::after
+          transition: top 0.3s 0s, transform 0.3s 0.3s
+        &::before 
+          top: 0
+          transform: rotate(45deg)
+        &::after 
+          top: 0
+          transform: rotate(-45deg)
+
+
+// Sections
+
+.section 
+  position: relative
+  padding: 80px 0
+  &__header
+    margin-bottom: $gutter
+  &__title
+    color: $text-color
+    font-size: 36px
+    font-weight: 700
+    line-height: 1.4
+    text-transform: uppercase
+    margin-bottom: $gutter/2
+    span
+      color: $theme-color
+  &__subtitle
+    color: $text-color
+    font-size: 14px
+    font-weight: 700
+    line-height: 30px
+    margin-bottom: $gutter/2
+  &__text
+    opacity: 0.6
+    color: $text-color
+    font-size: 14px
+    font-weight: 400
+    line-height: 1.5
+
+
+.section-callback
+  z-index: 20
+  padding-top: 0
+  margin-bottom: -280px
+  &__row 
+    display: flex
+    position: relative
+    top: -200px
+    background-color: $white
+    box-shadow: 0 3px 40px rgba(0, 0, 0, 0.1)
+  &__image
+    flex: 0 1 33.333%
+    margin-right: $gutter
+  &__content    
+    flex: 0 1 66.6667%
+    padding: 65px
+  
+  .form
+    &__header
+      margin-bottom: $gutter*2
+    &__pretitle 
+      color: $text-color
+      font-size: 26px
+      font-weight: 700
+      line-height: 30px
+      text-transform: uppercase
+      text-align: center
+      margin-bottom: $gutter/1.5
+    &__title
+      color: $text-color
+      font-size: 36px
+      font-weight: 700
+      line-height: 30px
+      text-transform: uppercase
+      text-align: center
+    &__row
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      margin: 0 -15px
+    &__input-wrap
+      flex: 0 1 33.333%
+      position: relative 
+      padding: 0 15px
+    &__input 
+      width: 100%
+      border: none 
+      border-bottom: 1px solid $text-color
+      padding: 10px 30px 10px 0
+      color: $text-color
+      font-size: 14px
+      font-weight: 400
+      line-height: 30px
+      margin-bottom: 10px
+      &::placeholder
+        opacity: 0.7
+        color: $text-color
+        font-size: 14px
+        font-weight: 400
+        line-height: 30px
+    &__button 
+      display: block
+      margin: 70px auto 0
+
+.section-welcome
+  .button
+    margin-top: $gutter*2
+  .row 
+    align-items: center
+  &__content 
+    flex: 0 1 41.6667%
+  &__image
+    position: relative
+    right: -200px
+    flex: 0 1 58.333%
+
+.section-services
+  background-color: $white
+  &__row
+    margin-left: -$gutter/2
+    margin-right: -$gutter/2
+  &__item 
+    padding: 0 $gutter/2
+    flex: 0 1 33.333%
+
+.service
+  &__body
+    background-color: #f1f4f6
+    height: 100%
+  &__image
+    background-color: #f1f4f6
+  &__content
+    display: flex
+    flex-direction: column
+    padding: 40px
+    background-color: #f1f4f6
+  &__name
+    color: $text-color
+    font-size: 26px
+    font-weight: 700
+    line-height: 1.4
+    margin-bottom: $gutter
+  &__description
+    color: $text-color
+    font-size: 16px
+    font-weight: 400
+    line-height: 1.4
+    margin-bottom: $gutter
+  &__button
+    align-self: flex-start
+    justify-self: flex-end
+
+.section-personal
+  text-align: center
+  color: $white
+  &::before 
+    content: ''
+    position: absolute
+    top: 0 
+    left: 0 
+    width: 100%
+    height: 100%
+    background-color: #000 
+    opacity: .3
+    z-index: 2
+  &__content
+    position: relative
+    z-index: 10
+    padding: 80px 0
+  &__title
+    color: #ffffff
+    font-size: 70px
+    font-weight: 700
+    line-height: 1.5
+    margin-bottom: $gutter
+  &__subtitle
+    color: #ffffff
+    font-size: 36px
+    font-weight: 400
+    line-height: 1.4
+    margin-bottom: $gutter/2
+
+
+.section-trainers
+  background-color: $white
+  &__row
+    margin-left: -$gutter/2
+    margin-right: -$gutter/2
+  &__item
+    flex: 0 1 33.333%
+    padding: 0 $gutter
+
+.trainer
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  &__image
+    img 
+      display: block
+      margin: 0 auto
+  &__info  
+    text-align: center
+    padding: 40px 15px
+  &__name
+    color: $text-color
+    font-size: 26px
+    font-weight: 700
+    line-height: 30px
+  &__spec
+    color: $theme-color
+    font-size: 14px
+    font-weight: 700
+    line-height: 30px
+    text-transform: uppercase
+    margin-bottom: $gutter/2
+  &__descr
+    color: $text-color
+    font-size: 16px
+    font-weight: 400
+    line-height: 30px
+
+.section-sale
+  padding: 0
+  &__row
+    position: relative
+    &::before 
+      content: ''
+      position: absolute
+      top: 0 
+      left: 0 
+      width: 100%
+      height: 100%
+      background-color: #000 
+      opacity: .3
+      z-index: 2 
+  &__free, &__contact
+    position: relative
+    flex: 0 1 50%
+    text-align: center
+    padding: 150px
+    z-index: 10
+  &__title 
+    color: #ffffff
+    font-size: 46px
+    font-weight: 700
+    line-height: 1.2
+    text-transform: uppercase
+    margin-bottom: $gutter*2
+  &__subtitle
+    color: #ffffff
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.2
+    text-transform: uppercase
+    margin-bottom: $gutter/2
+
+
+.footer
+  position: relative
+  background-color: #161418
+  padding: 100px 0
+  &__row
+    margin: 0 -15px
+  &__description, &__blog, &__instagram
+    padding: 0 $gutter
+  &__description
+    flex: 1 1 41.6667%
+  &__blog
+    flex: 1 1 33.333%
+  &__instagram
+    flex: 1 1 25%
+  &__title
+    color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: $gutter
+  &__logo
+    margin-bottom: $gutter
+  &__text
+    opacity: 0.7
+    color: #ffffff
+    font-size: 14px
+    line-height: 1.8
+    font-weight: 400
+    margin-bottom: $gutter
+  .social 
+    margin-bottom: $gutter
+  &__form
+    display: flex
+    max-width: 100%
+    
+    .button
+      flex: 0 1 35%
+      max-width: 100%
+      color: #ffffff
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 1.4px
+    input
+      padding: 8px 15px
+    input, input::placeholder 
+      flex: 0 1 65%
+      max-width: 100%
+      color: #cccccc
+      font-size: 15px
+      font-weight: 400
+      line-height: 24px
+
+.footer-blog 
+  display: flex
+  flex-direction: column
+  &__item
+    display: flex
+    align-items: center
+    &:not(:last-child)
+      margin-bottom: $gutter
+  &__image
+    width: 120px
+    height: 80px 
+    margin-right: $gutter/2
+  &__text
+    color: $white
+    font-size: 14px
+    font-weight: 400
+    line-height: 1.8
+
+.footer__instagram
+  span
+    display: block
+    margin-top: $gutter/2
+    color: #ffffff
+    font-size: 12px
+    font-weight: 400
+    line-height: 22.77px  
+
+.instagram-block
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 -6px
+  &__item
+    flex: 0 1 33.333%
+    max-width: 33.333%
+    padding: 0 2px
+    margin-bottom: 1px
+
+  
+ 
+      
+ 
+@import "media" // Staying at the end

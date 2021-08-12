@@ -1,0 +1,26 @@
+/* Header */
+
+.header {
+  background-color: var(--header-bg);
+  padding: 25px 0;
+}
+
+.header__content {
+  display: grid;
+  grid-template-columns: 162px 1fr;
+  align-items: center;
+  column-gap: var(--gutter);
+}
+
+.header__nav {
+  justify-self: end;
+}
+
+@media screen and (max-width: 680px) {
+  .header__nav {
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
+    justify-self: start;
+    margin-top: 15px;
+  }
+}

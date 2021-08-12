@@ -1,0 +1,197 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .header__content
+    padding: 30px 40px
+  .header__phones a
+    font-size: 24px
+
+  .section-callback
+    &__text
+      max-width: 40%
+      flex: 1 1 40% 
+    &__form
+      flex: 1 1 60%
+      .form 
+        flex-basis: 80%
+
+  .section-productions
+    &__text
+      max-width: 75%
+      flex-basis: 75%
+    &__link 
+      max-width: 25%
+      flex-basis: 25%
+
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .header__contacts 
+    justify-content: center
+    > * 
+      flex: 0 0 auto
+      &:not(:last-child)
+        margin-bottom: 10px
+  .header__web
+    display: flex
+    li:not(:last-child)
+      margin-right: 10px
+      margin-bottom: 0
+
+  .about-item__title
+    br 
+      display: none\
+
+  .section-about
+    &__item 
+      max-width: 100%
+
+  .footer
+    padding-top: 80px
+    &::before
+      margin-left: -130px
+    &__content
+      flex-direction: column
+    &__col
+      text-align: center
+      flex: 1 1 auto
+      flex-wrap: wrap
+      margin-bottom: 40px
+      display: flex
+      align-items: center
+      justify-content: center
+      > * 
+        flex: 1 0 auto
+        justify-content: center
+    &__col--left
+      order: 1
+
+  
+  
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+  body 
+    font-size: 16px
+
+  .header
+    padding-top: 15px
+
+  .header__logo 
+    flex: 1 1 auto
+    text-align: center
+    margin-bottom: 10px
+  .header__button
+    margin-right: 0
+
+  .section 
+    &__content
+      padding: 50px 30px
+    &__title 
+      font-size: 28px
+      padding-top: 0
+      margin-bottom: 30px
+
+
+  .section-callback
+    .section__content
+      padding: 50px 30px
+    &__title
+      font-size: 22px
+    &__text
+      padding-top: 0
+      max-width: 100%
+      flex: 1 1 100% 
+    &__form
+      flex: 1 1 100%
+      background-image: none
+      .form 
+        flex-basis: 100%
+
+  .production-grid
+    margin: 0 -5px
+    &__col 
+      padding: 0 5px
+    &__image:not(:last-child)
+      margin-bottom: 0
+  .section-productions
+    &__descr
+      margin-top: 15px
+    &__text
+      padding-right: 0
+      max-width: 100%
+      flex: 1 1 100%
+    &__link 
+      max-width: 100%
+      flex: 0 0 auto
+      margin-top: 30px
+  
+  .section-delivery
+    &__row
+      align-items: flex-start
+    &__image 
+      max-width: 30%
+      flex-basis: 30%
+    &__text p
+      margin-bottom: 20px
+    &__offer
+      h4 
+        font-size: 28px 
+      .button
+        font-size: 18px
+
+
+  .section-picture
+    height: 200px
+    
+  .footer
+    &__web, .logo
+      flex-basis: 100%
+      margin: 15px 0 0
+    .copyright
+      margin-top: 15px
+      order: 1
+
+
+  /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .header__content
+    padding: 30px 15px
+    margin-bottom: 15px
+  .button
+    font-size: 16px
+
+  .form 
+    padding: 30px 20px
+    &__title
+      font-size: 18px
+  
+  .section-delivery
+    &__image
+      max-width: 100%
+      flex-basis: 100%
+      img 
+        display: block
+        max-width: 180px
+        margin: 0 auto
+    &__text
+      flex-basis: auto
+      max-width: 100%
+      padding-left: 0
+  /**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  /**/

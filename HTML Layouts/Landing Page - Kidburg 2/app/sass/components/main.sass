@@ -1,0 +1,65 @@
+@import "components/config"
+
+*, *:before, *:after
+  box-sizing: border-box
+
+body, html 
+  height: 100% 
+
+h1, h2, h3, h4, h5, h6 
+  font-family: $title-font  
+
+body
+  display: flex
+  flex-direction: column
+  // max-width: 1920px
+  min-width: 320px
+  min-height: 100vh
+  position: relative
+  margin: 0 auto
+  padding: 0
+  font-family: $default-font
+  color: $text-color
+  line-height: $l-height
+  font-size: $f-size
+  
+
+.content 
+  flex: 1 0 auto
+  position: relative
+  z-index: 2 
+  top: -225px
+  margin-bottom: -225px
+  overflow-x: hidden
+  @media ( min-width: 2200px )
+    top: -5px
+    margin-bottom: -5px
+  @media screen and ( max-width: 1250px )
+    top: -260px
+    margin-bottom: -260px
+  @media screen and ( max-width: 768px )
+    top: -350px
+    margin-bottom: -350px
+  @media screen and ( max-width: 520px )
+    top: -200px
+    margin-bottom: -200px
+  @media screen and ( max-width: 420px )
+    margin-bottom: -300px
+  @media screen and ( max-width: 320px )
+    top: -300px
+
+
+  
+.footer 
+  flex: 0 0 auto 
+
+.container
+  max-width: $container-size
+  width: 100%
+  margin: 0 auto
+  padding: 0 $container-padding
+  @media screen and (max-width: 1370px)
+    max-width: $container-size-md
+  @media screen and (max-width: 768px)
+    padding: 0 $container-padding-sm
+

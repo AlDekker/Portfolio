@@ -1,0 +1,27 @@
+/* Menu */
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 34px;
+}
+.menu__item:last-child {
+  margin-right: -2px;
+}
+
+.menu__item a {
+  padding: 2px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu__item a:hover {
+  text-decoration: underline;
+}

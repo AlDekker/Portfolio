@@ -1,0 +1,105 @@
+/** Popup **/
+.gallery-wrap
+  position: relative
+  @media screen and ( max-width: 768px )
+    margin-top: 100px
+  @media screen and ( max-width: 750px )
+    margin-top: 0
+  &::before 
+    content: ''
+    position: absolute
+    top: -200px
+    left: 0
+    width: 100%
+    height: 717px
+    background-image: url(../img/dotted-line.svg)
+    background-repeat: no-repeat
+    background-position: center 0
+    @media screen and ( max-width: 1400px )
+      top: -340px
+    @media screen and ( max-width: 768px )
+      height: 686px
+      background-position: 70% 100%
+    @media screen and ( max-width: 750px )
+      top: 100px
+      height: 100%
+      background-image: url(../img/dotted-line-sm.svg)
+      background-position: 100% 100%
+
+.gallery
+  &__arrow
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 70px
+    height: 100%
+    background: none
+    border: none
+    cursor: pointer
+    opacity: .8
+    outline: none
+    transition: all .25s ease
+    &::before 
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 30px
+      height: 30px
+      background: url(../img/arrow.svg) no-repeat center
+    &--left
+      left: 0
+      &::before
+        transform: translate(-50%, -50%) rotate(180deg)
+    &--right
+      right: 0
+    &:hover 
+      opacity: 1
+    
+    @media screen and ( max-width: 768px )
+      width: 30px
+      height: 30px
+      &::before
+        width: 20px
+        height: 20px
+
+  &__close
+    top: 10px
+    right: 10px
+    width: 40px
+    height: 40px
+    opacity: .8
+    &:active
+      top: 10px
+    &::before 
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 23px
+      height: 23px
+      transform: translate(-50%, -50%)
+      background: url(../img/close.svg) no-repeat
+    @media screen and ( max-width: 768px )
+      top: 0
+      right: 0
+      &::before
+        width: 15px
+        height: 15px
+
+/** Magnific Popup **/  
+.mfp-my-gallery
+  &.mfp-bg
+    background-color: #fff
+    opacity: 1
+
+  img.mfp-img
+    padding: 20px 50px
+
+  /** Reset **/  
+  .mfp-bottom-bar, .mfp-figure:after
+    display: none
+
+
+

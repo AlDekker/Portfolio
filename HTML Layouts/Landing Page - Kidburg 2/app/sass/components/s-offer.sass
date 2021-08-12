@@ -1,0 +1,120 @@
+/** Section Offer **/
+.offer
+  &__row 
+    display: flex
+    align-items: flex-end
+    flex-wrap: wrap
+  &__main 
+    flex: 0 1 70%
+    @media screen and ( max-width: 998px )
+      flex-basis: 60%
+    @media screen and ( max-width: 768px )
+      flex-basis: 66%
+    @media screen and ( max-width: 688px ) 
+      flex-basis: 100%
+  &__image 
+    flex: 0 0 30%
+    @media screen and ( max-width: 998px )
+      flex-basis: 40%
+    @media screen and ( max-width: 768px )
+      flex-basis: 34%
+    @media screen and ( max-width: 688px ) 
+      flex-basis: 100%
+      margin-top: 20px
+  &__footer 
+    flex-basis: 100%
+
+.offer__title
+  @media screen and (max-width: 520px)
+    font-size: 23px
+
+.offer__text 
+  max-width: 85%
+  margin-bottom: 30px
+  @media screen and ( max-width: 768px )
+    max-width: 90%
+    margin-bottom: 30px
+  @media screen and ( max-width: 688px ) 
+    max-width: none
+  @media screen and ( max-width: 520px )
+  margin-bottom: 20px
+
+.offer__image 
+  img 
+    max-width: 100% 
+    height: auto
+  @media screen and ( max-width: 688px ) 
+    img
+      display: block
+      width: 240px
+      margin: 0 auto
+
+.offer__footer 
+  margin-top: 40px
+  @media screen and ( max-width: 998px )
+    margin-top: 40px
+  @media screen and ( max-width: 768px )
+    margin-top: 70px
+  @media screen and ( max-width: 768px )
+    margin-top: 30px
+
+.offer__dates
+  display: flex
+  flex-wrap: wrap 
+  font-size: 24px
+
+  @media screen and ( max-width: 1260px )
+    margin: 40px -15px 0
+  @media screen and ( max-width: 768px )
+    margin-top: 50px
+  @media screen and ( max-width: 520px )
+    margin-top: 20px
+    font-size: 15px
+.offer__date 
+  flex: 0 1 30%
+  margin-right: 40px
+  margin-bottom: 40px
+  @media screen and ( max-width: 1260px )
+    flex: 0 1 30%
+    margin-right: 0
+    padding: 0 15px
+  @media screen and ( max-width: 998px )
+    flex: 1 1 50%
+  @media screen and ( max-width: 768px )
+    flex-basis: 100%
+    margin-bottom: 40px
+  @media screen and ( max-width: 768px )
+    margin-bottom: 20px
+  @media screen and ( max-width: 520px )
+    margin-bottom: 15px
+
+
+/** offer ticket **/
+.ticket 
+  display: inline-flex
+  flex-direction: column
+  background: $white
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05)
+  border-radius: 20px
+  padding: 10px 52px 19px
+  font-family: $title-font
+  font-weight: 700
+  font-size: 24px
+  text-transform: uppercase
+  color: $text-color
+  &__value 
+    background-image: $g-orange
+    background-clip: text
+    text-fill-color: transparent
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    color: $theme-color-2
+  @media screen and ( max-width: 998px )
+    font-size: 20px
+    padding: 10px 30px 19px
+    max-width: 320px
+  @media screen and ( max-width: 688px )
+    max-width: 100%
+  @media screen and ( max-width: 520px )
+    font-size: 18px
+    padding: 10px 20px 19px

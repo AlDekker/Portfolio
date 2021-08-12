@@ -1,0 +1,7 @@
+node_modules/
+.git/
+.vscode
+*.log*
+dist/
+gulpfile.js
+_TODO.md

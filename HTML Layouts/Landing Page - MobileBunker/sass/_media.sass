@@ -1,0 +1,150 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1800px)
+  .header
+    min-height: 800px
+  .header__image
+    max-width: 650px
+    top: 5px
+    right: 0
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+
+  .header
+    min-height: auto
+    padding-bottom: 60px
+  .header__image
+    position: relative
+    top: -150px
+    flex: 0 1 45%
+    z-index: 1
+
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  body 
+    font-size: 16px
+
+  .header
+    &__title
+      font-size: 42px
+    &__subtitle
+      font-size: 22px
+    &__text p
+      font-size: 16px
+    &__button
+      margin-top: $gutter/2
+      margin-left: 0
+    &__text
+      flex: 1 1 50%
+    &__image
+      top: -100px
+
+  .section-scheme__item
+    flex: 1 1 50%
+  .section-scheme .item:not(:last-child)::before
+    display: none
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .button
+    font-size: 18px
+
+  .header
+    padding-bottom: 100px
+    &__contacts a
+      font-size: 18px
+
+    &__title
+      font-size: 32px
+      margin-bottom: 0px
+  
+    &__text
+      text-align: center
+      order: 1
+      flex-basis: 100%
+    &__image
+      padding-left: 0
+      position: static
+      order: 0
+      flex-basis: 100%
+      img     
+        display: block
+        width: 320px
+        margin: 0 auto
+  
+  
+  .section
+    &__title
+      font-size: 28px
+      max-width: 100%
+
+
+  .section-intro, .content
+    top: -20%
+  .section-trim .section__title
+  .section-forwhom__row ul
+    flex-basis: 100%
+  .section-descr__image
+    flex: 1 1 auto
+    img 
+      max-width: 100%
+      width: 480px
+      display: block
+      margin: 0 auto 60px
+  .section-descr__text
+    flex: 1 1 100% 
+    padding: 0
+
+  .section-equipment__content
+    padding-left: 15px
+    padding-right: 15px
+  .section-equipment__row
+    margin: 0 0
+  .section-equipment__col
+    padding: 0
+    flex: 1 1 100%
+  .section-equipment .button
+    margin-top: 30px
+
+  .advantages 
+    .item
+      margin-bottom: 30px
+    .item__title
+      br 
+        display: none
+  
+  .form__title
+    font-size: 18px
+
+  .footer__contacts
+    position: static
+    margin-top: 15px
+    min-width: auto
+  
+  /**/
+@media only screen and (max-width : 575px)
+  .top-line
+    flex-direction: column
+  .header
+    .logo 
+      margin-bottom: 30px
+      text-align: center
+    &__content
+      padding-top: 30px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .section-intro, .content
+    top: -25%
+  .content
+    margin-bottom: -100px
+  /**/

@@ -1,0 +1,26 @@
+/* Variables */
+
+:root {
+  --container-padding: 15px;
+  --gutter: 40px;
+  --gutter-sm: 40px;
+
+  --header-bg: #ECF3F7;
+  --footer-bg: #ECF3F7;
+  --content-bg: #FBFDFD;
+
+  --text-light: #666;
+  --font-size: 18px;
+}
+
+@media screen and (max-width: 998px) {
+  :root {
+    --gutter: 30px;
+    --gutter-sm: 30px;
+  }
+}
+@media screen and (max-width: 680px) {
+  :root {
+    --font-size: 16px;
+  }
+}

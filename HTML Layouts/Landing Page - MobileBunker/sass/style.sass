@@ -1,0 +1,730 @@
+@import "vars"
+@import "libs"
+@import "fonts"
+
+*, *:before, *:after
+  box-sizing: border-box
+
+a,a:hover, a:focus, a:active, 
+button, button:focus, button:active, 
+input, select, textarea
+  outline: none !important
+
+a
+  text-decoration: none
+  &:hover
+    color: $theme-color 
+    text-decoration: none  
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6
+  margin: 0
+
+ul, ul li
+  margin: 0
+  padding: 0
+  list-style-type: none
+
+ul
+  li 
+    position: relative
+    padding-left: 30px
+    &::before
+      content: '●'
+      position: absolute
+      top: -7px 
+      left: 0 
+      font-size: 25px
+      color: #4a6980
+
+body, html 
+  height: 100%  
+
+body
+  position: relative
+  margin: 0
+  padding: 0
+  min-width: 320px
+  font-family: $default-font
+  color: $text-color
+  line-height: $l-height
+  font-size: $f-size
+  overflow-x: hidden
+
+/*Press the footer to the bottom*/
+.wrapper 
+  display: flex
+  flex-direction: column
+  height: 100%
+.content 
+  flex: 1 0 auto
+.footer 
+  flex: 0 0 auto 
+/**/  
+
+// Custom container
+.container
+  width: 100%
+  max-width: $container-size
+  margin: 0 auto
+  padding: 0 $container-padding  
+
+.img-responsive
+  max-width: 100%
+
+.button 
+  display: inline-block
+  position: relative
+  padding: 15px 40px
+  border: none
+  border-radius: 7px
+  font-size: 22px 
+  font-weight: bold
+  color: #fff
+  // text-transform: uppercase
+  text-decoration: none
+  text-align: center
+  letter-spacing: 0.22px
+  vertical-align: middle
+  cursor: pointer
+  background-image: linear-gradient(to top, #3495eb, $theme-color)
+  outline: none
+  transition: all .25s ease
+  &:hover, &:focus
+    text-decoration: none
+    color: #fff 
+  &:hover 
+    background-image: linear-gradient(to top, #3495eb, $theme-color)
+  &:active
+    background-image: linear-gradient(to top, #3495eb, $theme-color)
+
+
+// Header 
+
+.logo 
+  img 
+    max-width: 100% 
+    height: auto
+  &__title 
+    text-transform: uppercase
+    text-shadow: 0px 2px 2.7px #000000
+    font-family: Montserrat, sans-serif
+    font-size: 14px
+    font-weight: 500
+    color: $white
+    margin-bottom: 5px
+  &__subtitle
+    font-family: Montserrat, sans-serif
+    font-size: 14px
+    font-weight: 500
+    color: #6a757c
+
+.top-line 
+  position: relative
+  display: flex
+  align-items: center 
+  justify-content: space-between
+  flex-wrap: wrap
+  z-index: 2
+
+.header 
+  min-height: 1000px
+  width: 100%
+  position: relative
+  padding: 15px 0 0
+  background-color: transparent
+  // background-image: url(../img/dest/header-bg.png)
+  background-position: 0 100% 
+  background-size: cover 
+  background-repeat: no-repeat
+  z-index: 10
+  .container
+    // position: relative
+  &__contacts
+    display: flex 
+    flex-direction: column
+    a 
+      position: relative
+      font-family: Montserrat, sans-serif
+      color: $white 
+      font-size: 26px
+      padding-left: 30px
+      transition: all .25s ease
+      &::before 
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+      &[href*="tel"]
+        &::before
+          content: '' url(../img/dest/phone.png)
+      &[href*="mailto"]
+        font-size: 20px
+        letter-spacing: .2px
+        &::before
+          content: '' url(../img/dest/email.png)
+      &:not(:last-child)
+        margin-bottom: 5px
+      &:hover 
+        opacity: .8
+  &__content
+    position: relative
+    padding-top: $gutter*2 
+    display: flex 
+    flex-wrap: wrap
+  &__title 
+    position: relative
+    flex-basis: 100%
+    font-size: 71.2px
+    font-weight: 300
+    line-height: 0.87
+    text-align: center
+    color: $white
+    margin-bottom: $gutter*2
+    z-index: 2
+  &__subtitle
+    font-size: 39px
+    font-weight: bold
+    line-height: 1
+    color: $theme-color
+  &__text
+    p 
+      font-size: 20px
+      font-weight: 600
+      line-height: 1.3
+      letter-spacing: 0.2px
+      color: $white
+  &__image
+    position: absolute
+    top: -65px
+    right: -280px
+    padding-left: 50px
+
+  &__text
+    flex: 0 1 50%
+
+  &__button
+    margin-top: 60px
+    margin-left: 70px
+
+// Sections
+
+.section
+  padding-top: 77px
+  padding-bottom: 76px
+  &__title
+    position: relative
+    margin: 0 auto 50px
+    max-width: 70%
+    font-size: 36px
+    font-weight: 600
+    line-height: 1.2
+    text-align: center
+    color: $black
+
+// Вступление
+.section-intro
+  position: relative
+  top: -15%
+  padding: 200px 0 155px
+  background-color: #0d1215
+  // background-image: url(../img/dest/intro-bg.jpg)
+  background-position: center
+  background-size: cover 
+  background-repeat: no-repeat
+  z-index: 1
+  .section__title
+    color: $white
+    letter-spacing: 0.9px
+    text-shadow: 0 0 91.7px rgba(0, 0, 0, 0.49)
+  &__text 
+    color: $white
+    font-size: 18px 
+    line-height: 1.5
+    text-align: center
+
+.content
+  position: relative
+  top: -15%
+
+// Преимущества
+.section-advantages
+  position: relative
+  background-image: url(../img/dest/advantages-bg.jpg)
+  background-position: 0 0
+  background-size: cover 
+  background-repeat: no-repeat
+  z-index: 2
+  &::before, &::after
+    content: ''
+    position: absolute
+    top: -30px
+    width: 62px
+    height: 77px
+    background-image: url(../img/dest/advantages-decore.png)
+    background-position: 0
+    background-size: contain 
+    background-repeat: no-repeat
+  &::before
+    left: 15%
+    transform: rotate(90deg)
+  &::after
+    right: 15%
+
+  .section__title
+    &::before
+      content: url(../img/dest/advantages-icon.png)
+      position: absolute
+      top: -50px
+      left: 50%
+      margin-left: calc(-83px/2)
+
+.advantages
+  &__row 
+    display: flex
+    flex-wrap: wrap 
+    align-items: flex-start
+    justify-content: center
+    margin: 90px $gutter/-2 0
+  &__item
+    flex: 1 1 33.333%
+    padding: 0 $gutter/2
+  
+  .item 
+    display: flex
+    flex-direction: column 
+    align-items: center 
+    text-align: center
+    &__image
+      margin-bottom: 22px
+      padding: 24px
+      border: solid 2px #4a6980
+      border-radius: 10em
+      width: 116px
+      height: 116px
+      img 
+        display: block
+        max-width: 100% 
+        height: auto
+        margin: 0 auto
+    &__title
+      font-size: 18px
+      font-weight: 500
+      line-height: 1.3
+      text-align: center
+      color: $black
+
+
+// Отделка
+.section-trim
+  display: flex
+  flex-direction: column
+  background-color: #f5f5f5
+  .section__title
+    max-width: 55%
+    position: relative
+    background-color: #f5f5f5
+    padding: 0 15px
+    z-index: 2
+    &::before
+      content: url(../img/dest/trim-icon.png)
+      position: absolute
+      top: -30px
+      left: 50%
+      margin-left: calc(-101px/2)
+  &__btn-wrap
+    position: relative
+    background-color: #f5f5f5
+    padding: 0 15px
+    z-index: 2
+  .container
+    position: relative
+  &__row
+    display: flex
+    flex-direction: column 
+    align-items: center
+    &::before
+      content: ''
+      position: absolute
+      top: 20px
+      left: 15px
+      bottom: 30px
+      right: 15px
+      border: 1px dashed $black 
+    img
+      mix-blend-mode: multiply
+    .button
+      margin-top: 85px
+    
+// Для кого
+.section-forwhom
+  padding: 40px 0
+  &__row
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    ul
+      flex: 0 1 33.333%
+      li 
+        font-weight: 600
+        font-size: 20px
+        line-height: 1.8
+        letter-spacing: 0.2px
+
+// Схема работы
+.section-scheme
+  background: url(../img/dest/scheme-bg.jpg) no-repeat center/cover #203c47
+  .section__title
+    color: $white
+    &::before
+      content: url(../img/dest/scheme-icon.png)
+      position: absolute
+      top: -35px
+      left: 50%
+      margin-left: calc(-101px/2)
+  &__row 
+    margin-top: 80px 
+    display: flex
+    flex-wrap: wrap 
+    justify-content: space-between
+  &__item
+    flex: 1 1 33.3333%
+    margin-bottom: $gutter
+  .item
+    position: relative
+    display: flex
+    flex-direction: column 
+    align-items: center
+    text-align: center
+    &__image
+      max-width: 100%
+      height: auto 
+      margin-bottom: 38px
+    &__title
+      color: $white
+      font-size: 18px
+      font-weight: 500
+    &:not(:last-child)
+      &::before
+        content: ''
+        position: absolute
+        top: 50% 
+        margin-top: -1px
+        left: 100%
+        margin-left: calc(-130px/2)
+        width: 130px
+        height: 2px
+        border-top: 2px dashed $white
+        opacity: 0.43
+
+// Описание работы
+.section-descr
+  &__row
+    display: flex
+    flex-wrap: wrap 
+  &__image 
+    flex: 0 1 45%
+    img 
+      max-width: 100%
+  &__text 
+    flex: 0 1 45%
+    padding-left: 80px
+  &__title 
+    font-size: 24px
+    font-weight: 600
+    margin-bottom: 25px
+  ul li 
+    font-size: 18px
+    line-height: 1.6
+  .button 
+    margin-top: 40px
+
+// Оснащение
+.section-equipment
+  padding: 0
+  &__content
+    display: flex
+    flex-direction: column 
+    align-items: center
+    padding-top: 77px
+    padding-bottom: 76px
+    padding: 77px 50px 76px
+    background-color: #edf2f5
+  &__row 
+    width: 100%
+    display: flex
+    flex-wrap: wrap 
+    margin: 0 -50px
+  &__col 
+    flex: 1 1 33.333%
+    padding: 0 50px
+  .list
+    margin-bottom: 30px
+    &__item
+      width: 100%
+      display: flex
+      justify-content: space-between
+      position: relative
+      &::before 
+        content: ''
+        position: absolute
+        bottom: 5px 
+        left: 0
+        width: 100%
+        height: 2px 
+        border-bottom: 1px dashed #6e6e6e
+    .item
+      margin-bottom: 10px
+      &__name
+        position: relative
+        background-color: #edf2f5 
+        padding-right: 10px
+        font-size: 18px
+        font-weight: bold
+        letter-spacing: 0.18px
+        margin-right: auto
+        // white-space: nowrap
+        z-index: 2
+      &__val 
+        position: relative
+        background-color: #edf2f5 
+        padding-left: 10px
+        letter-spacing: 0.18px
+        color: #514e4e
+        font-weight: 500
+        white-space: nowrap
+        z-index: 2
+  .button 
+    margin-top: 90px
+
+// Вопрос-Ответ
+.accordion
+  max-width: 600px
+  margin: 0 auto
+  &__btn
+    background-color: $white
+    color: $black
+    cursor: pointer
+    padding: 18px 0
+    width: 100%
+    border: none
+    border-bottom: 1px solid #ededed
+    text-align: left
+    outline: none
+    font-size: 18px
+    font-weight: normal
+    transition: 0.4s
+    &.active &:hover 
+      background-color: #ccc
+    &::before
+      content: '\002B'
+      color: $black
+      font-family: Arial, sans-serif
+      font-size: 20px
+      line-height: 18px
+      font-weight: normal
+      float: right
+      margin-left: 5px
+      width: 20px
+      height: 20px
+      text-align: center
+      border: 1px solid $black 
+      border-radius: 10em
+    &.active
+      &::before
+        content: "\2212"
+
+  &__panel
+    padding: 0 18px
+    background-color: $white
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+    font-size: 16px
+    font-weight: normal
+
+// Обратная связь
+
+
+$placeholder-color: #a9a9a9
+
+.section-callback
+  padding: 0
+.section-callback__form 
+  max-width: 540px
+  margin: 0 auto
+  padding: 40px
+  border: 1px solid #8a8a8a
+.form 
+  input, select, textarea 
+    outline: none !important
+  &__title
+    color: $black
+    font-size: 28px
+    font-weight: 600
+    line-height: 1.5
+    text-align: center
+    margin-top: 0
+    margin-bottom: 30px
+  &__subtitle
+    font-size: 18px
+    font-weight: 500
+    line-height: 1.33
+    text-align: center
+    color: #676767
+    margin-top: 0
+    margin-bottom: 30px
+
+  &__label
+    position: relative
+    display: block
+    font-size: 18px
+    font-weight: 500
+    color: $black
+    letter-spacing: 0.18px
+    padding: 0 30px
+    margin-bottom: 8px 
+    &[for="callback-phone"]
+      &::before
+        content: url(../img/dest/tel-grey.png)
+    &[for="callback-email"]
+      &::before
+        content: url(../img/dest/envelope-grey.png)
+    &::before
+      position: absolute
+      top: 0
+      left: 0
+
+  &__input, &__textarea, &__select
+    position: relative
+    max-width: 100%
+    width: 100%
+    padding: 12px 20px
+    background-color: $white
+    border: 1px solid #818181
+    border-radius: 3px
+    font-size: 16px
+    color: $black
+    margin-bottom: 30px
+    transition: all .25s ease
+    &::placeholder
+      color: #818181
+      font-weight: normal
+    &:hover 
+      border-color: #818181
+    &:focus 
+      border-color: $theme-color
+  &__button
+    width: 100%
+    display: block
+    margin: 20px auto 0
+    &--loading::before
+      content: ''
+      position: absolute
+      right: 15px
+      width: 15px
+      height: 15px
+      background-image: url(../img/dest/load.svg)
+      background-size: contain
+      background-position: 0 0
+      background-repeat: no-repeat
+
+  &__success
+    margin-top: 15px
+    display: none
+    justify-content: center
+    align-items: center
+    text-align: left
+    color: #96d51b
+
+
+// Footer
+.footer 
+  position: relative
+  &__contacts
+    position: absolute
+    bottom: 50px
+    left: 15%
+    min-width: 400px
+    padding: 30px 30px 30px 40px
+    z-index: 2
+
+.footer-contacts
+  display: flex
+  flex-direction: column
+  background-color: $white
+  box-shadow: 0.6px 0.8px 10px 0 rgba(0, 0, 0, 0.5)
+  background-color: #fdfefe
+  &__head
+    display: flex
+    flex-direction: column
+  &__title
+    font-size: 36px
+    font-weight: 600
+    line-height: 1.2
+    margin-bottom: 20px
+  &__tel, &__email, &__addr
+    position: relative
+    font-family: "Montserrat", sans-serif
+    font-size: 18px
+    font-weight: 600
+    color: $black
+    margin-bottom: 10px
+    padding-left: 28px
+    letter-spacing: -0.45px
+    // white-space: nowrap
+    transition: all .25s ease
+    &:hover 
+      opacity: .8
+    &::before
+      position: absolute
+      top: 0 
+      left: 0
+  &__tel
+    &::before
+      content: url(../img/dest/tel.png)
+  &__email
+    &::before
+      content: url(../img/dest/envelope.png)
+  &__addr
+    &::before
+      content: url(../img/dest/marker.png)
+  &__foot 
+    margin-top: 70px
+    display: flex
+    flex-direction: column 
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    font-weight: 500
+    color: #3d3d3d
+    span
+      margin-bottom: 5px
+
+.conf
+  padding: 18px 0
+  font-size: 18px
+  font-weight: 500
+  text-align: center
+  color: #676767
+  a 
+    color: #676767
+    border-bottom: 1px solid #676767
+
+
+.site-popup 
+  position: relative
+  width: auto
+  max-width: 450px
+  margin: 40px auto
+  padding: 40px 20px
+  background-color: #fff
+  border-radius: 10px
+  .mfp-close:active
+    top: 0
+  p
+    font-size: 18px
+    line-height: 1.5
+
+  
+
+@import "media" // Staying at the end

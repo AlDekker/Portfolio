@@ -1,0 +1,57 @@
+/* Libs */
+@import "../../node_modules/normalize.css/normalize"
+@import "../../node_modules/swiper/swiper-bundle.css"
+@import "../../node_modules/magnific-popup/dist/magnific-popup"
+
+/* Fonts */
+@mixin font-face($f-family, $f-weight, $f-style, $f-src)
+  @font-face
+    font-family: $f-family
+    font-display: swap
+    font-weight: $f-weight
+    font-style: $f-style
+    src: local($f-family), url(#{$f-src}.woff2) format('woff2'), url(#{$f-src}.woff) format('woff')
+
++font-face("Lineatura", 700, normal, "../fonts/Lineatura-Bold")
++font-face("PT Sans", 700, normal, "../fonts/PTSans-Bold")
++font-face("PT Sans", 400, normal, "../fonts/PTSans-Regular")
+
+// ** Vars ** 
+$text-color: #170E1B
+$theme-color-1: #572CA6
+$theme-color-2: #EC5230
+$theme-color-3: #7CE861
+
+$g-vio: linear-gradient(91.88deg, #572CA6 0%, #E8197E 57.87%)
+$g-orange: linear-gradient(87.85deg, #EC5230 0%, #FFC123 100%)
+$g-green: linear-gradient(87.85deg, #7CE861 0%, #1ED6FF 100%)
+
+$deep: #170E1B
+$grey: #85798A
+
+$white: #ffffff
+$black: #000000
+
+$default-font: "PT Sans", sans-serif
+$title-font: Lineatura, sans-serif
+$f-size: 18px
+$l-height: 1.5
+
+$container-size: 1360px
+$container-size-md: 1260px
+
+$container-padding: 30px
+$container-padding-sm: 20px
+$gutter: 30px  
+$gutter-sm: 20px
+
+:root
+  --header-top-height: 180px
+  @media screen and ( max-width: 768px )
+    --header-top-height: 150px
+  @media screen and ( max-width: 575px )
+    --header-top-height: 110px
+    
+
+
+
