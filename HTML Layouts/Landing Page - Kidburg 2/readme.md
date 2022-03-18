@@ -1,4 +1,4 @@
 # Adaptive html-coding
 
 ## Links:
-demo: //portfolio.web-branch.ru/projects/kidburg-2/
+demo: https://portfolio.web-branch.ru/projects/kidburg-2/
