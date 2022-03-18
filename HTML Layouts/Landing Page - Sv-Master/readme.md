@@ -1,4 +1,4 @@
 # Adaptive html-coding
 
 ## Links:
-demo: //portfolio.web-branch.ru/projects/sv-master/
+demo: https://portfolio.web-branch.ru/projects/sv-master/
