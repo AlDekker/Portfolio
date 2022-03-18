@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Страница товара</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Страница товара">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="stylesheet" href="css/style.min.css"> 
+</head>
+<body class="page">
+  
+  <div class="wrapper">
+    
+    <header class="header">
+      <div class="header__top">
+        <div class="container header__top-row">
+          
+          <!-- Mobile Logo -->
+          <a class="header__logo logo d-md-none d-sm-block" href="/">
+            <img src="img/logo.svg" width="166" height="41" alt="Логотип Comics Market Place">
+          </a>
+          
+          <nav class="header__menu header-menu d-md-block d-sm-none d-none">
+            <ul class="header-menu__list">
+              <li class="header-menu__item"><a href="#">Новости</a></li>
+              <li class="header-menu__item"><a href="#">О нас</a></li>
+              <li class="header-menu__item"><a href="#">Чёрный список</a></li>
+              <li class="header-menu__item"><a href="#">Топ продавцов</a></li>
+              <li class="header-menu__item"><a href="#">Наши правила</a></li>
+              <li class="header-menu__item"><a href="#">Отзывы</a></li>
+            </ul>
+          </nav>
+          
+          <a class="header__phone" href="tel:+79876543210">+7 987 654-32-10</a>
+        </div>
+      </div>
+      
+      <div class="header__main">
+        <div class="container header__main-row">
+          
+          <a class="header__logo logo d-md-block d-sm-none d-none" href="/">
+            <img src="img/logo.svg" width="166" height="41" alt="Логотип Comics Market Place">
+          </a>
+          
+          <div class="header__category header-category">
+            
+            <button class="header-category__btn skew" type="button">
+              <span class="skew__content">
+                <svg class="header-category__btn-icon header-category__btn-icon--closed" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#category"></use>
+                </svg>
+                <svg class="header-category__btn-icon header-category__btn-icon--opened" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#cross"></use>
+                </svg>
+                <span>Все категории</span>
+              </span>
+              <svg class="skew__bg skew__bg--lg" viewBox="0 0 194 45" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 1H189L192 44H4L2 1Z"/>
+              </svg>
+              <svg class="skew__bg skew__bg--sm" viewBox="0 0 51 45" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 1H46L49 44H4L2 1Z"/>
+              </svg>
+              
+            </button>
+            
+            <div class="header-category__popup skew-block">
+              <div class="skew-block__content header-category__popup-content">
+                <ul class="header-category__list">
+                  <li class="header-category__item"><a href="#">DC</a></li>
+                  <li class="header-category__item"><a href="#">Marvel</a></li>
+                  <li class="header-category__item"><a href="#">BUBBLE</a></li>
+                  <li class="header-category__item"><a href="#">Манга</a></li>
+                  <li class="header-category__item"><a href="#">Лидеры продаж</a></li>
+                  <li class="header-category__item"><a href="#">Фёдор Комикс и Студия «Феникс»</a></li>
+                </ul>
+                <ul class="header-category__list header-category__list--mobile">
+                  <li class="header-category__item"><a href="#">Новости</a></li>
+                  <li class="header-category__item"><a href="#">О нас</a></li>
+                  <li class="header-category__item"><a href="#">Чёрный список</a></li>
+                  <li class="header-category__item"><a href="#">Топ продавцов</a></li>
+                  <li class="header-category__item"><a href="#">Наши правила</a></li>
+                  <li class="header-category__item"><a href="#">Отзывы</a></li>
+                </ul>
+              </div>
+              
+              
+            </div>
+            
+          </div>
+          
+          <div class="header__search search">
+            <form action="#" class="search__form">
+              <label for="search-input" class="skew">
+                <span class="visually-hidden">Поле поиска</span>
+                <span class="skew__content search__input-wrap">
+                  <input id="search-input" class="search__input" type="text" name="search-input" placeholder="Поиск по названию">
+                </span>
+                
+                <svg class="skew__bg search-input-bg-lg" viewBox="0 0 636 45" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 1H634L632.5 44H5L2 1Z"/>
+                </svg>
+                <svg class="skew__bg search-input-bg-sm" viewBox="0 0 191 45" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 1H189L187.5 44H5L2 1Z"/>
+                </svg>
+              </label>
+              <button class="search__btn skew" aria-label="Найти на сайте">
+                <span class="skew__content">
+                  <svg class="search__icon" aria-hidden="true">
+                    <use xlink:href="img/sprite/sprite.svg#search"></use>
+                  </svg>
+                </span>
+                <svg class="skew__bg" viewBox="0 0 57 45" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 1H55L53 44H6L2 1Z"/>
+                </svg>
+              </button>
+              <button type="button" class="search__close" aria-label="Закрыть поиск">
+                <svg class="search__close-icon" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#cross"></use>
+                </svg>
+              </button>
+            </form>
+            <button type="button" class="search__open skew" aria-label="Открыть поиск">
+              <span class="skew__content">
+                <svg class="search__icon" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#search"></use>
+                </svg>
+              </span>
+              <svg class="skew__bg" viewBox="0 0 57 45" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 1H55L53 44H6L2 1Z"/>
+              </svg>
+            </button>
+          </div>
+          
+          <div class="header__account account">
+            
+            <!-- Wish List -->
+            <div class="account__item">
+              
+              <button data-value="12" class="header__wish-toggle account__btn account__btn--counter account__btn--wish" type="button" aria-label="Открыть избранное">
+                <svg class="account__icon" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#hearth"></use>
+                </svg>
+              </button>
+              
+              <div class="account__popup-wrapper">
+                <div class="account__popup account-popup skew-block">
+                  <div class="skew-block__content">
+                    
+                    <div class="account-popup__header">
+                      <span class="account-popup__title">В вашей корзине</span>
+                      <strong class="account-popup__sub-title">12 товаров</strong>
+                    </div>
+                    
+                    <div class="account-popup__body">
+                      <ul class="cart-list scroll-block">
+                        <li class="cart-list__item">
+                          <img class="cart-list__img" src="img/previews/1.png" alt="Мстители">
+                          <div class="cart-list__info">
+                            <a href="#" class="cart-list__title">Мстители</a>
+                            <span class="cart-list__price">750 ₽</span>
+                          </div>
+                          <button type="button" class="cart-list__delete" aria-label="Удалить из корзины">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="img/sprite/sprite.svg#cross"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="cart-list__item">
+                          <img class="cart-list__img" src="img/previews/1.png" alt="Мстители">
+                          <div class="cart-list__info">
+                            <a href="#" class="cart-list__title">Мстители</a>
+                            <span class="cart-list__price">750 ₽</span>
+                          </div>
+                          <button type="button" class="cart-list__delete" aria-label="Удалить из корзины">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="img/sprite/sprite.svg#cross"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="cart-list__item">
+                          <img class="cart-list__img" src="img/previews/1.png" alt="Мстители">
+                          <div class="cart-list__info">
+                            <a href="#" class="cart-list__title">Мстители</a>
+                            <span class="cart-list__price">750 ₽</span>
+                          </div>
+                          <button type="button" class="cart-list__delete" aria-label="Удалить из корзины">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="img/sprite/sprite.svg#cross"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="cart-list__item">
+                          <img class="cart-list__img" src="img/previews/1.png" alt="Мстители">
+                          <div class="cart-list__info">
+                            <a href="#" class="cart-list__title">Мстители</a>
+                            <span class="cart-list__price">750 ₽</span>
+                          </div>
+                          <button type="button" class="cart-list__delete" aria-label="Удалить из корзины">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="img/sprite/sprite.svg#cross"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="cart-list__item">
+                          <img class="cart-list__img" src="img/previews/1.png" alt="Мстители">
+                          <div class="cart-list__info">
+                            <a href="#" class="cart-list__title">Мстители</a>
+                            <span class="cart-list__price">750 ₽</span>
+                          </div>
+                          <button type="button" class="cart-list__delete" aria-label="Удалить из корзины">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="img/sprite/sprite.svg#cross"></use>
+                            </svg>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <div class="account-popup__footer">
+                      <a href="#" class="button button--blue">Оформить заказ</a>
+                      <a href="#" class="button">Открыть</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+            <!-- Cart -->
+            <div class="account__item">
+              <button data-value="0" class="header__cart-toggle account__btn account__btn--counter account__btn--cart" type="button" aria-label="Открыть корзину">
+                <svg class="account__icon" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#cart"></use>
+                </svg>
+              </button>
+              <div class="account__popup-wrapper">
+                <div class="account__popup account-popup skew-block">
+                  <div class="skew-block__content">
+                    
+                    <div class="account-popup__header">
+                      <span class="account-popup__title">В вашей корзине</span>
+                      <strong class="account-popup__sub-title">12 товаров</strong>
+                    </div>
+                    
+                    <div class="account-popup__body">
+                      <ul class="cart-list scroll-block">
+                        <li class="cart-list__item">
+                          <img class="cart-list__img" src="img/previews/1.png" alt="Мстители">
+                          <div class="cart-list__info">
+                            <a href="#" class="cart-list__title">Мстители</a>
+                            <span class="cart-list__price">750 ₽</span>
+                          </div>
+                          <button type="button" class="cart-list__delete" aria-label="Удалить из корзины">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="img/sprite/sprite.svg#cross"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="cart-list__item">
+                          <img class="cart-list__img" src="img/previews/1.png" alt="Мстители">
+                          <div class="cart-list__info">
+                            <a href="#" class="cart-list__title">Мстители</a>
+                            <span class="cart-list__price">750 ₽</span>
+                          </div>
+                          <button type="button" class="cart-list__delete" aria-label="Удалить из корзины">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="img/sprite/sprite.svg#cross"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="cart-list__item">
+                          <img class="cart-list__img" src="img/previews/1.png" alt="Мстители">
+                          <div class="cart-list__info">
+                            <a href="#" class="cart-list__title">Мстители</a>
+                            <span class="cart-list__price">750 ₽</span>
+                          </div>
+                          <button type="button" class="cart-list__delete" aria-label="Удалить из корзины">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="img/sprite/sprite.svg#cross"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="cart-list__item">
+                          <img class="cart-list__img" src="img/previews/1.png" alt="Мстители">
+                          <div class="cart-list__info">
+                            <a href="#" class="cart-list__title">Мстители</a>
+                            <span class="cart-list__price">750 ₽</span>
+                          </div>
+                          <button type="button" class="cart-list__delete" aria-label="Удалить из корзины">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="img/sprite/sprite.svg#cross"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="cart-list__item">
+                          <img class="cart-list__img" src="img/previews/1.png" alt="Мстители">
+                          <div class="cart-list__info">
+                            <a href="#" class="cart-list__title">Мстители</a>
+                            <span class="cart-list__price">750 ₽</span>
+                          </div>
+                          <button type="button" class="cart-list__delete" aria-label="Удалить из корзины">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="img/sprite/sprite.svg#cross"></use>
+                            </svg>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <div class="account-popup__footer">
+                      <a href="#" class="button button--blue">Оформить заказ</a>
+                      <a href="#" class="button">Открыть</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- User -->
+            <div class="account__item">
+              <button class="header__user-toggle account__btn account__btn--user" type="button" aria-label="Открыть профиль">
+                <svg class="account__icon" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#user"></use>
+                </svg>
+              </button>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </header>
+    
+    <main class="content">
+      
+      <div class="page__breadcrumbs breadcrumbs skew-block">
+        <div class="container skew-block__content">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="/catalog">Каталог товаров</a></li>
+            <li class="breadcrumbs__item"><a href="/catalog-dc">DS</a></li>
+            <li class="breadcrumbs__item breadcrumbs__item--current"><h1 class="page__title">Batman killing joke</h1></li>
+          </ul>
+        </div>
+      </div>
+      
+      <article class="product">
+        <div class="container product__main">
+          <div class="row product__main">
+            <!-- Картинки товара -->
+            <div class="col-xl-5 col-lg-6 col-sm-12">            
+              <div id="product-images-slider" class="product__images product-images">             
+                <div class="product-images__row">
+                  <div class="product-images__col">
+                    
+                    <button class="swiper-button-prev skew" aria-label="Предыдущий слайд">
+                      <span class="skew__content">
+                        <svg class="slider__btn-icon" aria-hidden="true">
+                          <use xlink:href="img/sprite/sprite.svg#slider-arr"></use>
+                        </svg>
+                      </span>
+                      <svg class="skew__bg" viewBox="0 0 37 38" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 4L36 2V33L2 36L5 4Z"/>
+                      </svg>
+                    </button>
+                    
+                    <div class="product-images__thumbs">
+                      <div class="swiper-container"> <!-- Слайдер с превью -->
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="product-images__image"><img src="img/comics/product-image.jpg" alt="Batman killing joke 1"/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="product-images__image"><img src="img/comics/product-image-2.jpg" alt="Batman killing joke 2"/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="product-images__image"><img src="img/comics/product-image-3.jpg" alt="Batman killing joke 3"/></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="product-images__image"><img src="img/comics/product-image-4.jpg" alt="Batman killing joke 4"/></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <button class="swiper-button-next skew" aria-label="Следующий слайд">
+                      <span class="skew__content">
+                        <svg class="slider__btn-icon" aria-hidden="true">
+                          <use xlink:href="img/sprite/sprite.svg#slider-arr"></use>
+                        </svg>
+                      </span>
+                      <svg class="skew__bg" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 4L36 2V33L2 36L5 4Z"/>
+                      </svg>
+                    </button>
+                    
+                  </div>
+                  <div class="product-images__images">
+                    <span class="product-status product-status--great">Отличное состояние</span>
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="product-images__image"><img src="img/comics/product-image.jpg" alt="Batman killing joke 1"/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product-images__image"><img src="img/comics/product-image-2.jpg" alt="Batman killing joke 2"/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product-images__image"><img src="img/comics/product-image-3.jpg" alt="Batman killing joke 3"/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product-images__image"><img src="img/comics/product-image-4.jpg" alt="Batman killing joke 4"/></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>      
+            </div>
+            <!-- Характеристики -->
+            <div class="col-xl-7 col-lg-6 col-sm-12">
+              <div class="product__characteristic">
+                <div class="product__rating rating">
+                  <div class="rating__stars">
+                    <span class="rating__item rating__item--check"></span>
+                    <span class="rating__item rating__item--check"></span>
+                    <span class="rating__item rating__item--check"></span>
+                    <span class="rating__item rating__item--check"></span>
+                    <span class="rating__item"></span>  
+                  </div>
+                  <div class="rating__reviews">22 отзыва</div>
+                </div>
+                <div class="product__short-descr">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира призывают нас к новым свершениям, которые, в свою очередь, должны быть ассоциативно распределены по отраслям</div>
+                <div class="product__prices prices">
+                  <span class="prices__item">750 ₽</span>
+                  <span class="prices__item prices__item--old">750 ₽</span>
+                </div>
+                <div class="product__stock">
+                  <svg class="product__stock-icon" aria-hidden="true">
+                    <use xlink:href="img/sprite/sprite.svg#check"></use>
+                  </svg>
+                  <span>В наличии у 2 продавцов</span>
+                </div>
+                <div class="product__buttons">
+                  <div class="skew">
+                    <div class="skew__content">
+                      <div class="input-number">
+                        <button type="button" class="input-number__minus">-</button>
+                        <input id="form-age" class="input-number__input" type="number" min="1" max="100" value="1" placeholder="1" required>
+                        <button type="button" class="input-number__plus">+</button>
+                      </div>
+                    </div>
+                    
+                    <svg class="skew__bg" width="83" height="45" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 4L79 2L81 44H1V4Z" fill="white"/>
+                    </svg>
+                    
+                  </div>
+                  <button id="cart-btn" type="button" class="button button--red">В корзину</button>
+                  <button id="wish-btn" type="button" class="wish-btn" aria-label="Добавить в избранное">
+                    <svg class="wish-btn__icon" aria-hidden="true">
+                      <use xlink:href="img/sprite/sprite.svg#hearth"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product__attr attr">
+                  <dl class="attr__list">
+                    
+                    <dt class="attr__term">Издание</dt>
+                    <dd class="attr__descr">
+                      <a href="#">DC Comics;</a>
+                      <span><a href="#">Deluxe edition</a> (March 19, 2008)</span>
+                    </dd>
+                    
+                    <dt class="attr__term">Формат издания</dt>
+                    <dd class="attr__descr">
+                      <a href="#">Мягкий переплёт</a>
+                    </dd>
+                    
+                    <dt class="attr__term">Авторы</dt>
+                    <dd class="attr__descr">Автор Комикса</dd>
+                    
+                    <dt class="attr__term">Страницы</dt>
+                    <dd class="attr__descr">64</dd>
+                    
+                    <dt class="attr__term">Жанр</dt>
+                    <dd class="attr__descr">Триллер, супергероика</dd>
+                    
+                  </dl>
+                </div>  
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container product__info skew-bg skew-bg--reverse">
+          <div class="row align-items-start">
+            <div class="col-xl-5">
+              <section class="section product__descr">
+                <header class="section__header">
+                  <h2 class="section__title">О комиксе</h2>
+                </header>
+                <div class="section__content">
+                  <p>One of the most famous Batman stories of all time is offered for the first time in hardcover in this special twentieth-anniversary edition.</p>
+                  <p>This is the unforgettable that forever changed Batman's world, adding a new element of darkness with its unflinching portrayal of The Joker's twisted psyche.</p>
+                  <p>Writer Alan Moore, acclaimed author of WATCHMEN and V FOR VENDETTA, offers his take on the disturbing relationship between The Dark Knight and his greatest foe. The Clown Prince of Crime has never been more ruthless than in this brutal tale.</p>
+                  <p>This special new edition also includes a story written and exquisitely illustrated by Brian Bolland.</p>
+                </div>
+              </section>
+            </div>
+            <div class="col-xl-6 offset-xl-1">
+              <!-- Сейчас просматривают -->
+              <section class="section product__other-product s-now">
+                
+                <header class="section__header">
+                  <h2 class="section__title">Вместе с этим смотрят</h2>
+                  <a href="#" class="section__more">Смотреть все</a>
+                </header>
+                
+                <div class="slider-product-container">
+                  <div id="slider-products-sm" class="section__content slider">
+                    <div class="swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <article class="product-card">
+                            <div class="product-card__image-wrap"><img class="product-card__image" loading="lazy" width="190" height="289" src="img/comics/1.jpg" alt="Batman killing joke"></div>
+                            <a class="product-card__category" href="#">DC, english edition</a>
+                            <h3 class="product-card__title"><a href="#">Batman killing joke</a></h3>
+                            <span class="product-card__meta">Новинка</span>
+                            <span class="product-status product-status--great">Отличное состояние</span>
+                            
+                            <div class="product-card__prices prices">
+                              <span class="prices__item">750 ₽</span>
+                              <span class="prices__item prices__item--old">750 ₽</span>
+                            </div>
+                            <div class="product-card__footer">
+                              <button type="button" class="product-card__button button button--red">В корзину</button>
+                              <button type="button" class="wish-btn wish-btn--red" aria-label="Добавить в избранное">
+                                <svg class="wish-btn__icon" aria-hidden="true">
+                                  <use xlink:href="img/sprite/sprite.svg#hearth"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            
+                            <!-- Описание в модалке -->
+                            <div class="product-card__exerpt visually-hidden">
+                              Семантический разбор внешних противодействий требует анализа системы обучения кадров, соответствующей насущным потребностям. Безусловно, выбранный нами инновационный путь способствует подготовке и реализации соответствующих условий активизации.
+                            </div>
+                            
+                          </article>
+                        </div>
+                        <div class="swiper-slide">
+                          <article class="product-card">
+                            <div class="product-card__image-wrap"><img class="product-card__image" loading="lazy" width="190" height="289" src="img/comics/2.jpg" alt="Amazing Spider Man"></div>
+                            <a class="product-card__category" href="#">Marvel, русское издание</a>
+                            <h3 class="product-card__title"><a href="#">Amazing Spider Man</a></h3>
+                            <span class="product-card__meta">Новинка</span>
+                            <span class="product-status product-status--great">Отличное состояние</span>
+                            
+                            <div class="product-card__prices prices">
+                              <span class="prices__item">750 ₽</span>
+                              <span class="prices__item prices__item--old">750 ₽</span>
+                            </div>
+                            <div class="product-card__footer">
+                              <button type="button" class="product-card__button button button--red">В корзину</button>
+                              <button type="button" class="wish-btn wish-btn--red" aria-label="Добавить в избранное">
+                                <svg class="wish-btn__icon" aria-hidden="true">
+                                  <use xlink:href="img/sprite/sprite.svg#hearth"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            
+                            <!-- Описание в модалке -->
+                            <div class="product-card__exerpt visually-hidden">
+                              Семантический разбор внешних противодействий требует анализа системы обучения кадров, соответствующей насущным потребностям. Безусловно, выбранный нами инновационный путь способствует подготовке и реализации соответствующих условий активизации.
+                            </div>
+                            
+                          </article>
+                        </div>
+                        <div class="swiper-slide">
+                          <article class="product-card">
+                            <div class="product-card__image-wrap"><img class="product-card__image" loading="lazy" width="190" height="289" src="img/comics/3.jpg" alt="Майор гром"></div>
+                            <a class="product-card__category" href="#">Bubble, русское издание</a>
+                            <h3 class="product-card__title"><a href="#">Майор гром</a></h3>
+                            <span class="product-card__meta">Новинка</span>
+                            <span class="product-status product-status--good">Среднее состояние</span>
+                            
+                            <div class="product-card__prices prices">
+                              <span class="prices__item">750 ₽</span>
+                              <span class="prices__item prices__item--old">750 ₽</span>
+                            </div>
+                            <div class="product-card__footer">
+                              <button type="button" class="product-card__button button button--red">В корзину</button>
+                              <button type="button" class="wish-btn wish-btn--red" aria-label="Добавить в избранное">
+                                <svg class="wish-btn__icon" aria-hidden="true">
+                                  <use xlink:href="img/sprite/sprite.svg#hearth"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            
+                            <!-- Описание в модалке -->
+                            <div class="product-card__exerpt visually-hidden">
+                              Семантический разбор внешних противодействий требует анализа системы обучения кадров, соответствующей насущным потребностям. Безусловно, выбранный нами инновационный путь способствует подготовке и реализации соответствующих условий активизации.
+                            </div>
+                            
+                          </article>
+                        </div>
+                        <div class="swiper-slide">
+                          <article class="product-card">
+                            <div class="product-card__image-wrap"><img class="product-card__image" loading="lazy" width="190" height="289" src="img/comics/4.jpg" alt="Мстители"></div>
+                            <a class="product-card__category" href="#">Marvel, русское издание</a>
+                            <h3 class="product-card__title"><a href="#">Мстители</a></h3>
+                            <span class="product-card__meta">Новинка</span>
+                            <span class="product-status product-status--bad">Ужасное состояние</span>
+                            
+                            <div class="product-card__prices prices">
+                              <span class="prices__item">750 ₽</span>
+                              <span class="prices__item prices__item--old">750 ₽</span>
+                            </div>
+                            <div class="product-card__footer">
+                              <button type="button" class="product-card__button button button--red">В корзину</button>
+                              <button type="button" class="wish-btn wish-btn--red" aria-label="Добавить в избранное">
+                                <svg class="wish-btn__icon" aria-hidden="true">
+                                  <use xlink:href="img/sprite/sprite.svg#hearth"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            
+                            <!-- Описание в модалке -->
+                            <div class="product-card__exerpt visually-hidden">
+                              Семантический разбор внешних противодействий требует анализа системы обучения кадров, соответствующей насущным потребностям. Безусловно, выбранный нами инновационный путь способствует подготовке и реализации соответствующих условий активизации.
+                            </div>
+                            
+                          </article>
+                        </div>
+                        <div class="swiper-slide">
+                          <article class="product-card">
+                            <div class="product-card__image-wrap"><img class="product-card__image" loading="lazy" width="190" height="289" src="img/comics/1.jpg" alt="Batman killing joke"></div>
+                            <a class="product-card__category" href="#">DC, english edition</a>
+                            <h3 class="product-card__title"><a href="#">Batman killing joke</a></h3>
+                            <span class="product-card__meta">Новинка</span>
+                            <span class="product-status product-status--great">Отличное состояние</span>
+                            
+                            <div class="product-card__prices prices">
+                              <span class="prices__item">750 ₽</span>
+                              <span class="prices__item prices__item--old">750 ₽</span>
+                            </div>
+                            <div class="product-card__footer">
+                              <button type="button" class="product-card__button button button--red">В корзину</button>
+                              <button type="button" class="wish-btn wish-btn--red" aria-label="Добавить в избранное">
+                                <svg class="wish-btn__icon" aria-hidden="true">
+                                  <use xlink:href="img/sprite/sprite.svg#hearth"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            
+                            <!-- Описание в модалке -->
+                            <div class="product-card__exerpt visually-hidden">
+                              Семантический разбор внешних противодействий требует анализа системы обучения кадров, соответствующей насущным потребностям. Безусловно, выбранный нами инновационный путь способствует подготовке и реализации соответствующих условий активизации.
+                            </div>
+                            
+                          </article>
+                        </div>
+                        <div class="swiper-slide">
+                          <article class="product-card">
+                            <div class="product-card__image-wrap"><img class="product-card__image" loading="lazy" width="190" height="289" src="img/comics/2.jpg" alt="Amazing Spider Man"></div>
+                            <a class="product-card__category" href="#">Marvel, русское издание</a>
+                            <h3 class="product-card__title"><a href="#">Amazing Spider Man</a></h3>
+                            <span class="product-card__meta">Новинка</span>
+                            <span class="product-status product-status--great">Отличное состояние</span>
+                            
+                            <div class="product-card__prices prices">
+                              <span class="prices__item">750 ₽</span>
+                              <span class="prices__item prices__item--old">750 ₽</span>
+                            </div>
+                            <div class="product-card__footer">
+                              <button type="button" class="product-card__button button button--red">В корзину</button>
+                              <button type="button" class="wish-btn wish-btn--red" aria-label="Добавить в избранное">
+                                <svg class="wish-btn__icon" aria-hidden="true">
+                                  <use xlink:href="img/sprite/sprite.svg#hearth"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            
+                            <!-- Описание в модалке -->
+                            <div class="product-card__exerpt visually-hidden">
+                              Семантический разбор внешних противодействий требует анализа системы обучения кадров, соответствующей насущным потребностям. Безусловно, выбранный нами инновационный путь способствует подготовке и реализации соответствующих условий активизации.
+                            </div>
+                            
+                          </article>
+                        </div>
+                        <div class="swiper-slide">
+                          <article class="product-card">
+                            <div class="product-card__image-wrap"><img class="product-card__image" loading="lazy" width="190" height="289" src="img/comics/3.jpg" alt="Майор гром"></div>
+                            <a class="product-card__category" href="#">Bubble, русское издание</a>
+                            <h3 class="product-card__title"><a href="#">Майор гром</a></h3>
+                            <span class="product-card__meta">Новинка</span>
+                            <span class="product-status product-status--good">Среднее состояние</span>
+                            
+                            <div class="product-card__prices prices">
+                              <span class="prices__item">750 ₽</span>
+                              <span class="prices__item prices__item--old">750 ₽</span>
+                            </div>
+                            <div class="product-card__footer">
+                              <button type="button" class="product-card__button button button--red">В корзину</button>
+                              <button type="button" class="wish-btn wish-btn--red" aria-label="Добавить в избранное">
+                                <svg class="wish-btn__icon" aria-hidden="true">
+                                  <use xlink:href="img/sprite/sprite.svg#hearth"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            
+                            <!-- Описание в модалке -->
+                            <div class="product-card__exerpt visually-hidden">
+                              Семантический разбор внешних противодействий требует анализа системы обучения кадров, соответствующей насущным потребностям. Безусловно, выбранный нами инновационный путь способствует подготовке и реализации соответствующих условий активизации.
+                            </div>
+                            
+                          </article>
+                        </div>
+                        <div class="swiper-slide">
+                          <article class="product-card">
+                            <div class="product-card__image-wrap"><img class="product-card__image" loading="lazy" width="190" height="289" src="img/comics/4.jpg" alt="Мстители"></div>
+                            <a class="product-card__category" href="#">Marvel, русское издание</a>
+                            <h3 class="product-card__title"><a href="#">Мстители</a></h3>
+                            <span class="product-card__meta">Новинка</span>
+                            <span class="product-status product-status--bad">Ужасное состояние</span>
+                            
+                            <div class="product-card__prices prices">
+                              <span class="prices__item">750 ₽</span>
+                              <span class="prices__item prices__item--old">750 ₽</span>
+                            </div>
+                            <div class="product-card__footer">
+                              <button type="button" class="product-card__button button button--red">В корзину</button>
+                              <button type="button" class="wish-btn wish-btn--red" aria-label="Добавить в избранное">
+                                <svg class="wish-btn__icon" aria-hidden="true">
+                                  <use xlink:href="img/sprite/sprite.svg#hearth"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            
+                            <!-- Описание в модалке -->
+                            <div class="product-card__exerpt visually-hidden">
+                              Семантический разбор внешних противодействий требует анализа системы обучения кадров, соответствующей насущным потребностям. Безусловно, выбранный нами инновационный путь способствует подготовке и реализации соответствующих условий активизации.
+                            </div>
+                            
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="swiper-button-prev slider__btn slider__btn--prev skew" aria-label="Предыдущий слайд">
+                      <span class="skew__content">
+                        <svg class="slider__btn-icon" aria-hidden="true">
+                          <use xlink:href="img/sprite/sprite.svg#slider-arr"></use>
+                        </svg>
+                      </span>
+                      <svg class="skew__bg" viewBox="0 0 37 38" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 4L36 2V33L2 36L5 4Z"/>
+                      </svg>
+                    </button>
+                    <button class="swiper-button-next slider__btn slider__btn--next skew" aria-label="Следующий слайд">
+                      <span class="skew__content">
+                        <svg class="slider__btn-icon" aria-hidden="true">
+                          <use xlink:href="img/sprite/sprite.svg#slider-arr"></use>
+                        </svg>
+                      </span>
+                      <svg class="skew__bg" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 4L36 2V33L2 36L5 4Z"/>
+                      </svg>
+                    </button>
+                    
+                    <div class="swiper-scrollbar slider__scrollbar"></div>
+                  </div>
+                </div>
+                
+              </section> 
+            </div>
+          </div>
+        </div>
+        <div class="container product__reviews">
+          <section class="row section">
+            <div class="col-xl-7 col-lg-9 col-md-8  order-md-1 order-1">
+              <div class="product__reviews-header">
+                <h2 class="section__title">Отзывы</h2>
+                <button type="button" class="button product__reviews-add">+ Оставить отзыв</button>
+              </div>
+              <div class="product__reviews-list">
+                
+                <div class="reviews__item review">
+                  <div class="review__avatar">
+                    AN
+                  </div>
+                  <div class="review__author">Господа, был сорван доклад председателя совхоза</div>
+                  <div class="review__meta">
+                    <div class="review__rating rating">
+                      <div class="rating__stars">
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item rating__item--check"></span>
+                      </div>
+                    </div>
+                    <span class="review__date">23 декабря 2021</span>
+                  </div>        
+                  
+                  <div class="review__text">
+                    Предварительные выводы неутешительны: базовый вектор развития, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для модели развития
+                  </div>
+                </div>
+                
+                <div class="reviews__item review">
+                  <div class="review__avatar">
+                    БЮ
+                  </div>
+                  <div class="review__author">Курс на социально-ориентированный национальный проект станет частью наших традиций</div>
+                  <div class="review__meta">
+                    <div class="review__rating rating">
+                      <div class="rating__stars">
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item rating__item--check"></span>
+                      </div>
+                    </div>
+                    <span class="review__date">23 декабря 2021</span>
+                  </div>        
+                  
+                  <div class="review__text">
+                    Постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает актуальность новых принципов формирования материально-технической и кадровой базы. Мы вынуждены отталкиваться от того, что глубокий уровень погружения выявляет срочную потребность системы обучения кадров, соответствующей насущным потребностям.
+                  </div>
+                </div>
+                
+                <div class="reviews__item review">
+                  <div class="review__avatar">
+                    AN
+                  </div>
+                  <div class="review__author">Сложно сказать, почему зима близко</div>
+                  <div class="review__meta">
+                    <div class="review__rating rating">
+                      <div class="rating__stars">
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item rating__item--check"></span>
+                      </div>
+                    </div>
+                    <span class="review__date">23 декабря 2021</span>
+                  </div>        
+                  
+                  <div class="review__text">
+                    Каждый из нас понимает очевидную вещь: глубокий уровень погружения обеспечивает широкому кругу (специалистов) участие в формировании своевременного выполнения сверхзадачи. Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: граница обучения кадров говорит о возможностях экспериментов, поражающих по своей масштабности и грандиозности.
+                  </div>
+                </div>
+                
+              </div>
+              <button type="button" class="button product__reviews-more">Загрузить еще</button>
+            </div>
+            <div class="col-xl-4 offset-xl-1 col-lg-3 col-md-4 order-md-1 order-0">
+              <div class="review-summary__wrapper">
+                <div class="product__reviews-summary review-summary sticky skew-block">
+                  <div class="review-summary__main skew-block__content">
+                    <span class="review-summary__num">4.3</span>
+                    <div class="review-summary__rating rating">
+                      <div class="rating__stars">
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item rating__item--check"></span>
+                        <span class="rating__item"></span>
+                      </div>
+                    </div>
+                    <div class="review-summary__subtitle">На основании 22 отзывов</div>
+                  </div>
+                  <div class="review-summary__stats review-stats ">
+                    <div class="review-stats__item review-stats__item--positive">
+                      <span class="review-stats__val">18</span>
+                      <span class="review-stats__subtitle">положительные</span>
+                    </div>
+                    <div class="review-stats__item review-stats__item--negative">
+                      <span class="review-stats__val">2</span>
+                      <span class="review-stats__subtitle">отрицательные</span>
+                    </div>
+                    <div class="review-stats__item review-stats__item--neutral">
+                      <span class="review-stats__val">2</span>
+                      <span class="review-stats__subtitle">нейтральные</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+      </article>
+      
+    </main>
+    
+    <footer class="footer">
+      
+      <section class="section section-subscribe footer__subscribe">
+        
+        <img class="section-subscribe__supeman" src="img/superman.png" alt="" aria-hidden="true">
+        
+        <div class="container section-subscribe__content">
+          <div class="row align-items-center">
+            <div class="col-xl-5 col-lg-6 col-md-12">
+              <div class="section-subscribe__decr">
+                <h2 class="section__title section-subscribe__title">Будьте всегда в курсе новых поступений!</h2>
+                <p class="section__text">Учитывая ключевые сценарии поведения, внедрение современных методик, в своём классическом представлении, допускает внедрение распределения внутренних резервов и ресурсов!</p>
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 col-md-12 offset-xl-2">
+              <form action="#" class="section-subscribe__form subscribe-form form">
+                <label for="subs-email" class="visually-hidden">Ваш Email для подписки на новости</label>
+                <input type="email" id="subs-email" class="subscribe-form__input form__input" name="subs-email" placeholder="Email" required>
+                <button class="subscribe-form__button" aria-label="Подписаться">
+                  <svg class="subscribe-form__button-icon" aria-hidden="true">
+                    <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </form>  
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section footer__main">
+        <div class="container">
+          <div class="footer__top row">
+            
+            <div class="col-lg-3 col-sm-12 col-12 order-sm-0 order-first">
+              <div class="footer__col footer__about">
+                <a class="footer__logo logo" href="/">
+                  <img src="img/logo-white.svg" width="166" height="41" alt="Логотип Comics Market Place">
+                </a>
+                <p>
+                  Допускает внедрение распределения внутренних резервов и ресурсов!
+                </p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-sm-6 col-12 footer-offset order-sm-0 order-1">
+              <div class="footer__col footer__accordion">
+                <span id="footerPanelCatalog" class="footer__title footer__accordion-toggle">Каталог</span>
+                <div class="row footer__accordion-content" aria-labelledby="footerPanelCatalog">
+                  <div class="col-xl-6 col-lg-5 col-sm-6">
+                    <ul class="footer__menu">
+                      <li><a href="#">DC</a></li>
+                      <li><a href="#">Marvel</a></li>
+                      <li><a href="#">Bubble</a></li>
+                      <li><a href="#">Манга</a></li>
+                      <li><a href="#">Русское издание</a></li>
+                      <li><a href="#">English edition</a></li>
+                      <li><a href="#">Walking dead</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xl-6 col-lg-5 col-sm-6">
+                    <ul class="footer__menu">
+                      <li><a href="#">DC</a></li>
+                      <li><a href="#">Marvel</a></li>
+                      <li><a href="#">Bubble</a></li>
+                      <li><a href="#">Манга</a></li>
+                      <li><a href="#">Русское издание</a></li>
+                      <li><a href="#">English edition</a></li>
+                      <li><a href="#">Walking dead</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+            <div class="col-lg-2 col-sm-3 col-12 order-sm-0 order-1">
+              <div class="footer__col footer__accordion">
+                <span id="footerPanelInfo" class="footer__title footer__accordion-toggle">Информация</span>  
+                <ul class="footer__menu footer__accordion-content" aria-labelledby="footerPanelInfo">
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Чёрный список</a></li>
+                  <li><a href="#">Топ продавцов</a></li>
+                  <li><a href="#">Наши правила</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Мошшеничество</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-lg-2 col-sm-3 col-12 order-0">
+              <div class="footer__col">
+                <span class="footer__title">Контакты</span> 
+                <a href="tel:+7987654-210" class="footer__phone">+7 987 654-32-10</a>
+                <a href="mailto:qwerty@mail.com" class="footer__email">qwerty@mail.com </a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="footer__bottom row justify-content-between">
+            <div class="col-sm-6 col-12">
+              <div class="footer__copyright">
+                <p>© 2021 Правообладатель контента</p>
+                <a href="#">Политика конфиденциальности</a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12 justify-content-end">
+              <div class="footer__devs">
+                <p>Дизайн — <a href="#">Диана Игнатова</a></p>
+                <p>Верстка — </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </footer>
+    
+  </div>
+  
+  <!-- Product Popup -->
+  <div id="product-popup" class="modal micromodal-slide product-popup"  aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="skew-block">
+          <div class="skew-block__content">
+            
+            <button type="button" class="modal__close" data-micromodal-close aria-label="Закрыть окно">
+              <svg class="modal__close-icon" aria-hidden="true">
+                <use xlink:href="img/sprite/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            
+            <a class="product-popup__cat" href=""></a>
+            <span class="product-popup__title"><a href="#"></a></span>
+            
+            <div class="product-popup__text">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/app.min.js"></script> 
+  
+</body>
+</html>
