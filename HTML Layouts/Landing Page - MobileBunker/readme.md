@@ -1,4 +1,4 @@
 # Adaptive html-coding
 
 ## Links:
-demo: //portfolio.web-branch.ru/projects/mobilebunker/
+demo: https://portfolio.web-branch.ru/projects/mobilebunker/
