@@ -6,4 +6,4 @@ Experimental site in fullpage style
 - html-coding
 
 ## Links:
-demo: https://portfolio.web-branch.ru/projects/nightlight/
+demo: https://portfolio.web-branch.ru/projects/night-light/
