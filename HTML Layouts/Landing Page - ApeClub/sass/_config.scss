@@ -1,0 +1,25 @@
+/* Libs */
+
+@import "../../node_modules/normalize.css/normalize";
+
+/* Fonts */
+
+@mixin font-face($f-family, $f-weight, $f-style, $f-src) {
+  @font-face {
+    font-family: $f-family;
+    font-display: swap;
+    font-weight: $f-weight;
+    font-style: $f-style;
+    src: local($f-family), url(#{$f-src}.woff2) format('woff2'), url(#{$f-src}.woff) format('woff');
+  }
+}
+
+@include font-face("Space-Mono", 400, normal, "../fonts/space-mono-v10-latin-regular");
+@include font-face("Space-Mono", 700, normal, "../fonts/space-mono-v10-latin-700");
+@include font-face("Impact", 400, normal, "../fonts/impact");
+@include font-face("Mukokuse-Kikitchen", 400, normal, "../fonts/mukokusekikitchen");
+
+
+
+
+

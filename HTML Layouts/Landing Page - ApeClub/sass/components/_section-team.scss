@@ -1,0 +1,74 @@
+/* Section Team */
+
+.section-team {
+  background: #121212;
+}
+
+.section-team {
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: -34%;
+    width: 1261px;
+    height: 923px;
+    background: url(../img/bg/bg-7.png) no-repeat 0 0;
+    background-size: cover;
+    @media screen and (min-width: 2000px) {
+      display: none;
+    }
+    @media screen and (max-width: 1400px) {
+      left: -35%;
+      bottom: -150px;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      left: 0;
+      bottom: -150px;
+      background-position: 80% 0;
+    }
+  }
+}
+
+/* Team */
+
+.team {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: var(--gap);
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Item */
+
+.team__item {
+  text-align: center;
+}
+
+/* Photo */
+
+.team__photo {
+  max-width: 100%;
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  @media screen and (max-width: 578px) {
+    width: 158px;
+    height: 158px;
+  }
+}
+
+.team__name {
+  display: block;
+  color: var(--theme-color-light);
+  font-size: 1.38rem;
+  font-weight: bold;
+}
+
+.team__position, .team__job {
+  display: block;
+}

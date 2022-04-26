@@ -1,0 +1,12 @@
+/* Link into paragraph */
+
+p {
+  a {
+    color: var(--theme-color-light);
+    text-decoration: none;
+    transition: all .25s ease;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

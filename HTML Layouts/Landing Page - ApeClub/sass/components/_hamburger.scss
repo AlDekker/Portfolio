@@ -1,0 +1,73 @@
+/* Hamburger */
+
+.hamburger {
+  z-index: 3;
+  position: relative;
+  border: none;
+  background: none;
+  width: 30px;
+  height: 24px;
+  padding: 0;
+  opacity: 1;
+  transition: all .25s ease;
+  cursor: pointer;
+  outline: none;
+  &:focus-visible {
+    outline: auto;
+  }
+  &__center,
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 4px;
+    background: url(../img/icons/hamburger-line.svg) no-repeat center;
+  }
+  
+  &__center {
+    top: 50%;
+    transform: translateY(-50%);
+    transition-delay: .3s;
+  }
+  
+  &::before {
+    content: '';
+    top: 0;
+    transition: transform .3s ease, top .3s .3s ease;
+  }
+  
+  &::after {
+    content: '';
+    bottom: 0;
+    transition: transform .3s ease, bottom .3s .3s ease;
+  }
+  
+  &:active, 
+  &:focus {
+    opacity: 1
+  }
+
+}
+
+.hamburger.active {
+
+  .hamburger__center {
+    opacity: 0;
+  }
+
+  &::before {
+    top: 50%;
+    margin-top: -2px;
+    transform: rotate(45deg);
+    transition: top .3s ease, transform .3s .3s ease;
+  }
+  
+  &::after {
+    bottom: 50%;
+    margin-bottom: -2px;
+    transform: rotate(-45deg);
+    transition: bottom .3s ease, transform .3s .3s ease;
+  }
+  
+}

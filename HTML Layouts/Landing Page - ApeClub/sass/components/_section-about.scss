@@ -1,0 +1,111 @@
+/* Section About */
+
+.section-about {
+  z-index: 1;
+  padding-top: 220px;
+  background-color: #121212;
+  @media screen and (max-width: 1200px) {
+    padding-top: 80px;
+  }
+}
+
+.section-about {
+  &::before {
+    content: '';
+    position: absolute;
+    top: -16%;
+    left: -33.5%;
+    width: 1261px;
+    height: 1086px;
+    background: url(../img/bg/bg-2.png) no-repeat 0 0;
+    @media screen and (min-width: 2000px) {
+      left: -5%;
+    }
+    @media screen and (max-width: 1600px) {
+      left: -60%;
+    }
+    @media screen and (max-width: 1400px) {
+      left: -70%;
+    }
+    @media screen and (max-width: 998px) {
+      display: none;
+    }
+  }
+}
+
+.section-about {
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(100% - 200px);
+    left: 72%;
+    width: 1261px;
+    height: 1426px;
+    background: url(../img/bg/bg-3.png) no-repeat 0 0;
+    @media screen and (min-width: 2000px) {
+      left: 80%;
+    }
+    @media screen and (max-width: 1400px) {
+      display: none;
+    }
+    @media screen and (max-width: 578px) {
+      display: block;
+      width: 100%;
+      height: 380px;
+      background-position: 100% 0;
+      background-size: cover;
+      top: unset;
+      bottom: -20%;
+      left: 0;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.section-about__body {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap);
+  row-gap: calc(var(--gap) * 1.5);
+  font-size: 1.11rem;
+  @media screen and (max-width: 998px) {
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.section-about__img {
+  position: relative;
+  flex: 1 1 50%;
+  height: 250px;
+  border-radius: 20px;
+  background: linear-gradient(-35deg, #5B6463 0%, #5B6463 40%, #3F4746 40%, #3F4746 60%, #5B6463 60%, #5B6463 100% );
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 998px) {
+    order: 1;
+    border-radius: 0;
+  }
+  @media screen and (max-width: 578px) {
+    height: 160px;
+  }
+}
+
+.section-about__text {
+  flex: 1 1 50%;
+  @media screen and (max-width: 998px) {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+}

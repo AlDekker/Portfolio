@@ -1,0 +1,39 @@
+/* Section Roadmap */
+
+.section-roadmap {
+  background-color: #121212;
+}
+
+/* Roadmap */
+
+.roadmap {
+  font-size: 1.388rem;
+  line-height: 1.5;
+  margin-top: 60px;
+}
+
+.roadmap__row {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 10px; 
+  margin-bottom: 30px;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+.roadmap__definition {
+  flex: 0 0 15%;
+  white-space: nowrap;
+  color: var(--theme-color-light);
+  @media screen and (max-width: 1200px) {
+    flex-basis: 20%;
+  }
+  @media screen and (max-width: 768px) {
+    flex-basis: 100%;
+  }
+}
+
+.roadmap__description {
+  margin: 0;
+}

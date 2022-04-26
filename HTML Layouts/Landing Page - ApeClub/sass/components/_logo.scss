@@ -1,0 +1,37 @@
+/* Logo */
+
+.logo {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  column-gap: 10px;
+  
+  font-size: 15px;
+  font-family: var(--theme-font);
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 34px 1fr;
+  }
+}
+
+/* Img */
+
+.logo__img {
+  grid-row: span 2;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text */
+
+.logo__text {
+  margin: 0;
+  white-space: nowrap;
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+  }
+}

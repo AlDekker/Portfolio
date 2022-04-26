@@ -1,0 +1,28 @@
+/* Button */
+
+.button {
+  position: relative;
+  display: inline-block;
+  max-width: 100% ;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--grey);
+  color: #ffffff;
+  font-size: 1.11rem;
+  line-height: auto;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .25s ease;
+  &:hover {
+    background-color: var(--grey-light);
+  }
+  span {
+    display: block;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}

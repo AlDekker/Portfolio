@@ -1,0 +1,26 @@
+/* Root */
+
+:root {
+  --theme-color: #3970FF;
+  --theme-color-light: #3970FF;
+  --grey: #3F4746;
+  --grey-light: #6D6D6D;
+
+  --txt-color: #ffffff;
+  --txt-font: "Space-mono", monospace, sans-serif;
+  --txt-size: 18px;
+  --txt-lh: 1.5;
+
+  --theme-font: "Mukokuse-Kikitchen", sans-serif; 
+  --title-font: "Impact", sans-serif; 
+  
+
+  --container-width: 1340px;
+  --container-padding: 20px;
+  --gap: 20px;
+  
+  @media screen and (max-width: 576px) {
+    --txt-size: 15px;
+    --txt-lh: 1.5;
+  }
+}

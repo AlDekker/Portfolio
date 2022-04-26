@@ -1,0 +1,12 @@
+/* Custom List */
+
+.list {
+  padding-left: 12px;
+  li {
+    list-style-image: url(../img/icons/line.svg);
+    padding-inline-start: 20px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

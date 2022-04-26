@@ -1,0 +1,112 @@
+/* Section NFT */
+
+.section-nft {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.section-nft {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 1384px;
+    height: 1463px;
+    background: url(../img/bg/bg-4.png) no-repeat 0 0;
+    @media screen and (max-width: 1600px) {
+      left: -60%;
+    }
+    @media screen and (max-width: 1400px) {
+      width: 722px;
+      height: 763px;
+      background-size: contain;
+      top: -22%;
+      left: calc(100% - 200px);
+    }
+  }
+}
+
+.section-nft {
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    left: calc(100% - 620px);
+    width: 1313px;
+    height: 1359px;
+    background: url(../img/bg/bg-5.png) no-repeat 0 0;
+    @media screen and (max-width: 1400px) {
+      display: none;
+    }
+  }
+}
+
+/*  */
+
+.section-nft__body {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 130px;
+  row-gap: 50px;
+  @media screen and (max-width: 1200px) {
+    column-gap: 80px;
+  }
+  @media screen and (max-width: 880px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Media */
+
+.section-nft__media {
+  flex: 0 1 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  @media screen and (max-width: 880px) {
+    order: 1;
+  }
+}
+
+.section-nft__img {
+  max-width: 100%;
+  height: auto;
+  &:nth-child(1) {
+    border-top-left-radius: 15px;
+  }
+  &:nth-child(2) {
+    border-top-right-radius: 15px;
+  }
+  &:nth-child(3) {
+    border-bottom-left-radius: 15px;
+  }
+  &:nth-child(4) {
+    border-bottom-right-radius: 15px;
+  }
+}
+
+/* Descr */
+
+.section-nft__descr {
+  max-width: 420px;
+  @media screen and (max-width: 880px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    max-width: 100%;
+  }
+}
+
+.section-nft__title {
+  margin-bottom: 40px;
+}
+
+.section-nft__btn {
+  margin-top: 10px;
+  min-width: 310px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
