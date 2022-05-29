@@ -1,0 +1,15 @@
+/* Section Text */
+
+.section-text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.text {
+  p {
+    margin-bottom: 0;
+    margin-top: 15px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

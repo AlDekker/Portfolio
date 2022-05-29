@@ -1,0 +1,46 @@
+/* Box Sizing */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  line-height: 1.25;
+}
+
+/* Page */
+
+.page {
+  font-size: var(--txt-size);
+  scroll-behavior: smooth; 
+}
+
+.page, .page__body {
+  height: 100%;
+}   
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: var(--txt-font);
+  color: var(--txt-color);
+  font-size: var(--txt-size);
+  line-height: var(--txt-lh);
+  overflow-x: hidden;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}

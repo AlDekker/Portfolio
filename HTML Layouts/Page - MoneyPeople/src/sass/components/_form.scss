@@ -1,0 +1,19 @@
+/* Form */
+
+.form__input {
+  background: transparent;
+  border: 1px solid #DEE2E6;
+  border-radius: var(--border-radius);
+  color: var(--txt-color);
+  padding: 10px 16px;
+  color: var(--txt-color);
+  font-weight: normal;
+  outline: none;
+  &::placeholder {
+    color: var(--input-color);
+  }
+  &:focus {
+    border-color: var(--theme-color); 
+  }
+}
+

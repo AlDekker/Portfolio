@@ -1,0 +1,74 @@
+/* Libs */
+
+@import "../../node_modules/baguettebox.js/dist/baguetteBox.min";
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/select2/dist/css/select2";
+@import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/bootstrap/scss/functions";
+
+$container-max-widths: (
+  xxl: 1190px
+);
+
+$container-padding-x: 40px;
+
+@media screen and (max-width: 576px) {
+  .container, .container-fluid, .container-xxl {
+    padding-left: var(--bs-gutter-x,15px);
+    padding-right: var(--bs-gutter-x,15px);
+  }
+}
+
+$grid-gutter-width: 30px;
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap-utilities";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+
+/* Fonts */
+
+/* mulish-regular - latin */
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../fonts/mulish-v11-latin-regular.woff2') format('woff2'), 
+  url('../fonts/mulish-v11-latin-regular.woff') format('woff'); 
+}
+/* mulish-500 - latin */
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+  url('../fonts/mulish-v11-latin-500.woff2') format('woff2'), 
+  url('../fonts/mulish-v11-latin-500.woff') format('woff'); 
+}
+/* mulish-600 - latin */
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+  url('../fonts/mulish-v11-latin-600.woff2') format('woff2'), 
+  url('../fonts/mulish-v11-latin-600.woff') format('woff'); 
+}
+/* mulish-700 - latin */
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+  url('../fonts/mulish-v11-latin-700.woff2') format('woff2'), 
+  url('../fonts/mulish-v11-latin-700.woff') format('woff'); 
+}
+
+    
+    
+    
+    
+    

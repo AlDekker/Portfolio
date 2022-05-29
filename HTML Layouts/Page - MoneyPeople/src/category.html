@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <title>Category | Money People</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Money People">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:image" content="img/person.jpg">
+  <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16"> 
+  <link rel="stylesheet" href="css/style.min.css"> 
+</head>
+<body class="page__body">
+  
+  <header class="header">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <div class="col-md-3 col-6">
+          <a href="/" class="header__logo logo">
+            <img class="logo__img" src="img/logo.svg" width="106" height="16" alt="MoneyPeople Logo">
+          </a>
+        </div>
+        
+        <div class="header__nav col-md-9 col-12">
+          
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item active">
+                <a href="#">Investors</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Traders</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">CEO</a>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="header__search search">
+            <form class="search__form form">
+              <label for="header-search" class="visually-hidden">Search field</label>
+              <input id="header-search" class="search__input form__input" type="text" placeholder="Type to find...">
+              <button class="search__button button">Search</button>
+            </form>
+          </div>
+          
+        </div>
+        
+        <div class="col-md-3 col-6 d-md-none d-flex justify-content-end align-items-center">
+          <button class="header__menu-btn hamburger" aria-label="Open mobile menu">
+            <span class="hamburger__center"></span>
+          </button>
+        </div>        
+        
+      </div>
+    </div>
+  </header>
+  
+  <main class="content">
+    
+    <!-- Filter Block -->
+    <section class="section section-filter">
+      <div class="container">
+        <h1 class="section__title section__title--big section__title--center">Investor list</h1>
+        
+        <div class="filter">
+          <div class="filter__params">
+            <div class="filter__params-col filter__params-col--offset"></div>
+            <div class="filter__params-col">
+              <div class="filter__sort">
+                <button class="filter__sort-btn" type="button"></button>
+                <select class="custom-select" name="Name">
+                  <option value="" disabled selected>Name</option>
+                  <option value="E">Elon Musk</option>
+                  <option value="B">Jeff Bezos</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter__params-col">
+              <div class="filter__sort">
+                <button class="filter__sort-btn" type="button"></button>
+                <select class="custom-select" name="Company">
+                  <option value="" disabled selected>Company</option>
+                  <option value="E">Tesla</option>
+                  <option value="B">Facebook</option>
+                  <option value="B">Amazon</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter__params-col">
+              <div class="filter__sort">
+                <button class="filter__sort-btn" type="button"></button>
+                <select class="custom-select-icons" name="Country">
+                  <option value="" disabled selected>Country</option>
+                  <optgroup label="Alaskan/Hawaiian Time Zone">
+                    <option value="A" data-icon="img/flags/alaska.png">Alaska</option>
+                    <option value="H" data-icon="img/flags/hawaii.png">Hawaii</option>
+                  </optgroup>
+                  <optgroup label="Pazific Time Zone">
+                    <option value="C" data-icon="img/flags/california.png">California</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="filter__content">
+            <div class="filter__item filter-item">
+              <div class="filter-item__image"><img src="img/people/image-musk-thumb.jpg" alt="Elon Musk"></div>
+              <div class="filter-item__cell filter-item__cell--name"><a href="/">Elon Musk</a></div>
+              <div class="filter-item__cell">Tesla</div>
+              <div class="filter-item__cell">USA</div>
+              <div class="filter-item__cell filter-item__cell--descr">
+                <p>Elon Reeve Musk FRS is a business magnate, investor, and philanthropist. He is the founder, CEO, and Chief Engineer at SpaceX; angel investor, CEO, and Product Architect of Tesla, Inc.; founder of The Boring Company; and co...</p>
+              </div>
+            </div>
+            <div class="filter__item filter-item">
+              <div class="filter-item__image"><img src="img/people/image-besos.jpg" alt="Jeff Bezos"></div>
+              <div class="filter-item__cell filter-item__cell--name"><a href="/">Jeff Bezos</a></div>
+              <div class="filter-item__cell">Amazon</div>
+              <div class="filter-item__cell">USA</div>
+              <div class="filter-item__cell filter-item__cell--descr">
+                <p>Jeffrey Preston Bezos is an American entrepreneur, media proprietor, investor, computer engineer, and commercial astronaut. He is the founder, executive chairman and former president and CEO of Amazon. With a net worth of...</p>
+              </div>
+            </div>
+            <div class="filter__item filter-item">
+              <div class="filter-item__image"><img src="img/people/image-zuckerberg.jpg" alt="Mark Zuckerberg"></div>
+              <div class="filter-item__cell filter-item__cell--name"><a href="/">Mark Zuckerberg</a></div>
+              <div class="filter-item__cell">Facebook</div>
+              <div class="filter-item__cell">USA</div>
+              <div class="filter-item__cell filter-item__cell--descr">
+                <p>Mark Elliot Zuckerberg is an American media magnate, internet entrepreneur, and philanthropist. He is known for co-founding the social media website Facebook and its parent company Meta Platforms, of which he is the...</p>
+              </div>
+            </div>
+            <div class="filter__item filter-item">
+              <div class="filter-item__image"><img src="img/people/image-buffett.jpg" alt="Warren Buffett"></div>
+              <div class="filter-item__cell filter-item__cell--name"><a href="/">Warren Buffett</a></div>
+              <div class="filter-item__cell">Berkshire Hathaway</div>
+              <div class="filter-item__cell">USA</div>
+              <div class="filter-item__cell filter-item__cell--descr">
+                <p>Warren Edward Buffett is an American business magnate, investor, and philanthropist. He is currently the chairman and CEO of Berkshire Hathaway. He is one of the most successful investors in the world and has a net worth of ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="filter__footer row">
+            <div class="col-md-6">
+              <div class="filter__buttons">
+                <button class="button button--outline" type="button">Show more</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="filter__pagination pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__item pagination__item--prev"><a href="#"></a></li>
+                  <li class="pagination__item"><a href="#">1</a></li>
+                  <li class="pagination__item"><span>...</span></li>
+                  <li class="pagination__item"><a href="#">3</a></li>
+                  <li class="pagination__item pagination__item--active"><span>4</span></li>
+                  <li class="pagination__item"><a href="#">5</a></li>
+                  <li class="pagination__item"><span>...</span></li>
+                  <li class="pagination__item"><a href="#">30</a></li>
+                  <li class="pagination__item pagination__item--next"><a href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- Text Block -->
+    <section class="section section-text">
+      <div class="container">
+        <h2 class="section__title">SEO-text</h2>
+        <div class="text">
+          <p>
+            An investor is a person that allocates capital with the expectation of a future financial return (profit) or to gain an advantage (interest).[1][2] Through this allocated capital most of the time the investor purchases some species of property.[3] Types of investments include equity, debt, securities, real estate, infrastructure, currency, commodity, token, derivatives such as put and call options, futures, forwards, etc. This definition makes no distinction between the investors in the primary and secondary markets. That is, someone who provides a business with capital and someone who buys a stock are both investors. An investor who owns a stock is a shareholder.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="footer__lang lang">
+            <button class="lang__toggle lang__button active" aria-label="Change language"><img class="lang__icon" src="img/icons/uk-lang.svg" alt="">United Kingdom</button>
+            <div class="lang__dropdown">
+              <div class="lang__list">
+                <a href="#" class="lang__button" aria-label="Change language"><img class="lang__icon" src="img/icons/uk-lang.svg" alt="">United Kingdom</a>
+                <a href="#" class="lang__button" aria-label="Change language"><img class="lang__icon" src="img/icons/uk-lang.svg" alt="">United Kingdom</a>
+              </div>
+            </div>
+            <!-- <button class="lang__button"><img class="lang__icon" src="img/icons/uk-lang.svg" alt="">United Kingdom</button> -->
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <ul class="footer__menu">
+            <li><a href="#">Website terms</a></li>
+            <li><a href="#">Legal Agreements</a></li>
+            <li><a href="#">Complaints</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Responsible Disclosure Program Policy</a></li>
+            <li><a href="#">UK Modern Slavery Policy</a></li>
+            <li><a href="#">Customer Vulnerability</a></li>
+            <li><a href="#">Data Privacy Statement for Candidates</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <div class="footer__copyright">
+            <p>© Revolut Ltd 2022</p>
+            <p>
+              If you would like to find out more about which Revolut entity you receive services from, or if you have any other questions, please reach out to us via the in-app chat in the Revolut app. Revolut Ltd (No. 08804411) is authorised by the Financial Conduct Authority under the Electronic Money Regulations 2011 (Firm Reference 900562). Registered address: 7 Westferry Circus, Canary Wharf, London, England, E14 4HD. Insurance related-products are arranged by Revolut Travel Ltd which is authorised by the Financial Conduct Authority to undertake insurance distribution activities (FCA No: 780586) and by Revolut Ltd, an Appointed Representative of Revolut Travel Ltd in relation to insurance distribution activities. Trading and investment products are provided by Revolut Trading Ltd (No. 832790) is wholly owned subsidiary of Revolut Ltd and is an appointed representative of Resolution Compliance Ltd which is authorised and regulated by the Financial Conduct Authority.
+            </p>  
+            <p>Revolut's cryptocurrency service is not regulated by the FCA, other than for the purposes of money laundering. Revolut Ltd has been temporarily registered with the FCA as a cryptoasset business until 31 March 2022, pending determination of its application by the FCA.
+            </p>
+            <p>Revolut's commodities service is not regulated by the FCA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </footer>
+  
+  <script src="js/app.min.js"></script> 
+  
+</body>
+</html>

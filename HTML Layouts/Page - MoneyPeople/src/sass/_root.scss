@@ -1,0 +1,24 @@
+/* Root */
+
+:root {
+  --theme-color: #6B3FA0;
+  --alt-color: #3FA06B;
+  --light-color: #E1D9EC;
+  --dark-color: #152536;
+
+  --txt-color: #6C757D ; 
+  --heading-color: #152536;
+  --input-color: #ABB5BE;
+
+  --txt-font: "Mulish", sans-serif;
+  --txt-size: 16px;
+  --txt-lh: 1.75;
+
+  --border-radius: 8px;
+  --gap: 30px;
+  --offset: 64px;
+  @media screen and (max-width: 998px) {
+    --offset: 40px;
+  }
+}
+ 

@@ -1,0 +1,31 @@
+/* Search */
+
+.search__form {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.search__input {
+  font-size: 12px;
+  line-height: 1.25em;
+  padding: 5.5px 16px;
+  @media screen and (max-width: 767px) {
+    flex: 1 1 auto;
+  }
+}
+
+.search__button {
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  line-height: 1.25em;
+  padding: 5.5px 12px;
+}
+
+/* Убирает масштабирование на IOS */
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  .search__input {
+    font-size: 16px;
+  }
+}

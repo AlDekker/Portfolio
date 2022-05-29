@@ -1,0 +1,116 @@
+/* Share */
+
+.share {
+  display: flex;
+  align-items: center;
+}
+
+.share__button:not(:first-child) {
+  margin-left: 10px;
+}
+
+.share__button--main .share, 
+.share__button--main .close, 
+.share__button--main .check {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 150ms;
+}
+
+.share__button--main .share, 
+.share__button--main.open .close, 
+.share__button--main.sent .check {
+  transform: translate(-50%, -50%) rotate(0) scale(1);
+  opacity: 1;
+}
+.share__button--main .close, 
+.share__button--main .check, 
+.share__button--main.open .share, 
+.share__button--main.open .check, 
+.share__button--main.sent .share {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(90deg) scale(0);
+}
+
+.share__button, 
+.share__button.open {
+  border: none;
+  border-radius: 50%;
+  background: #152536;
+  // padding: 1rem;
+  padding: 0;
+  overflow: hidden;
+  outline: none;
+  width: 26px;
+  height: 26px;
+  box-sizing: content-box;
+  transition: all 200ms;
+  position: relative;
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 0 0 transparent;
+  cursor: pointer;
+}
+
+.share__button:hover, 
+.share__button.open:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.share__button:active, 
+.share__button.open:active {
+  cursor: pointer;
+}
+
+.share__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share__button svg, 
+.share__button.open svg {
+  display: block;
+  fill: #fff;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  transition: all 150ms;
+  transform: scale(1);
+  // margin: 0 auto; 
+}
+
+.share__button--ig.open {
+  transition-delay: 100ms;
+}
+
+.share__button--tw.open {
+  transition-delay: 50ms;
+}
+
+.share__button--fb.open {
+  transition-delay: 0ms;
+}
+
+.share__button--fb, 
+.share__button--tw, 
+.share__button--ig {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.share__button--fb svg, .share__button--tw svg, .share__button--ig svg {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transform: scale(0);
+}

@@ -1,0 +1,36 @@
+/* See More Button */
+
+.seemore {
+  color: var(--heading-color);
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  font-size: 13px;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+  transition: all .25s ease;
+  &.active {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 13px;
+    background: url(../img/icons/ChevronDown.svg) no-repeat center/contain;
+    transition: all .25s ease;
+  }
+  &:hover {
+    opacity: .8;
+  }
+}

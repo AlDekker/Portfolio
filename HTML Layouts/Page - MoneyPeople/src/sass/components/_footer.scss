@@ -1,0 +1,134 @@
+/* Footer */
+
+.footer {
+  margin-top: var(--offset);
+  padding: 70px 0 40px;
+  background-color: var(--dark-color);
+  color: #fff;
+  @media screen and (max-width: 998px) {
+    padding: 37px 0 40px;
+  }
+}
+
+.footer--no-margin {
+  margin-top: 0;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+  transition: all .25s ease;
+  &:hover {
+    color: var(--theme-color);
+  }
+}
+
+/* Lang */
+
+.footer__lang {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 25px;
+  }
+}
+
+.lang {
+  position: relative;
+  font-size: 13px;
+}
+
+.lang__toggle {
+  position: relative;
+  z-index: 2;
+}
+
+.lang__button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  text-align: left;
+  color: inherit;
+  font-weight: bold;
+  gap: 26px;
+  padding: 0;
+  cursor: pointer; 
+  @media screen and (max-width: 998px) {
+    gap: 10px;
+  }
+}
+
+.lang__icon {
+  width: 39px;
+  height: 39px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.lang__dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 10px;
+}
+
+.lang__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--heading-color);
+  background-color: rgba(255,255,255, 0.99);
+  padding: 10px 15px 10px 10px;
+  border-radius: var(--border-radius);
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  .lang__button {
+    gap: 10px;
+    &:hover {
+      opacity: .9;
+    }
+  }
+}
+
+
+/* Menu */
+
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 21px;
+  row-gap: 13px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 1.3;
+  font-weight: bold;
+  @media screen and (max-width: 998px) {
+    justify-content: space-between;
+    row-gap: 8px;
+  }
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    column-gap: 37px;
+    row-gap: 10px;
+  }
+}
+
+/* Copyright */
+
+.footer__copyright {
+  margin-top: 30px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--txt-color);
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+    line-height: 1.3;
+    p {
+      margin: 10px 0;
+    }
+  }
+  @media screen and (max-width: 578px) {
+    margin-top: 33px;
+  }
+}
