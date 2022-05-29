@@ -1,4 +1,7 @@
 # Adaptive html-coding
 
 ## Links:
-demo: https://portfolio.web-branch.ru/projects/moneypeople/
+demo: 
+- Main: https://portfolio.web-branch.ru/projects/moneypeople/
+- Filter: https://portfolio.web-branch.ru/projects/moneypeople/category.html
+- Blog: https://portfolio.web-branch.ru/projects/moneypeople/blog.html
