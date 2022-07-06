@@ -1,0 +1,56 @@
+{
+  "name": "lets-html",
+  "description": "Template for quick started projects.",
+  "author": "beeeblebrox",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beeeblebrox/Lets-HTML"
+  },
+  "browserslist": [
+    "last 10 version",
+    "> 1%",
+    "not dead"
+  ],
+  "scripts": {
+    "serve": "gulp"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-root-import": "^6.6.0",
+    "browser-sync": "^2.27.7",
+    "cssnano": "^5.0.17",
+    "del": "^6.0.0",
+    "dev-ip": "^1.0.1",
+    "gulp": "^4.0.2",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-rsync": "0.0.9",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.4.6",
+    "sass": "^1.49.7",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.68.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "jquery": "^3.6.0",
+    "normalize.css": "^8.0.1",
+    "swiper": "^8.2.4"
+  }
+}

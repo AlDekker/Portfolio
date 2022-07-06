@@ -1,0 +1,20 @@
+/* Links */
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.links__item {
+  display: inline-block;
+  transition: all .25s ease;
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  &:hover {
+    opacity: .5;
+  }
+}

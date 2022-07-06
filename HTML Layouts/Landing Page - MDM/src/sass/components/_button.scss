@@ -1,0 +1,27 @@
+/* Button */
+
+.button {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  width: 166px;
+  padding: 13px 15px;
+  border-radius: 50rem;
+  border: none;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: all .25s ease;
+  &:hover {
+    background-color: var(--accent-color-hover);
+  }
+  &:active {
+    background-color: var(--accent-color-active);
+  }
+}

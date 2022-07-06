@@ -1,0 +1,28 @@
+/* Box Sizing */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Page */
+
+.page {
+  font-size: var(--txt-size); 
+}
+
+.page, .page__body {
+  height: 100%;
+}   
+
+.page__body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: var(--txt-font);
+  color: var(--txt-color);
+  font-size: var(--txt-size);
+  line-height: var(--txt-lh);
+  overflow-x: hidden;
+}
+

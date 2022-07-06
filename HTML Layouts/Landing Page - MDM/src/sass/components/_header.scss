@@ -1,0 +1,220 @@
+/* Header */
+
+.header {
+  --logo-size: 49px;
+  position: relative;
+  background-color: var(--theme-color);
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+
+.header__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px 0px;
+  background-color: var(--theme-color);
+  color: var(--txt-color-alt);
+  @media screen and (max-width: 768px) {
+    padding: 15px 0;
+  }
+}
+
+.header__top-container {
+  position: relative;
+  @media screen and (max-width: 998px) {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+  }
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    position: static;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: 998px) {
+    position: static;
+    transform: translate(0);
+  }
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--logo-size) + 45px);
+  
+  &-links {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
+  @media screen and (max-width: 998px) {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 0;
+  }
+  @media screen and (max-width: 768px) {
+    will-change: transform; 
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top: calc(100% + 30px);
+    left: var(--container-padding);
+    right: var(--container-padding);
+    padding: 50px 15px 60px;
+    background-color: var(--grey);
+    border-radius: var(--radius);
+    font-size: 1.3rem;
+    text-align: center !important;
+    color: var(--txt-color);
+    gap: var(--gap);
+    align-items: center;
+
+    opacity: 0;
+    transform: translateY(-250px);
+    will-change: transform;
+    ul {
+      width: 100%;
+      li {
+        width: 100%;
+      }
+      a {
+        display: block;
+      }
+    }
+    &-links {
+      display: flex;
+      gap: 15px;
+      margin: 30px auto 0;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &.opened {
+      display: flex;
+    }
+  }
+}
+
+.header__menu-list {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 35px;
+  &--right {
+    justify-content: flex-end;
+    text-align: right;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+  li {
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all .25s ease;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      transition: all .3s ease;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+        background-color: var(--accent-color);
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: var(--gap);
+    a::before {
+      display: none;
+    }
+  }
+}
+
+/* Hamburder */
+
+.header__hamburger {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+/* Header Main */
+
+.header__main {
+  padding: 250px 0 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  color: var(--txt-color-alt);
+}
+
+/* Header Title */
+
+.header__title {
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 1.2;
+  @media screen and (max-width: 768px) {
+    font-size: 42px;
+  }
+}
+
+/* Header Links */
+
+.header__links {
+  position: absolute;
+  right: var(--container-padding);
+  bottom: -30px;
+  @media screen and (max-width: 998px) {
+    bottom: -40px;
+    padding-top: 10px;
+    gap: 15px;
+  }
+  @media screen and (max-width: 768px) {
+    bottom: 20px;
+    display: none;
+  }
+}
+.header__links img { 
+  @media screen and (max-width: 998px) {
+    width: 25px;
+    height: 25px;
+  }
+}

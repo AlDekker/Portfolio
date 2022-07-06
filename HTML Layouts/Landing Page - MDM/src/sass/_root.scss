@@ -1,0 +1,29 @@
+/* Root */
+
+:root {
+  --theme-color: #224873;
+  --accent-color: #EA5127;
+  --accent-color-hover: #ee633d;
+  --accent-color-active: #f04718;
+  --grey: #E8EAED;
+  --txt-color: #000;
+  --txt-color-alt: #fff;
+  --txt-font: "Open Sans", sans-serif;
+  --txt-size: 14px;
+  --txt-lh: 1.5;
+  
+  --container-width: 1170px;
+  --container-padding: 30px;
+  --gap: 30px;
+  --row-gap: 40px;
+  --section-margin: 100px;
+  --radius: 10px;
+  @media screen and (max-width: 768px) {
+    --section-margin: 60px;
+  }
+  @media screen and (max-width: 576px) {
+    --container-padding: 15px;
+    --txt-size: 16px;
+  }
+}
+

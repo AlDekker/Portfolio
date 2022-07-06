@@ -1,0 +1,790 @@
+@font-face {
+  font-family: fontello;
+  src: url(../font/fontello.eot?18608164);
+  src: url(../font/fontello.eot?18608164#iefix) format("embedded-opentype"), url(../font/fontello.woff2?18608164) format("woff2"), url(../font/fontello.woff?18608164) format("woff"), url(../font/fontello.ttf?18608164) format("truetype"), url(../font/fontello.svg?18608164#fontello) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+[class*=" icon-"]:before,
+[class^=icon-]:before {
+  font-family: fontello;
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -70px;
+  z-index: 9999;
+}
+
+.icon-fit:before {
+  content: '\e80e'
+}
+
+.icon-print:before {
+  content: '\e80f'
+}
+
+.icon-zoom:before {
+  content: '\e810'
+}
+
+.icon-minus:before {
+  content: '\e802'
+}
+
+.icon-plus:before {
+  content: '\e803'
+}
+
+.control {
+  position: relative;
+  display: block;
+  margin: 10px 0 0;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #e65623;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, .1);
+  transition: all .15s;
+  z-index: 99999;
+}
+
+.control:first-child {
+  margin-top: 0
+}
+
+.control:hover {
+  color: #fff;
+  background-color: #e65623
+}
+
+.control:active {
+  transform: translateY(1.5px)
+}
+
+.control.disabled {
+  cursor: default;
+  opacity: .5;
+  background-color: #e65623;
+  transform: translateY(0)
+}
+
+.control .icon-plus {
+  font-size: 13px
+}
+
+.control .icon-minus {
+  position: relative;
+  top: -3px;
+  font-size: 3px
+}
+
+.control .icon-fit {
+  font-size: 19px
+}
+
+.control--top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0
+}
+
+.form {
+  position: relative;
+  margin-top: 75px
+}
+
+.form:first-child {
+  margin-top: 0
+}
+
+.form__title {
+  font-family: Roboto Condensed;
+  font-size: 28px;
+  line-height: 1.22;
+  color: #585858
+}
+
+.form__subtitle {
+  font-size: 18px
+}
+
+.form__items {
+  margin: 80px 0 0
+}
+
+.form__items:first-child {
+  margin-top: 0
+}
+
+.form__item {
+  position: relative;
+  margin: 80px 0 0
+}
+
+.form__item:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.form__item:first-child {
+  margin-top: 0
+}
+
+.form__item--stars {
+  line-height: 1.2
+}
+
+.form__item--closer {
+  margin-top: 40px
+}
+
+.form__item--closer .form__error {
+  margin-top: 0
+}
+
+.form__item--cols {
+  margin-left: -20px;
+  margin-right: -20px
+}
+
+.form__item--col {
+  float: left;
+  width: 50%;
+  margin-top: 0;
+  padding-right: 20px;
+  padding-left: 20px
+}
+
+.form__item--col .form__item-label--absolute {
+  right: 20px;
+  left: 20px
+}
+
+.form__item--cols-1 {
+  margin-left: -15px;
+  margin-right: -15px
+}
+
+.form__item--cols-1 .form__item--col {
+  padding-right: 15px;
+  padding-left: 15px
+}
+
+.form__item--cols-1 .form__item--col .form__item-label--absolute {
+  right: 15px;
+  left: 15px
+}
+
+.form__item--cols-2 {
+  margin-left: -10px;
+  margin-right: -10px
+}
+
+.form__item--cols-2 .form__item--col {
+  padding-right: 10px;
+  padding-left: 10px
+}
+
+.form__item--cols-2 .form__item--col .form__item-label--absolute {
+  right: 10px;
+  left: 10px
+}
+
+.form__item--col-1-4 {
+  width: 25%
+}
+
+.form__item-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.143;
+  color: #a4a4a4;
+  cursor: default
+}
+
+.form__item-label--double {
+  margin-top: -11px
+}
+
+.form__item-label--double+.form__item-field {
+  margin-top: 12px
+}
+
+.form__item-label--absolute {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 17px
+}
+
+.form__item-label--absolute.form__item-label--double {
+  margin-bottom: 12px
+}
+
+.form__item-label--absolute-closer {
+  margin-bottom: 7px
+}
+
+.form__item-label--absolute-closer.form__item-label--double {
+  margin-bottom: 2px
+}
+
+.form__item-label--absolute+.form__item-field {
+  margin-top: 0
+}
+
+.form__item-field {
+  position: relative;
+  margin-top: 17px
+}
+
+.form__item-field:first-child {
+  margin-top: 0
+}
+
+.form__item-field .datepick-popup {
+  position: absolute !important;
+  left: 0 !important;
+  top: 100% !important;
+  width: 100%;
+  max-width: 220px;
+  min-width: 205px
+}
+
+.form__item-icon-calendar {
+  position: absolute;
+  top: 11px;
+  right: 14px;
+  height: 24px;
+  width: 23px;
+  background: url(../img/icon-calendar.svg) 50% no-repeat;
+  background-size: cover;
+  pointer-events: none
+}
+
+.form__item-icon-calendar+.textfield {
+  padding-right: 40px
+}
+
+.required-sign {
+  color: #dc1818
+}
+
+.form__actions {
+  margin-top: 50px
+}
+
+.form__actions:first-child {
+  margin-top: 0
+}
+
+.form__error {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: 3px;
+  color: #e65623;
+  font-size: 12px;
+  font-weight: 400;
+  transform: translateY(5px);
+  transition: all .3s;
+  animation: .5s ease-out;
+  animation-iteration-count: 2;
+  animation-fill-mode: both;
+  animation-delay: .3s
+}
+
+.form__error.active {
+  color: #ff3006;
+  transform: translateY(0);
+  animation-name: e
+}
+
+@keyframes e {
+  0% {
+      opacity: 1
+  }
+
+  50% {
+      opacity: .5
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+.form__required {
+  margin: 25px 0 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #a4a4a4
+}
+
+.form__required:first-child {
+  margin-top: 0
+}
+
+.form__required--closer {
+  margin-top: 15px
+}
+
+.form__required-icon {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  height: 15px;
+  width: 4px;
+  margin-right: 5px;
+  background-color: #e65623
+}
+
+.marker-drop {
+  position: absolute;
+  height: 160px;
+  width: 133px;
+  margin: -140px 0 0 -56px;
+  background: url(../img/marker-outline.svg) 50% no-repeat;
+  background-size: contain
+}
+
+.btn.btn_vip.btn_vip_black .icon-print {
+  margin-right: 10px
+}
+
+.btn.btn_vip.btn_vip_black .icon-print:hover {
+  border: 0
+}
+
+
+.icon-fit:before {
+  content: '\e80e'
+}
+
+.icon-print:before {
+  content: '\e80f'
+}
+
+.icon-zoom:before {
+  content: '\e810'
+}
+
+
+.marker-drop__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 58px;
+  width: 58px;
+  line-height: 58px;
+  text-align: center;
+  border-radius: 50%;
+  margin: -43px 0 0 -30px;
+  background-color: #45668d;
+  font-size: 28px;
+  color: #fff;
+  z-index: 1
+}
+
+.marker-circle {
+  position: relative;
+  cursor: default
+}
+
+.marker-circle.active {
+  z-index: 2
+}
+
+.map>.marker-circle {
+  visibility: hidden
+}
+
+.marker-circle__icon {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  background: #45668d url(../img/icons-advantages-white.png) -9999px -9999px no-repeat;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+  z-index: 3333
+}
+
+.marker-circle__icon {
+  cursor: pointer
+}
+
+.marker-circle__icon--parking {
+  background-position: -72px 9px
+}
+
+.marker-circle__icon--park {
+  background-position: 11px 8px
+}
+
+.marker-circle__icon--metro {
+  background-position: -161px 9px
+}
+
+.marker-circle__icon--ring,
+.marker-circle__icon--ttk {
+  background-position: -252px 10px
+}
+
+.marker-circle__text,
+.marker-drop__text {
+  position: relative;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  color: #224873;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 400;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+  white-space: nowrap;
+  transition: all .3s
+}
+
+.marker-circle__text-crop,
+.marker-drop__text-crop {
+  max-width: 0;
+  overflow: hidden;
+  transition: all .3s
+}
+
+.marker-circle.active .marker-circle__text,
+.marker-drop.active .marker-drop__text {
+  padding-left: 55px
+}
+
+.marker-circle.active .marker-circle__text-crop,
+.marker-drop.active .marker-drop__text-crop {
+  max-width: 500px
+}
+
+.marker-circle__text-inner,
+.marker-drop__text-inner {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap
+}
+
+.marker-drop__text {
+  position: absolute;
+  top: 45px;
+  left: 50px;
+  z-index: 0
+}
+
+#marker-drop.active .marker-drop__text-crop {
+  max-width: 210px
+}
+
+.g-block {
+  position: relative;
+  display: block;
+  margin-top: 10px
+}
+
+.g-block:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.g-block:first-child {
+  margin-top: 0
+}
+
+.g-block:before {
+  position: absolute;
+  top: 0;
+  right: -1500px;
+  bottom: 0;
+  left: -1500px;
+  background-color: rgba(69, 102, 141, .1);
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  content: "";
+  transition: all .3s, visibility 0 .3s
+}
+
+.no-touchevents .g-block--w-hover {
+  cursor: default
+}
+
+.no-touchevents .g-block--w-hover .g-block__image {
+  transition: all .3s, visibility .3s
+}
+
+.no-touchevents .g-block--w-hover .g-block__action {
+  transform: translateX(300px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s, visibility 0 .3s
+}
+
+.no-touchevents .g-block--w-hover:hover:before {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0
+}
+
+.no-touchevents .g-block--w-hover:hover .g-block__image {
+  margin-right: -150px;
+  transform: translateX(-160px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s, visibility 0 .3s
+}
+
+.no-touchevents .g-block--w-hover:hover .g-block__action {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0
+}
+
+.no-touchevents .g-block--w-hover:hover .g-block__content {
+  margin-left: 0
+}
+
+.no-touchevents .g-block--w-hover:hover.g-block--w-action .g-block__content,
+.touchevents .g-block--w-action .g-block__content {
+  padding-right: 250px
+}
+
+.touchevents .g-block--w-hover .g-block__action {
+  opacity: 0;
+  visibility: hidden
+}
+
+.g-block__icon {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: -9999px -9999px no-repeat
+}
+
+.g-block--advantages .g-block__icon {
+  background-image: url(../img/icons-main-large.png);
+  background-position: 0 4px
+}
+
+.g-block--restaurants .g-block__icon {
+  background-image: url(../img/icons-main-large.png);
+  background-position: -210px 4px
+}
+
+.g-block--events .g-block__icon {
+  background-image: url(../img/icons-main-large.png);
+  background-position: -420px 4px
+}
+
+.g-block--rent .g-block__icon {
+  background-image: url(../img/icons-main-large.png);
+  background-position: -630px 4px
+}
+
+.g-block--train .g-block__icon {
+  background-image: url(../img/icons-advantages.png);
+  background-position: 20px 17px
+}
+
+.g-block--lights .g-block__icon {
+  background-image: url(../img/icons-advantages.png);
+  background-position: 20px -93px
+}
+
+.g-block--parking .g-block__icon {
+  background-image: url(../img/icons-advantages.png);
+  background-position: 20px -195px
+}
+
+.g-block--trees .g-block__icon {
+  background-image: url(../img/icons-advantages.png);
+  background-position: 20px -306px
+}
+
+.g-block__content {
+  margin-left: 130px;
+  padding: 11px 0;
+  transition: all .3s
+}
+
+.js-go-rest {
+  cursor: pointer
+}
+
+.g-block__image {
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 130px;
+  height: 80px;
+  overflow: hidden
+}
+
+.g-block__image+.g-block__content {
+  margin-left: 160px
+}
+
+.g-block__title {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.46;
+  margin-top: 10px
+}
+
+.g-block__title:first-child {
+  margin-top: 0
+}
+
+.g-block__title .suffix {
+  font-size: 16px;
+  color: #e65623
+}
+
+.g-block__title-icon {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  color: #e65623
+}
+
+.g-block__subtitle {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(88, 88, 88, .5);
+  text-transform: uppercase
+}
+
+.g-block__subtitle--small {
+  font-size: 10px;
+  margin-bottom: 10px
+}
+
+.g-block__subtitle--small:last-child {
+  margin-bottom: 0
+}
+
+.g-block__more {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin-top: 3px
+}
+
+.g-block__more:first-child {
+  margin-top: 0
+}
+
+.g-block__more a {
+  color: #e65623
+}
+
+.g-block__more [class*=" icon-"],
+.g-block__more [class^=icon-] {
+  position: relative;
+  top: 1px;
+  margin-left: 4px;
+  font-size: 12px
+}
+
+.g-block__action {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -23px
+}
+
+.g-blocks-more {
+  margin-top: 35px
+}
+
+.g-blocks-more:first-child {
+  margin-top: 0
+}
+
+.g-blocks-more .btn {
+  min-width: 190px
+}
+
+a[href^="http://maps.google.com/maps"],
+a[href^="https://maps.google.com/maps"] {
+  display: none !important
+}
+
+.gm-style-cc,
+.gmnoprint a,
+.gmnoprint span {
+  display: none
+}
+
+.gmnoprint div {
+  background: none !important
+}
+
+.icon-logo-symbol:before {
+  content: '\e800'
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  background-color: #eee
+}
+
+.map:first-child {
+  margin-top: 0
+}
+
+.map--absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto
+}
+
+#map { width: 100%; padding: 0; margin: 0; } #map input {margin: 0;}
