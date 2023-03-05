@@ -13,10 +13,6 @@ This is a list of links to my web development work
 1. https://portfolio.web-branch.ru/projects/night-light/
 1. https://portfolio.web-branch.ru/projects/svadba/
 
-## Adaptivity
-1. https://totalvintage.co/ru/
-1. https://aversautoschool.com/
-
 ## Full construction
 1. https://autorem-motors.ru/
 1. https://xn--h1adbqbm.xn--p1ai/
