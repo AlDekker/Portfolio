@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".countdown").downCount({date:"10/10/2030 12:00:00",offset:10},function(){alert("Конец акции!")});try{$.browserSelector(),$("html").hasClass("chrome")&&$.smoothScroll()}catch(t){}$("img, a").on("dragstart",function(t){t.preventDefault()})});
