@@ -1,9 +1,5 @@
-# Adaptive html-coding
-Experimental site in fullpage style
+# Адаптивная верстка и дизайн
+Эксперименты с полноэкранными блоками
 
-## Tasks:
-- design 
-- html-coding
-
-## Links:
-demo: https://portfolio.web-branch.ru/projects/night-light/
+## Ссылка:
+https://portfolio.web-branch.ru/projects/night-light/

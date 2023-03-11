@@ -1,4 +1,4 @@
-# Adaptive html-coding
+# Адаптивная верстка
 
-## Links:
-demo: https://portfolio.web-branch.ru/projects/mobilebunker/
+## Ссылка:
+https://portfolio.web-branch.ru/projects/mobilebunker/

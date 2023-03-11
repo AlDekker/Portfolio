@@ -1,8 +1,4 @@
-# Adaptive html-coding
+# Адаптивная верстка и дизайн
 
-## Tasks:
-- design 
-- html-coding
-
-## Links:
-demo: https://portfolio.web-branch.ru/projects/littleprince/
+## Ссылка:
+https://portfolio.web-branch.ru/projects/littleprince/

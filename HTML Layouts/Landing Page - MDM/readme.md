@@ -1,4 +1,4 @@
-# Adaptive html-coding
+# Адаптивная верстка
 
-## Links:
+## Ссылка:
 demo: https://portfolio.web-branch.ru/projects/mdm/

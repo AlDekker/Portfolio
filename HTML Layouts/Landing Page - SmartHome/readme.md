@@ -1,4 +1,4 @@
-# Adaptive html-coding
+# Адаптивная верстка
 
-## Links:
-demo: https://portfolio.web-branch.ru/projects/smarthome/
+## Ссылка:
+https://portfolio.web-branch.ru/projects/smarthome/

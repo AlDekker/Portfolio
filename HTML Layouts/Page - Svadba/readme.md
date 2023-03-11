@@ -1,4 +1,4 @@
-# Adaptive html-coding
+# Адаптивная верстка и дизайн
 
-## Links:
-demo: https://portfolio.web-branch.ru/projects/svadba/
+## Ссылка:
+https://portfolio.web-branch.ru/projects/svadba/

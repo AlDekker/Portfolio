@@ -1,7 +1,6 @@
-# Adaptive html-coding
+# Адаптивная верстка и дизайн
 
-## Links:
-demo: 
-- Main: https://portfolio.web-branch.ru/projects/moneypeople/
-- Filter: https://portfolio.web-branch.ru/projects/moneypeople/category.html
-- Blog: https://portfolio.web-branch.ru/projects/moneypeople/blog.html
+## Ссылки:
+- Главная: https://portfolio.web-branch.ru/projects/moneypeople/
+- Фильтр: https://portfolio.web-branch.ru/projects/moneypeople/category.html
+- Блог: https://portfolio.web-branch.ru/projects/moneypeople/blog.html
