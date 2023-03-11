@@ -1,0 +1,21 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Neutral';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../fonts/neutralface-bold.woff2') format('woff2'),
+    url('../fonts/neutralface-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Neutral';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/neutralface.woff2') format('woff2'),
+    url('../fonts/neutralface.woff') format('woff');
+}

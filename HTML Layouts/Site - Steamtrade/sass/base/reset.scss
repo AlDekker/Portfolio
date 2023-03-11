@@ -1,0 +1,66 @@
+/* Reset */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,
+ul[class],ol[class],li,
+figure,figcaption,
+blockquote, dl,dd {
+  margin: 0;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button, select, input, textarea {font-family: inherit;}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Page */
+
+html {
+  font-size: var(--text); 
+}
+
+html, body {
+  height: 100%;
+}   
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--text-font);
+  color: var(--text-color);
+  font-size: var(--text);
+  line-height: var(--text-lh);
+  text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: var(--black02);
+}
+
+body.is-menu-opened {
+  overflow-y: hidden;
+  .header {
+    backdrop-filter: none;
+  }
+}
+

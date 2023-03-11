@@ -1,0 +1,56 @@
+/* rating */
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.rating input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0 none;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.rating label {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.rating label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/icons/star-o.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  transition: all .25s ease;
+}
+
+.rating input:not(:checked) ~ label:hover::before,
+.rating input:not(:checked) ~ label:hover ~ label::before {
+  background-image: url(../img/icons/star.svg);
+}
+
+.rating input:checked ~ label::before {
+  background-image: url(../img/icons/star.svg);
+}
+
+.rating input:focus-visible ~ label::before {
+  outline: 1px solid auto;
+}
+

@@ -1,0 +1,129 @@
+/* contacts */
+
+.contacts {
+  flex: 1 1 50%;
+  padding: calc(var(--gap) * 4) 0;
+  background-color: var(--black04);
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--gray-color01);
+}
+
+@media (max-width: 1600px) {
+  .contacts {
+    padding: calc(var(--gap) * 3) 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: calc(var(--gap) * 2) 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .contacts {
+    padding: calc(var(--gap) / 2) 0;
+  }
+}
+
+/* contacts__container */
+
+.contacts__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 60px;
+}
+
+@media (max-width: 1600px) {
+  .contacts__container {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 998px) {
+  .contacts__container {
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+  }
+}
+
+@media (max-width: 576px) {
+  .contacts__container {
+    gap: 10px;
+  }
+}
+
+/* contacts-box */
+
+.contacts-box {
+  background: var(--black03);
+  border-radius: 12px;
+  padding: 40px;
+}
+
+@media (max-width: 1600px) {
+  .contacts-box {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-box {
+    padding: 20px;
+  }
+}
+
+/* contacts-box__title */
+
+.contacts-box__title {
+  font-family: var(--title-font);
+  line-height: var(--title-lh);
+  font-size: var(--h2);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .contacts-box__title {
+    font-size: 18px;
+  }
+}
+
+/* contacts-box__descr */
+
+.contacts-box__descr {
+  margin-top: 20px;
+  font-family: var(--alt-font);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-color05);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 1600px) {
+  .contacts-box__descr {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 998px) {
+  .contacts-box__descr {
+    font-size: 14px;
+  }
+}
+
+/* contacts-box__links */
+
+.contacts-box__links {
+  margin-top: calc(var(--gap) * 2);
+}
+
+@media (max-width: 1600px) {
+  .contacts-box__links {
+    margin-top: var(--gap);
+  }
+}

@@ -1,0 +1,8 @@
+/* blur-box */
+
+.blur-box {
+  backdrop-filter: var(--backdrop);
+  background: var(--glass-grey);
+  border: 1px solid rgba(107, 107, 107, 0.54);
+  border-radius: 8px;
+}

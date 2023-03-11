@@ -1,0 +1,151 @@
+/* page */
+
+/* page title */
+
+.page__title {
+  margin: 0;
+  font-family: var(--title-font);
+  font-size: var(--h1);
+  line-height: var(--title-lh);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.breadcrumbs__list + .page__title {
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .page__title {
+    font-weight: normal;
+  }
+  .faq--single {
+    padding: 40px 0;
+  }
+}
+
+/* page__subtitle */
+
+.page__subtitle {
+  font-family: var(--title-font);
+  font-size: var(--text);
+  line-height: var(--title-lh);
+  color: var(--gray-color04);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+/* page__wrapper */
+
+.page__wrapper {
+  padding: 40px 0 80px;
+}
+
+.page__wrapper--bordered {
+  border-top: 1px solid var(--gray-color01);
+}
+
+.page__wrapper--dark {
+  background-color: var(--black04);
+}
+
+.page__wrapper--no-offset {
+  padding-top: var(--gap);
+}
+
+@media (max-width: 768px) {
+  .page__wrapper {
+    padding: 40px 0;
+  }
+
+  .page__wrapper--no-offset {
+    padding-top: var(--gap);
+  }
+}
+
+/* page__content */
+
+.page__grid {
+  display: grid;
+  grid-template-columns: minmax(30%, 1fr) minmax(65%, 1fr);
+  align-items: start;
+  gap: var(--gap);
+}
+
+@media (max-width: 1600px) {
+  .page__grid {
+    // grid-template-columns: minmax(30%, 1fr) minmax(70%, 1fr);
+  }
+}
+
+@media (max-width: 998px) {
+  .page__grid {
+    grid-template-columns: 100%;
+    gap: calc(var(--gap)/2);
+  }
+}
+
+.page__col--wide {
+  grid-column: 1/-1;
+}
+
+/* page__sidebar */
+
+.page__sidebar {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+
+
+@media (max-width: 998px) {
+  .page__sidebar {
+    gap: calc(var(--gap)/2);
+  }
+}
+
+/* page__content */
+
+.page__content {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: var(--gap);
+}
+
+@media (max-width: 998px) {
+  .page__content {
+    gap: calc(var(--gap)/2);
+  }
+}
+
+// .page__content {
+//   padding: 40px 0 80px;
+// }
+
+// .page__content--bordered {
+//   border-top: 1px solid var(--gray-color01);
+// }
+
+// .page__content--dark {
+//   background-color: var(--black04);
+// }
+
+// .page__content--no-offset {
+//   padding-top: var(--gap);
+// }
+
+// @media (max-width: 768px) {
+//   .page__content {
+//     padding: 40px 0;
+//   }
+
+//   .page__content--no-offset {
+//     padding-top: var(--gap);
+//   }
+// }
+
+
+

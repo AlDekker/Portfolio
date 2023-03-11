@@ -1,0 +1,230 @@
+/* top-screen */
+
+.top-screen {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  min-height: 560px;
+}
+
+.top-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #232323 0%, rgba(43, 43, 43, 0.7) 30.21%, rgba(40, 40, 40, 0.801053) 77.08%, #232323 100%);
+}
+
+.top-screen > * {
+  position: relative;
+  z-index: 1;
+}
+
+.top-screen__container {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (max-width: 1600px) {
+  .top-screen {
+    min-height: auto;
+  }
+  .top-screen__container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 998px) {
+  .top-screen {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-screen__container {
+    flex-wrap: wrap;
+  }
+}
+
+/* top-screen__info */
+
+.top-screen__info {
+  flex: 0 1 40%;
+  position: relative;
+  z-index: 1;
+}
+
+.top-screen__status {
+  display: inline-block;
+  font-family: var(--title-font);
+  font-size: var(--h3);
+  line-height: var(--title-lh);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: var(--red-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: var(--gap);
+}
+
+.top-screen__title {
+  font-family: var(--title-font);
+  font-size: var(--h1);
+  line-height: var(--title-lh);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.top-screen__descr {
+  font-family: var(--alt-font);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-top: var(--gap);
+}
+
+.top-screen__button {
+  margin-top: calc(var(--gap) * 1.5);
+  min-width: 220px;
+  max-width: 100%;
+}
+
+@media (max-width: 1600px) {
+  .top-screen__breadcrumbs {
+    margin-bottom: 20px;
+  }
+  .top-screen__info {
+    flex: 0 1 50%;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .top-screen__container {
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .top-screen__info {
+    flex-basis: 100%;
+  }
+
+  .top-screen__status {
+    margin-bottom: 10px;
+  }
+  
+  .top-screen__title {
+    font-weight: 400;
+  }
+  
+  .top-screen__descr {
+    margin-top: 10px;
+  }
+
+  .top-screen__button {
+    display: none;
+  }
+
+  .top-screen__breadcrumbs {
+    margin-bottom: 10px;
+  }
+  
+}
+
+/* top-screen__media */
+
+.top-screen__media .product {
+  max-width: 400px;
+  backdrop-filter: var(--backdrop);
+  background: var(--glass-grey);
+  border: 1px solid rgba(107, 107, 107, 0.54);
+}
+
+@media (max-width: 1600px) {
+  .top-screen__media .product {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 998px) {
+  .top-screen__media {
+    flex: 0 1 auto;
+  }
+  .top-screen__media .product {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-screen__media {
+    flex-basis: 100%;
+  }
+}
+
+/* top-screen__breadcrumbs */
+
+.top-screen__breadcrumbs {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+/* top-screen__image */
+
+.top-screen__media--image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1600px) {
+  .top-screen__media--image {
+    width: 460px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-screen__media--image {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .top-screen__media--image img {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  .top-screen__media--image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #232323 0%, rgba(43, 43, 43, 0.7) 30.21%, rgba(40, 40, 40, 0.801053) 77.08%, #232323 100%);
+  }
+}

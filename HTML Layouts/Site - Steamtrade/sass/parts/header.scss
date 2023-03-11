@@ -1,0 +1,271 @@
+@import "./hamburger";
+@import "./lang";
+@import "./cart";
+@import "./logout";
+@import "./header-dropdown";
+@import "./header-menu";
+@import "./header-steamauth";
+
+/* header */
+
+.header {
+  position: relative;
+  background: rgba(51, 51, 51, 0.4);
+  backdrop-filter: var(--backdrop);
+  z-index: 2;
+  padding: 2px 0;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--stroke-gradient);
+}
+
+.header__container {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+  min-height: var(--header-height);
+}
+
+@media (max-width: 1200px) {
+  .header__container {
+    gap: 15px;
+  }
+}
+
+/* header__logo */
+
+.header__logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* header__nav */
+
+.header-menu__box {
+  height: 100%;
+}
+
+.header__nav {
+  flex-shrink: 1;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header__nav .nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: var(--gap);
+  row-gap: 5px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: 100%;
+}
+
+.header__nav .nav__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--gray-color01);
+  text-decoration: none;
+  transition: all .25s ease;
+}
+
+.header-dropdown.nav__item:hover .nav__link,
+.header__nav .nav__item.active .nav__link, 
+.header__nav .nav__link:hover {
+  color: var(--red01)
+}
+
+.header-dropdown.nav__item .header-dropdown__box {
+  padding-top: 10px;
+}
+
+@media (max-width: 1600px) {
+  .header-menu {
+    margin: 0 auto;
+  }
+
+  .header__nav .nav__list {
+    // gap: calc(var(--gap) / 2);
+  }
+
+  .header__nav .nav__link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__nav .nav__list {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 998px) {
+  .header__nav .nav__link {
+    font-size: 16px;
+  }
+}
+
+
+/* header__account */
+
+.header__account {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__account > * {
+  flex-shrink: 0;
+}
+
+@media (max-width: 1600px) {
+  .header__account {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__account {
+    gap: 5px;
+  }
+}
+
+/* header__logout */
+
+.header__logout {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 998px) {
+  .header__logout {
+    display: none;
+  }
+}
+
+/* header-lang */
+
+.header__lang {
+  margin-right: 12px;
+}
+
+.header-dropdown__content--lang {
+  min-width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (max-width: 998px) {
+  .header__lang {
+    display: none;
+  }
+}
+
+/* header__cart */
+
+.header__cart {
+  display: flex;
+  align-items: center;
+}
+
+/* header__user */
+
+.header__user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header__user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__user-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  color: inherit;
+}
+
+.header__user-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.2;
+  color: var(--gray-color01);
+  transition: all .25s ease;
+}
+
+.header__user-link:hover {
+  opacity: .8;
+}
+
+.header__user-avatar {
+  width: 36px;
+  height: 36px;
+}
+
+.header__user-avatar img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 1600px) {
+  // .header__user {
+  //   gap: 8px;
+  // }
+
+  .header__user-name {
+    font-size: 12px;
+  }
+
+  .header__user-link {
+    font-size: 10px;
+  }
+
+  // .header__user-avatar {
+  //   width: 28px;
+  //   height: 28px;
+  // }
+  
+  // .header__user-avatar img {
+  //   width: 24px;
+  //   height: 24px;
+  // }
+}
+
+@media (max-width: 1200px) {
+  .header__user-info {
+    display: none;
+  }
+}
+
+/* header__hamburger */
+
+.header__hamburger {
+  display: none;
+}
+
+@media (max-width: 998px) {
+  .header__hamburger {
+    display: block;
+  }
+}
+

@@ -1,0 +1,19 @@
+/* hamburger */
+
+.hamburger {
+  background: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 6px 3px;
+  cursor: pointer;
+}
+
+.hamburger:hover .hamburger__icon {
+  fill: var(--white);
+}
+
+.hamburger__icon {
+  fill: var(--gray-color01);
+  transition: all .25s ease;
+}

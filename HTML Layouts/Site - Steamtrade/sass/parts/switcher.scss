@@ -1,0 +1,78 @@
+/* switcher */
+
+.switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px;
+  background: var(--black03);
+  border: 1px solid var(--black02);
+  border-radius: 12px;
+}
+
+.switcher__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0 none;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.switcher__label {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding: 4px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+.switcher__input:checked + .switcher__label {
+  background: var(--red-gradient);
+  box-shadow: 0px 4px 5px rgba(255, 33, 1, 0.36);
+  cursor: default;
+}
+
+.switcher__input:not(:checked) + .switcher__label:hover {
+  background: var(--black01);
+}
+
+.switcher__input:focus-visible + .switcher__label {
+  outline: 2px solid var(--white);
+}
+
+/* switcher--transparent */
+
+.switcher--transparent {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.switcher--transparent .switcher__label {
+  padding: 11px 20px;
+  border: 2px solid transparent;
+}
+
+.switcher--transparent .switcher__input:checked + .switcher__label {
+  background: var(--black03);
+  border: 2px solid var(--red01);
+  box-shadow: none;
+}
+
+@media (max-width: 1600px) {
+  .switcher {
+    gap: 3px;
+  }
+  .switcher__label {
+    padding: 4px 18px;
+  }
+}

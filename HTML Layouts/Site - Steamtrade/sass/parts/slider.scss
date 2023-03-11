@@ -1,0 +1,20 @@
+/* slider */
+
+.swiper-pagination {
+  position: static;
+  margin-top: 20px;
+  line-height: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  opacity: .3;
+  background: var(--gray-color03);
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--gray-color03);
+  opacity: 1;
+}

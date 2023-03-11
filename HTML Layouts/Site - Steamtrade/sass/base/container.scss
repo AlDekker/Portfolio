@@ -1,0 +1,12 @@
+/* Container */
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding) * 2);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.container--wide {
+  max-width: 1920px;
+}
