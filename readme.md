@@ -5,7 +5,7 @@
 ## HTML-верстка
 
 1. **Сайт для покупка и продажи игровых товаров** 
-> [Репозиторий]() | [Демо](https://portfolio.web-branch.ru/projects/steamtrade)
+> [Репозиторий](https://github.com/beeeblebrox/Portfolio/tree/main/HTML%20Layouts/Site%20-%20Steamtrade) | [Демо](https://portfolio.web-branch.ru/projects/steamtrade)
 
 2. **Лэндинг Московского Дворца молодежи**
 > [Репозиторий](https://github.com/beeeblebrox/Portfolio/tree/main/HTML%20Layouts/Page%20-%20MoneyPeople) | [Демо](https://portfolio.web-branch.ru/projects/mdm/)
