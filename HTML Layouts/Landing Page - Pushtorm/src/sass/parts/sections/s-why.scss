@@ -1,0 +1,90 @@
+/* s-why */
+
+// advantages
+
+.advantages__item {
+  position: relative;
+  min-height: 470px;
+  background: #FFFFFF;
+  border: 1px solid #EEF0FF;
+  box-shadow: 0px 11px 27.5px rgba(184, 224, 255, 0.239216);
+  border-radius: 26px;
+  padding: 50px;
+  overflow: hidden;
+  margin-bottom: var(--gap);
+}
+
+.advantages__item::before {
+  position: absolute;
+  bottom: -19%;
+  right: 0;
+}
+
+.advantages__content {
+  position: relative;
+  z-index: 1;
+}
+
+.advantages__title {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 35px;
+}
+
+.advantages__descr {
+  font-weight: 600;
+}
+
+// red
+
+.advantages__item--red::before {
+  content: url(../img/honest-img.png);
+}
+
+.advantages__item--red .advantages__title {
+  color: var(--red);
+}
+
+// blue 
+
+.advantages__item--blue {
+  background: var(--gradient);
+}
+
+.advantages__item--blue::before {
+  content: url(../img/speed-img.png);
+  bottom: -24.5%;
+}
+
+.advantages__item--blue .advantages__title {
+  color: var(--theme-color);
+}
+
+// green 
+
+.advantages__item--green::before {
+  content: url(../img/price-img.png);
+}
+
+.advantages__item--green .advantages__title {
+  color: var(--green);
+}
+
+@media (max-width: 768px) {
+  .advantages__item {
+    min-height: auto;
+    padding-bottom: 200px;
+  }
+
+  .advantages__item::before {
+    width: 150px;
+    bottom: -40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .advantages__item {
+    padding: 40px 30px 200px 30px;
+  }
+}

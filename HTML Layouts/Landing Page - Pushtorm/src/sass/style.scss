@@ -1,0 +1,23 @@
+@import "base/libs";
+@import "base/fonts";
+@import "base/root";
+@import "base/reset";
+@import "base/page";
+@import "base/wrapper";
+@import "base/visually-hidden";
+
+@import "parts/button";
+@import "parts/mobile-menu";
+@import "parts/hamburger";
+@import "parts/logo";
+
+@import "parts/header";
+@import "parts/footer";
+
+@import "parts/sections/section";
+@import "parts/sections/s-why";
+@import "parts/sections/s-steps";
+@import "parts/sections/s-tariffs";
+@import "parts/sections/s-faq";
+
+@import "parts/form/input-range";

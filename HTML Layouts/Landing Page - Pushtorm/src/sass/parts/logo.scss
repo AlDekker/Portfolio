@@ -1,0 +1,19 @@
+/* logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2F3382;
+  font-weight: 800;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo span {
+  margin-left: 10px;
+  white-space: nowrap;
+}

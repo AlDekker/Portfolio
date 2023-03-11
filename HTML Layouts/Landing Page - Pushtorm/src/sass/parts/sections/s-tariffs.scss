@@ -1,0 +1,129 @@
+/* s-tariffs */
+
+// tariffs
+
+.tariffs {
+  --bs-gutter-y: 20px
+}
+
+.tariffs__item {
+  min-height: 418px;
+}
+
+.tariff {
+  height: 100%;
+  background: #FFFFFF;
+  border: 1px solid #EEF0FF;
+  box-shadow: 0px 11px 27.5px rgba(184, 224, 255, 0.239216);
+  border-radius: 26px;
+  padding: 50px 50px 30px;
+  text-align: center;
+}
+
+.tariff__title {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: var(--theme-color);
+  margin-bottom: 50px;
+}
+
+.tariff__descr {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29px;
+}
+
+.tariff__price {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tariff-price__output {
+  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid #EEF0FF;
+  box-shadow: 0px 11px 27.5px rgba(184, 224, 255, 0.239216);
+  border-radius: 26px;
+  padding: 18px 30px 18px 30px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: var(--theme-color);
+}
+
+.tariff-price__output::before {
+  content: '₽';
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  transform: translateY(-50%);
+}
+
+ul.tariff__options {
+  margin: 0;
+  padding: 0;
+  // list-style-type: none;
+  margin-top: 30px;
+  text-align: left;
+  font-size: 16px;
+}
+
+// pro
+
+.tariff--pro .tariff__title {
+  color: var(--green);
+}
+
+// custom 
+
+.tariff--custom .tariff__title {
+  color: var(--red);
+}
+
+// button
+
+.tariffs__button {
+  min-width: 586px;
+  max-width: 100%;
+  margin-top: 70px;
+}
+
+@media (max-width: 1200px) {
+  .tariff {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tariffs__item {
+    min-height: auto;
+  }
+  .tariff__title {
+    margin-bottom: 20px;
+  }
+  .tariffs__button {
+    min-width: auto;
+    width: 50%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tariffs__button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .tariff__descr {
+    font-size: var(--txt-size);
+  }
+}

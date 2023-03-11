@@ -1,0 +1,25 @@
+/* Page */
+
+.page {
+  font-size: var(--txt-size); 
+}
+
+.page, .page__body {
+  height: 100%;
+}   
+
+.page__body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--txt-font);
+  color: var(--txt-color);
+  font-size: var(--txt-size);
+  line-height: var(--txt-lh);
+  text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
