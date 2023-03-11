@@ -27,9 +27,4 @@ This is a list of links to my web development work
 1. https://portfolio.web-branch.ru/projects/kidburg/
 1. https://portfolio.web-branch.ru/projects/privelegiya/
 1. https://portfolio.web-branch.ru/projects/koteyka/
-1. https://portfolio.web-branch.ru/projects/spirit8/
-1. https://portfolio.web-branch.ru/projects/arbitraj/
-1. https://portfolio.web-branch.ru/projects/posh/
-1. https://portfolio.web-branch.ru/projects/shoeshop/
-1. https://portfolio.web-branch.ru/projects/fitness/
 1. https://portfolio.web-branch.ru/projects/bender/
