@@ -8,7 +8,7 @@
 > [Репозиторий](https://github.com/beeeblebrox/Portfolio/tree/main/HTML%20Layouts/Site%20-%20Steamtrade) | [Демо](https://portfolio.web-branch.ru/projects/steamtrade)
 
 2. **Лэндинг Московского Дворца молодежи**
-> [Репозиторий](https://github.com/beeeblebrox/Portfolio/tree/main/HTML%20Layouts/Page%20-%20MoneyPeople) | [Демо](https://portfolio.web-branch.ru/projects/mdm/)
+> [Репозиторий](https://github.com/beeeblebrox/Portfolio/tree/main/HTML%20Layouts/Landing%20Page%20-%20MDM) | [Демо](https://portfolio.web-branch.ru/projects/mdm/)
 
 3. **Сайт с комиксами**
 > [Репозиторий](https://github.com/beeeblebrox/Portfolio/tree/main/HTML%20Layouts/Site%20-%20Geekcomics) | [Демо](https://portfolio.web-branch.ru/projects/geekcomics/) 
