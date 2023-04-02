@@ -4,7 +4,7 @@
 
 ## HTML-верстка
 
-1. **Сайт для покупка и продажи игровых товаров** 
+1. **Сайт для покупки и продажи игровых товаров** 
 > [Репозиторий](https://github.com/beeeblebrox/Portfolio/tree/main/HTML%20Layouts/Site%20-%20Steamtrade) | [Демо](https://portfolio.web-branch.ru/projects/steamtrade)
 
 2. **Лэндинг Московского Дворца молодежи**
