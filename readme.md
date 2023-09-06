@@ -41,8 +41,6 @@
 1. https://autorem-motors.ru/ - интернет-магазин на Opencart
 1. https://atlanta-dv.ru/ - интернет-магазин на Opencart
 1. https://xn--h1adbqbm.xn--p1ai/ - сайт на Wordpress
-1. https://natalight.ru/ - интернет-магазин на Opencart
-1. https://citary.ru/ - интернет-магазин на Opencart
 1. http://xn--63-6kc3dg.xn--p1ai/ - лэндинг на October CMS
 1. https://pk-line.ru/ - интернет-магазин на Opencart
 
