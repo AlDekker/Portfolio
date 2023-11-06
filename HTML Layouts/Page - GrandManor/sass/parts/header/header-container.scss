@@ -1,0 +1,13 @@
+/* header__container */
+
+.header__container {
+  padding-right: calc(50% - 1920px / 2 + var(--container-padding));
+  padding-left: calc(50% - 1920px / 2 + var(--container-padding));
+}
+
+@media (max-width: 1920px) {
+  .header__container {
+    padding-right: var(--container-padding);
+    padding-left: var(--container-padding);
+  }
+}

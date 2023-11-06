@@ -1,0 +1,28 @@
+/* header */
+
+.header {
+  position: relative;
+  z-index: 10;
+  color: var(--color-text-contrast);
+  line-height: 1.5;
+}
+
+@media (min-width: 1368px) {
+  .header.is-fixed::after {
+    display: block;
+    width: 100%;
+    height: 55px;
+    content: '';
+  }
+
+  .header.is-fixed .header__bottom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 55px;
+  }
+}
+
+

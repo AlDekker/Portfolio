@@ -1,0 +1,58 @@
+/* header__tools */
+
+.header__tools {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__tools-item {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.header__tools-button {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  padding-right: 13px;
+  color: inherit;
+  line-height: 1;
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
+.header__tools-icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.header__tools-count {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  min-width: 16px;
+  max-width: 25px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--color-black);
+  font-weight: 900;
+  font-size: 11px;;
+  line-height: 14px;
+  white-space: nowrap;
+  text-align: center;
+  text-overflow: ellipsis;
+  background: var(--color-theme-primary);
+  border-radius: 50%;
+  padding-inline: 1px;
+}
+
+@media (max-width: 576px) {
+  .header__tools-icon {
+    width: 24px;
+  }
+}
+

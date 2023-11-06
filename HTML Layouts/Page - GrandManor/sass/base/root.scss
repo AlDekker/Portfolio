@@ -1,0 +1,26 @@
+/* Root */
+
+:root {
+  --color-theme-primary: #dabc86;
+  --color-white: #fff;
+  --color-black: #1a1a1a;
+  --color-dark-grey: #252525;
+  --color-light-grey: #999;
+  --color-yellow: #dabc86;
+  --color-red: #f55;
+  --color-orange: #b67f40;
+  --color-text-primary: #1a1a1a;
+  --color-text-contrast: #fff;
+  --text-font: 'Merriweather', serif;
+  --text-font-alt: 'Vollkorn', serif;
+  --text-size: 16px;
+  --text-line-height: 1.8;
+  --container-width: 1290px;
+  --container-padding: 30px;
+
+  @media (max-width: 576px) {
+    --container-padding: 10px;
+  }
+}
+
+

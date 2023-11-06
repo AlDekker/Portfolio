@@ -1,0 +1,9 @@
+/* header__logo */
+
+@media (max-width: 768px) {
+  .header__logo {
+    display: flex;
+    grid-column: 1/-1;
+    justify-content: center;
+  }
+}

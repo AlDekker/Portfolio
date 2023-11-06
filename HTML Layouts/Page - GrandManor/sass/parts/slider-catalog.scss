@@ -1,0 +1,30 @@
+/* slider-catalog */
+
+.slider-catalog {
+  padding: 0;
+  overflow: visible;
+}
+
+.slider-catalog .slider__item {
+  overflow: visible;
+}
+
+.slider-catalog .slider__pagination,
+.slider-catalog .slider__button {
+  display: none;
+}
+
+@media (max-width: 998px) {
+  .slider-catalog {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .slider-catalog .slider__button {
+    display: block;
+  }
+
+  .slider-catalog .slider__pagination {
+    display: flex;
+  }
+}

@@ -1,0 +1,88 @@
+/* footer__column--contacts */
+
+.footer__column--contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 1368px) {
+  .footer__column--contacts {
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .footer__column--contacts::after {
+    position: absolute;
+    top: 100%;
+    left: calc(var(--container-padding) * -1);
+    width: 100vw;
+    height: 1px;
+    background: rgb(153 153 153 / 15%);
+    content: '';
+  }
+}
+
+@media (max-width: 576px) {
+  .footer__column--contacts {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+/* footer__logo */
+
+@media (max-width: 576px) {
+  .footer__logo {
+    width: 240px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer__logo {
+    margin: 0 auto;
+  }
+}
+
+/* footer__contacts */
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer__contacts-link {
+  color: var(--color-theme-primary);
+  white-space: nowrap;
+  transition: all .25s ease;
+}
+
+.footer__contacts-link[href*='tel'] {
+  color: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer__contacts-link:hover {
+  text-decoration: none;
+}
+
+.footer__contacts-link[href*='tel']:hover {
+  color: var(--color-theme-primary);
+}
+
+.footer__contacts-caption {
+  font-weight: 300;
+}
+
+/* footer__links */
+
+@media (max-width: 375px) {
+  .footer__links {
+    justify-content: center;
+  }
+}
+
+

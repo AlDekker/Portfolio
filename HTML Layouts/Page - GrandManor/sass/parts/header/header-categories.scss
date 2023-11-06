@@ -1,0 +1,111 @@
+/* header__categories */
+
+.header__categories {
+  font-size: 14px;
+}
+
+.header__categories .menu__list {
+  z-index: 2;
+  gap: 70px;
+}
+
+.header__categories .menu__link {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.header__categories-link-sm {
+  display: none;
+  font-size: 13px;
+}
+
+.header__categories-button {
+  display: none;
+  border-radius: 6px;
+}
+
+.header__categories-button span {
+  position: relative;
+  padding-right: 16px;
+}
+
+.header__categories-button span::before {
+  position: absolute;
+  top: calc(50% + 1px);
+  right: 0;
+  width: 12px;
+  height: 12px;
+  font-size: 10px;
+  background: url(../img/icons/icon-arrow-down.svg) no-repeat 0 0/contain;
+  transform: translateY(-50%);
+  content: '';
+}
+
+.header__categories-button.is-active {
+  background-color: var(--color-theme-primary);
+  border-color: var(--color-theme-primary);
+}
+
+.header__categories-button.is-active span::before {
+  transform: scale(-1) translateY(50%);
+}
+
+@media (max-width: 1600px) {
+  .header__categories .menu__list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .header__categories {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .header__categories-link-sm {
+    display: inline-block;
+  }
+
+  .header__categories-button {
+    display: inline-block;
+  }
+
+  .header__categories .menu__list.is-closed {
+    display: none;
+  }
+
+  .header__categories .menu__list {
+    position: absolute;
+    top: calc(100% + 16px);
+    left: 0;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    background: var(--color-dark-grey);
+    border-radius: 6px;
+  }
+
+  .header__categories .menu__item {
+    width: 100%;
+  }
+
+  .header__categories .menu__dropdown-list {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__categories {
+    width: 100%;
+  }
+
+  .header__categories .menu__list {
+    top: calc(100% + 30px);
+  }
+}

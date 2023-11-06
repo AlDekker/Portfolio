@@ -1,0 +1,72 @@
+/* button */
+
+.button {
+  position: relative;
+  display: inline-block;
+  min-width: 140px;
+  max-width: 100%;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 13px;
+  font-family: var(--text-font);
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-theme-primary);
+  border: 1px solid var(--color-theme-primary);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+.button:active {
+  opacity: 1;
+}
+
+.button:disabled {
+  background: var(--color-grey);
+  cursor: default;
+  opacity: .4;
+}
+
+.button:focus-visible:not(:disabled) {
+  outline: 2px solid var(--color-theme-primary);
+  outline-offset: 2px;
+}
+
+.button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.button:hover:not(:disabled),
+.button:focus:not(:disabled) {
+  opacity: .9;
+}
+
+/* button--big */
+
+.button--big {
+  min-width: 190px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* button--outline */
+
+.button--outline {
+  background: transparent;
+}
+
+.button--outline-white {
+  border-color: var(--color-white);
+}
+
+.button--outline-black {
+  color: var(--color-black);
+  border-color: var(--color-black);
+}
+
+.button--outline-black:hover {
+  border-color: var(--color-theme-primary);
+}

@@ -1,0 +1,11 @@
+/* header__hamburger */
+
+.header__hamburger {
+  flex-shrink: 0;
+}
+
+@media (min-width: 998px) {
+  .header__hamburger {
+    display: none;
+  }
+}
