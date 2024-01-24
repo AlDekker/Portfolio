@@ -1,0 +1,66 @@
+/* Libs */
+@import "../../node_modules/bootstrap/scss/functions";
+
+$container-max-widths: (
+  xxl: 1330px
+);
+
+$container-padding-x: 20px;
+
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap-utilities";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+
+@import "../../node_modules/swiper/swiper";
+@import '../../node_modules/nouislider/dist/nouislider';
+
+
+/* Fonts */
+@mixin font-face($f-family, $f-weight, $f-style, $f-src) {
+  @font-face {
+    font-family: $f-family;
+    font-display: swap;
+    font-weight: $f-weight;
+    font-style: $f-style;
+    src: local($f-family), url(#{$f-src}.woff2) format('woff2'), url(#{$f-src}.woff) format('woff');
+  }
+}
+
+@include font-face("RobotoCondenced", 400, normal, "../fonts/roboto-condensed-regular");
+@include font-face("RobotoCondenced", 700, normal, "../fonts/roboto-condensed-bold");
+
+/* Vars */
+
+$transition: .25s ease;
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #828282;
+  --light-grey: #F2F2F2;
+
+  --theme: #1566D4;
+  --theme-hover: #4879be;
+  --theme-active: #004FBA;
+
+  --accent: #D41536;
+  --accent-hover: #BA0020;
+  --accent-active: #A1001C;
+
+  --accent-alt: #4DAE4B;
+
+  --border-color: #000000;
+  --border-width: 2px;
+
+  --txt-color: #252525;
+  --txt-font: "RobotoCondenced", sans-serif;
+  --txt-size: 16px;
+  --txt-lh: 1.5;
+}
+
+

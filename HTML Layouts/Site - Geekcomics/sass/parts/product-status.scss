@@ -1,0 +1,20 @@
+/* Product status (Состояние: Отличное, хорошее, плохое) */
+
+.product-status {
+  position: absolute;
+  top: 7px;
+  left: -7px;
+  padding: 5px 7px 3px 7px;
+  background-color: black;
+  color: var(--white);
+  z-index: 10;
+  &--great {
+    background-color: var(--accent-alt);
+  }
+  &--good {
+    background-color: var(--grey);
+  }
+  &--bad {
+    background-color: var(--accent);
+  }
+}

@@ -301,10 +301,14 @@ window.addEventListener('load', function () {
           productModal.style.left = '0';
           productModal.style.width = '100%';
 
+          window.scrollTo({
+            top: scrollY
+          });
+
           // Product Info
           let productTitle   = product.querySelector('.product-card__title');
           let productCat     = product.querySelector('.product-card__category');
-          let productText  = product.querySelector('.product-card__exerpt');
+          let productText    = product.querySelector('.product-card__exerpt');
           
           // Modal
           let modal    = document.querySelector('#product-popup');

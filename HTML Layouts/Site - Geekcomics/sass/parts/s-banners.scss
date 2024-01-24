@@ -1,0 +1,37 @@
+/* Section Banners */
+
+.section-banners {
+  @media screen and (max-width: 800px) {
+    .section-banners__container {
+      max-width: 100%;
+      padding: 0;
+      overflow: hidden;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .container {
+      padding-left: $container-padding-x;
+      padding-right: $container-padding-x;
+    }
+  }
+}
+
+.banner {
+  display: block;
+  border: var(--border-width) solid var(--border-color);
+  height: 151px;
+  @media screen and (max-width: 575px) {
+    margin-bottom: 20px;
+    height: 134px;
+  }
+  @media screen and (max-width: 380px) {
+    height: 110px;
+  }
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+}

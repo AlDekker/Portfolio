@@ -1,0 +1,44 @@
+/* Wish Button */
+
+.wish-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all $transition;
+  &:hover .wish-btn__icon {
+    stroke: var(--accent);
+  }
+  &:active .wish-btn__icon {
+    stroke: var(--accent-active);
+  }
+}
+
+.wish-btn__icon {
+  width: 80%;
+  height: 80%;
+  fill: transparent;
+  stroke: var(--border-color);
+  transition: all $transition;
+}
+
+.wish-btn--red .wish-btn__icon {
+  stroke: var(--accent);
+  &:hover {
+    stroke: var(--accent-hover);
+  }
+  &:active {
+    stroke: var(--accent-active);
+  }
+}
+
+
+

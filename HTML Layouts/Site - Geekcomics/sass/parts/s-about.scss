@@ -1,0 +1,56 @@
+/* Section About */
+
+.section-about__advantages > div {
+  @media screen and (max-width: 576px) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  @media screen and (max-width: 478px) {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+/* Advantages */
+
+.advantages__item {
+  margin-bottom: 30px;
+  @media screen and (max-width: 998px) {
+    margin-bottom: 20px;
+  }
+}
+
+.advantages__title {
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-weight: bold;
+  color: var(--theme);
+  margin-bottom: 10px;
+  @media screen and (max-width: 1200px) {
+    font-size: 1.25rem;
+  }
+}
+
+.advantages__descr {
+  font-size: 1rem;
+  color: #4F4F4F;
+}
+
+/* Descr */
+
+.section-about__descr {
+  font-size: 1.125rem;
+  color: #4F4F4F;
+}
+
+.section-about__caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--txt-color);
+  @media screen and (max-width: 1200px) {
+    font-size: 1.25rem;
+  }
+}
+

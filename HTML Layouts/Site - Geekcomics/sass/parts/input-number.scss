@@ -1,0 +1,46 @@
+/* Input type number */
+
+.input-number {
+  position: relative;
+
+}
+
+
+.input-number__input {
+  border: none;
+  width: 83px;
+  height: 45px;
+  background-color: transparent;
+  text-align: center;
+  outline: none;
+  font-weight: bold;
+  padding: 0 25px;
+  -moz-appearance: textfield;
+}
+
+/* Buttons */
+
+.input-number__minus, 
+.input-number__plus {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  fill: var(--text-color);
+  color: var(--text-color);
+  transition: all $transition;
+  &:hover {
+    color: var(--theme);
+  }
+}
+.input-number__minus {
+  left: 0;
+  padding-left: 15px;
+}
+.input-number__plus {
+  right: 0;
+  padding-right: 15px;
+}
+

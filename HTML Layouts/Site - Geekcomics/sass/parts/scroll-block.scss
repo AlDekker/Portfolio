@@ -1,0 +1,23 @@
+/* Custom Scroll */
+
+.scroll-block {
+  overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	-moz-overflow-scrolling: touch;
+	-ms-overflow-scrolling: touch;
+	-o-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+	scrollbar-width: thin;
+	scrollbar-color: var(--theme) #e0dfdf;
+}
+
+.scroll-block::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 2px;
+  background-color: #bdbdbd;
+}
+
+.scroll-block::-webkit-scrollbar-thumb {
+	background-color: var(--theme);
+}

@@ -1,0 +1,56 @@
+/* Checkbox */
+
+.input-checkbox {
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.input-checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0 none;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.input-checkbox > span {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+}
+
+.input-checkbox > span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  background-image: url(../img/sprite/icons/checkbox-o.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+
+.input-checkbox__input:checked + span::before {
+  background-image: url(../img/sprite/icons/checkbox-i.svg);
+}
+
+.input-checkbox__input:focus + span::before {
+  outline: 3px solid tomato;
+  outline-offset: 2px;
+}
+.input-checkbox__input:focus:not(:focus-visible) + span::before {
+  outline: none;
+}
+

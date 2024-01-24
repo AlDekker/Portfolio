@@ -1,0 +1,128 @@
+/* Account menu in Header */
+
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  @media screen and (max-width: 1200px) {
+    gap: 40px;
+  }
+}
+
+.account__item {
+  position: relative;
+}
+
+.account__btn {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all $transition;
+  &:hover .account__icon {
+    stroke: var(--accent);
+  }
+  &:active .account__icon {
+    stroke: var(--accent-active);
+  }
+}
+
+.account__btn--counter::before {
+  content: attr(data-value);
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--theme);
+  border: var(--border-width) solid var(--white);
+  border-radius: 50%;
+  padding: 1px 3px;
+  min-width: 20px;
+  height: 20px;
+} 
+
+.account__icon {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke: var(--border-color);
+  transition: all $transition;
+}
+
+
+/* Account Popup */
+
+.account__popup-wrapper {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transform: translateY(10px) translate(16%, 10px);
+  z-index: 999;
+}
+
+.account__popup-wrapper--opened {
+  display: block;
+}
+.account__popup-wrapper {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 32px;
+    background-color: tomato;
+    background: url(../img/sprite/icons/corner.svg) no-repeat 0 0;
+    right: 36px;
+    top: -7.6px;
+
+    z-index: 1;
+  }
+}
+.account__popup.skew-block {
+  --lt-x: 3%;
+  --lt-y: 0%;
+  width: max-content;
+  min-height: 270px;
+  padding: 30px 20px 20px 30px;
+  background-color: var(--white);
+}
+
+.account-popup__header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+  .account-popup__subtitle {
+    font-weight: bold;
+  }
+}
+
+.account-popup__body {
+  margin-bottom: 20px;
+}
+
+.account-popup__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  > *:first-child {
+    flex: 1 1 142px;
+  }
+}

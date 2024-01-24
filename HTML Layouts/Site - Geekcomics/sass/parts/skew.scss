@@ -1,0 +1,43 @@
+/* Skew */
+
+
+.skew {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  outline-offset: 2px;
+}
+
+.skew__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  stroke: var(--border-color);
+  stroke-width: var(--border-width);
+  transition: all $transition;
+  &--sm {
+    display: none;
+    @media screen and (max-width: 520px) {
+      display: block;
+    }
+  }
+  &--lg {
+    @media screen and (max-width: 520px) {
+      display: none;
+    }
+  }
+}
+
+.skew__content {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.skew-bg--mb {
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 60px;
+  }
+}

@@ -1,0 +1,78 @@
+/* Slider */
+
+.slider, .swiper {
+  position: relative;
+}
+
+/* Slider Nav */
+
+.slider__navigation {
+  position: relative; 
+}
+
+.slider__btn {
+  position: absolute;
+  top: 40%;
+  width: 34px;
+  height: 34px;
+  background-color: transparent;
+  border: none;
+  z-index: 999;
+  transition: all $transition;
+  .skew__bg {
+    fill: var(--white);
+    transition: all $transition;
+  }
+  &:hover {
+    .slider__btn-icon {
+      stroke: var(--white);
+    }
+    .skew__bg {
+      fill: var(--theme);
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
+
+}
+
+.slider__btn--prev {
+  left: -15px;
+  transform: translateY(-50%) translateX(-100%);
+}
+
+.slider__btn--next {
+  right: -15px;
+  transform: rotate(180deg) translateY(50%) translateX(-100%);;
+}
+
+.slider__btn-icon {
+  max-width: 100%;
+  width: 7px;
+  height: 14px;
+  fill: none;
+  stroke: var(--border-color);
+  transition: all $transition;
+}
+
+
+/* Scrollbar */
+
+.slider__scrollbar {
+  height: 2px;
+  background-color: #bdbdbd;
+  margin-top: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  .swiper-scrollbar-drag {
+    background-color: var(--theme);
+    height: 100%;
+  }
+  @media screen and (min-width: 1400px ){
+    display: none;
+  }
+
+}

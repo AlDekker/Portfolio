@@ -1,0 +1,73 @@
+/* Section */
+
+.content .section {
+  margin-bottom: 90px;
+  @media screen and (max-width: 998px) {
+    margin-bottom: 30px;
+  }
+}
+
+.section {
+  position: relative;
+  font-size: 1.125rem; // 18px
+  line-height: 1.4;
+  @media screen and (max-width: 576px) {
+    font-size: 1rem;
+  }
+}
+
+/* Section Header */
+
+.section__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+
+/* Section Title */
+
+.section__title {
+  font-size: 2.625rem; // 42px
+  line-height: 1.1;
+  font-weight: bold;
+  color: inherit;
+  margin-bottom: 0;
+  @media screen and (max-width: 1200px) {
+    font-size: 2.25rem; // 36px
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 2rem; // 32px
+  }
+  @media screen and (max-width: 420px) {
+    flex-basis: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+
+/* Section More */
+
+.section__more {
+  font-size: 1rem;
+  color: inherit;
+  text-decoration: none;
+  transition: all $transition;
+  &:hover {
+    color: var(--accent);
+  }
+  &:active {
+    color: var(--accent-active);
+  }
+}
+
+/* Section Text */
+
+.section__text {
+  margin-top: 0;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

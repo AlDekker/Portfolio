@@ -1,0 +1,62 @@
+/* Skew Block */ 
+
+.skew-block {
+  
+  /* width */
+  --w: 2px; 
+  
+  /* left top */
+  --lt-x: 0%;
+  --lt-y: 0%;
+  
+  /* right top */
+  --rt-x: 100%;
+  --rt-y: 0%; 
+  
+  /* right bottom */
+  --rb-x: 100%;
+  --rb-y: 100%; 
+  --stitch: 0.1%; /* */
+  
+  /* left bottom */
+  --lb-x: 0%;
+  --lb-y: 100%; 
+  
+  position: relative;
+  clip-path: polygon(
+  var(--lt-x) var(--lt-y), 
+  var(--rt-x) var(--rt-y), 
+  var(--rb-x) var(--rb-y), 
+  var(--lb-x) var(--lb-y),
+  var(--lt-x) var(--lt-y));
+}
+
+.skew-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--border-color);
+  clip-path: polygon(
+    var(--lt-x) var(--lt-y),
+    var(--rt-x) var(--rt-y),
+    var(--rb-x) var(--rb-y),
+    var(--stitch) var(--lb-y),
+    var(--stitch) calc(100% - var(--w)),
+    calc(var(--rb-x) - var(--w)) calc(var(--rb-y) - var(--w)), /* 6/3 rb */
+    calc(var(--rt-x) - var(--w)) calc(var(--rt-y) + var(--w)), /* 7/2 rt */
+    calc(var(--lt-x) + var(--w)) calc(var(--lt-y) + var(--w)), /* 8/1 lt */
+    calc(var(--lb-x) + var(--w)) calc(var(--lb-y) - var(--w)), /* 9 lb */
+    var(--stitch) calc(100% - var(--w)),
+    var(--stitch) 100%,
+    var(--lb-x) var(--lb-y),
+    var(--lt-x) var(--lt-y));
+}
+
+.skew-block__content {
+  display: block;
+  z-index: 1;
+  position: relative;
+}

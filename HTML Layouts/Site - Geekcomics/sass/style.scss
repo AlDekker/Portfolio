@@ -1,0 +1,71 @@
+/* Main */
+@import "config";
+@import "parts/body";
+@import "parts/grid";
+
+@import "parts/header";
+@import "parts/footer";
+
+/* Elements */
+@import "parts/logo";
+@import "parts/buttons";
+@import "parts/wish-btn";
+@import "parts/account";
+@import "parts/cart-list";
+@import "parts/breadcrumbs";
+@import "parts/pagination";
+@import "parts/rating";
+@import "parts/prices";
+@import "parts/product-status";
+@import "parts/product-card";
+@import "parts/product-images";
+@import "parts/product";
+
+@import "parts/category-slider";
+@import "parts/sidebar";
+@import "parts/catalog";
+@import "parts/filter-mobile";
+@import "parts/filter";
+
+@import "parts/skew"; // Наклонные рамки у блоков (удалить)
+@import "parts/skew-block"; // Наклонные рамки у блоков
+@import "parts/skew-bg"; // Серый наклонный фон у блоков
+@import "parts/scroll-block";
+@import "parts/sticky";
+@import "parts/micromodal";
+@import "parts/product-popup";
+
+@import "parts/search";
+@import "parts/range-slider";
+@import "parts/input-checkbox";
+@import "parts/input-number";
+@import "parts/form";
+
+@import "parts/slider";
+@import "parts/slider-main";
+@import "parts/slider-products";
+
+
+// Sections
+@import "parts/section";
+@import "parts/s-banners";
+@import "parts/s-news";
+@import "parts/s-about";
+@import "parts/s-subscribe";
+
+@import "parts/page";
+@import "parts/404";
+
+
+
+
+
+
+
+
+
+
+
+
+
+

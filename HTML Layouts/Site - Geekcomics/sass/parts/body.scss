@@ -1,0 +1,45 @@
+/* Body */
+
+body, html {
+  height: 100%;
+}   
+
+html {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 360px;
+  font-size: var(--txt-size);
+  font-family: var(--txt-font);
+  color: var(--txt-color);
+  line-height: var(--txt-lh);
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  @media screen and (max-width: 576px) {
+    overflow: hidden;
+  }
+}
+
+.wrapper.overlay {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1C2128;
+    opacity: .9;
+    z-index: 1;
+  }
+  .header {
+    z-index: 12;
+  }
+} 

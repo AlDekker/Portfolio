@@ -1,0 +1,113 @@
+/* Section Subscribe */
+
+.section-subscribe {
+  background-color: var(--theme);
+  background: url(../img/bg/subs-bg.jpg) no-repeat 0 0/cover;
+  margin-top: 70px;
+  padding: 100px 0 80px;
+  color: var(--white);
+  
+  @media screen and (max-width: 1200px) {
+    margin-top: 60px;
+  }
+  
+  @media screen and (max-width: 998px) {
+    padding-top: 86px;
+    padding-bottom: 50px;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -74px;
+    left: 0;
+    width: 100%;
+    height: 74px;
+    background-color: #FFFFFF;
+    left: 0;
+    transform: skewY(-0.8deg);
+    transform-origin: 100%;
+    z-index: 1;
+    @media screen and (max-width: 1200px) {
+      top: -60px;
+      height: 100px;
+    }
+    @media screen and (max-width: 998px) {
+      height: 60px;
+      top: -16px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    margin-top: 20px;
+  }
+  
+}
+
+.section-subscribe__content {
+  position: relative;
+  z-index: 3;
+  @media screen and (max-width: 998px) {
+    padding-left: 35vw;
+  }
+  @media screen and (max-width: 576px) {
+    padding-left: 28vw;
+  }
+  @media screen and (max-width: 420px) {
+    padding-left: $container-padding-x;
+  }
+}
+
+.section-subscribe__supeman {
+  position: absolute;
+  bottom: 0;
+  left: 56%;
+  transform: translateX(-56%);
+  z-index: 2;
+  @media screen and (max-width: 1200px) {
+    left: 47%;
+    transform: translateX(0);
+  }
+  @media screen and (max-width: 998px) {
+    left: 0;
+    transform: translateX(-17%);
+  }
+  @media screen and (max-width: 576px) {
+    transform: translateX(-25%);
+  }
+  @media screen and (max-width: 420px) {
+    display: none;
+  }
+}
+
+/* Title */
+
+.section-subscribe__title {
+  margin-bottom: 10px;
+}
+
+
+/* Subscribe Form  */
+
+.subscribe-form__input {
+  padding-right: 65px;
+  font-size: 1.125rem;
+  outline: none;
+}
+
+.subscribe-form__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55px;
+  padding-right: 20px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  .subscribe-form__button-icon {
+    max-width: 100%;
+    width: 28px;
+    height: 100%;
+    fill: var(--border-color);
+  }
+}

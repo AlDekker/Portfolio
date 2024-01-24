@@ -1,0 +1,17 @@
+/* Page */
+
+.page__breadcrumbs {
+  margin-bottom: 30px;
+}
+
+.page__title {
+  font-size: 3.125rem;
+  line-height: 1;
+  font-weight: bold;
+  @media screen and (max-width: 1200px) {
+    font-size: 2.625rem;
+  }
+  @media screen and (max-width: 520px) {
+    font-size: 2.25rem;
+  }
+}

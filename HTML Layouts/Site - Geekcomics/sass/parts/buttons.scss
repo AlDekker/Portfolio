@@ -1,0 +1,74 @@
+/* Button */
+
+.button {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding: 5px 10px;
+  border-radius: 0;
+  border: var(--border-width) solid var(--border-color);
+  background-color: transparent;
+  color: var(--txt-color);
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all $transition;
+  &:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  &:active {
+    color: var(--accent-active);
+    border-color: var(--accent-active);
+  }
+}
+
+.button--blue-hover {
+  &:hover {
+    color: var(--theme-hover);
+    border-color: var(--theme-hover);
+  }
+  &:active {
+    color: var(--theme-active);
+    border-color: var(--theme-active);
+  }
+}
+
+/* Button Red */
+
+.button--red {
+  border: var(--border-width) solid var(--border-color);
+  background-color: var(--accent);
+  color: var(--white);
+  &:hover {
+    color: var(--white);
+    border-color: var(--border-color);
+    background-color: var(--accent-hover);
+  }
+  &:active {
+    color: var(--white);
+    border-color: var(--border-color);
+    background-color: var(--accent-active);
+  }
+}
+
+.button--blue {
+  border: var(--border-width) solid var(--border-color);
+  background-color: var(--theme);
+  color: var(--white);
+  &:hover {
+    color: var(--white);
+    border-color: var(--border-color);
+    background-color: var(--theme-hover);
+  }
+  &:active {
+    color: var(--white);
+    border-color: var(--border-color);
+    background-color: var(--theme-active);
+  }
+}
+
+/*  */
