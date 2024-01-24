@@ -1,0 +1,29 @@
+/* container */
+
+.container {
+  padding-inline: var(--container-padding);
+}
+
+@media (min-width: 660px) {
+  .container:not(.container--xl, .container--md) {
+    padding-inline: calc( (100% - var(--container-width)) / 2);
+  }
+}
+
+@media (min-width: 743px) {
+  .container--xl {
+    --container-width: 683px;
+
+    padding-inline: calc( (100% - var(--container-width)) / 2);
+  }
+}
+
+@media (min-width: 560px) {
+  .container--md {
+    --container-width: 500px;
+
+    padding-inline: calc( (100% - var(--container-width)) / 2);
+  }
+}
+
+

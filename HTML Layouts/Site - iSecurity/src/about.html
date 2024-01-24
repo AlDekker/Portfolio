@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <title>iSecurity | About</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="iSecurity">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#eeeeee">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" sizes="any" href="/img/favicons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="/img/favicons/manifest.webmanifest">
+
+  <link rel="stylesheet" href="css/hystmodal.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body">
+
+  <div class="wrapper">
+    <header class="header container container--xl">
+      <a href="/" class="logo">
+        <img class="logo__img" src="img/logo.svg" width="56" height="56" alt="Logo">
+
+        <p class="logo__text">iSecurity</p>
+      </a>
+
+      <nav class="header__menu menu">
+        <button class="menu-button js-menu-toggle" type="button" aria-expanded="false" aria-controls="menu-list" aria-label="Menu">
+          <svg class="menu-button__icon" width="32" height="32" aria-hidden="true">
+            <use class="menu-button__icon-menu" href="img/sprite.svg#menu"></use>
+            <use class="menu-button__icon-close" href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <ul class="menu__list is-closed js-menu" id="menu-list">
+          <li class="menu__item">
+            <a class="menu__link" href="/">Activate iSecurity</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/page.html">Terms of Services</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/page.html">Privacy policy</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/page.html">Subscription Terms</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/page.html">Money Back policy</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/page.html">Cookie policy</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#" data-hystmodal="#modal-subject">Contact us</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#" data-hystmodal="#modal-cancel-subscription">Cancel Subscription</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main page__content">
+      <main class="container container--md">
+        <h1 class="page__title">About</h1>
+
+        <div class="about">
+          <div class="about__item">
+            <div class="about__item-title">Name:</div>
+            <div class="about__item-descr">Yauheni Nestsiarenka</div>
+          </div>
+
+          <div class="about__item">
+            <div class="about__item-title">Email:</div>
+            <div class="about__item-descr">support@location-tracking-apps.com</div>
+          </div>
+
+          <div class="about__item">
+            <div class="about__item-title">Address:</div>
+            <div class="about__item-descr">
+              Andokidou 1, Olive Residence, Block F,
+              flat 301, 4046 Limassol, Cyprus
+            </div>
+          </div>
+
+          <div class="about__item">
+            <div class="about__item-title">Tax:</div>
+            <div class="about__item-descr">081234556X</div>
+          </div>
+
+          <div class="about__item">
+            <div class="about__item-title">Working Hours:</div>
+            <div class="about__item-descr">
+              Weekdays 9:00 - 18:00 by Cyprus Time Zone
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- subject -->
+  <div class="modal hystmodal" id="modal-subject" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">Support Form</h2>
+
+          <button class="modal__close" data-hystclose aria-label="Close modal">
+            <svg class="modal__close-icon" width="32" height="32" aria-hidden="true" data-micromodal-close>
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal__content">
+          <form id="form-subject" class="form form--modal" action="#">
+            <div class="form__row">
+              <div class="form-checkbox-list">
+                <label class="form-checkbox-list__item form-checkbox" for="subscription">
+                  <input type="radio" class="form-checkbox__input" id="subscription" name="subject" value="subscription">
+                  <span>Subscription</span>
+                </label>
+
+                <label class="form-checkbox-list__item form-checkbox" for="cancel-subscription">
+                  <input type="radio" class="form-checkbox__input" id="cancel-subscription" name="subject" value="cancel-subscription">
+                  <span>Cancel Subscription</span>
+                </label>
+
+                <label class="form-checkbox-list__item form-checkbox" for="question">
+                  <input type="radio" class="form-checkbox__input" id="question" name="subject" value="question" checked>
+                  <span>Question</span>
+                </label>
+              </div>
+            </div>
+
+            <footer class="form__actions">
+              <button class="button form__submit" type="submit">Next</button>
+            </footer>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- question -->
+  <div class="modal hystmodal" id="modal-question" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">Support Form</h2>
+
+          <button class="modal__close" data-hystclose aria-label="Close modal">
+            <svg class="modal__close-icon" width="32" height="32" aria-hidden="true" data-micromodal-close>
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal__content">
+          <form id="form-question" class="form form--modal js-form">
+
+            <input type="hidden" name="subject" value="Question">
+
+            <div class="form__row">
+              <label class="form__label" for="fq-first-name">Name</label>
+              <input class="form-field" type="text" id="fq-first-name" name="first-name">
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="fq-email">Email</label>
+              <input class="form-field" type="email" id="fq-email" name="email" required>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="fq-message">Message</label>
+              <textarea class="form-field form-field--textarea" id="fq-message" name="message" cols="10" rows="2"></textarea>
+            </div>
+
+            <footer class="form__actions">
+              <button class="button form__submit" type="submit" disabled>Send</button>
+            </footer>
+
+            <div class="form__soccess">
+              <h2 class="form__soccess-title">Thank you for submitting the form.</h2>
+              <p class="form__soccess-text">Your information has been successfully received.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- subscription -->
+  <div class="modal hystmodal" id="modal-subscription" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">Subscription</h2>
+
+          <button class="modal__close" data-hystclose aria-label="Close modal">
+            <svg class="modal__close-icon" width="32" height="32" aria-hidden="true" data-micromodal-close>
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal__content">
+          <form id="form-subscription" class="form form--modal js-form">
+
+            <input type="hidden" name="subject" value="Subscription">
+
+            <div class="form__row">
+              <label class="form__label" for="fs-first-name">Name</label>
+              <input class="form-field" type="text" id="fs-first-name" name="first-name">
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="fs-email">Email</label>
+              <input class="form-field" type="email" id="fs-email" name="email" required>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="fs-message">Message</label>
+              <textarea class="form-field form-field--textarea" id="fs-message" name="message" cols="10" rows="2"></textarea>
+            </div>
+
+            <footer class="form__actions">
+              <button class="button form__submit" type="submit" disabled>Send</button>
+            </footer>
+
+            <div class="form__soccess">
+              <h2 class="form__soccess-title">Thank you for submitting the form.</h2>
+              <p class="form__soccess-text">Your information has been successfully received.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- cancel-subscription -->
+  <div class="modal hystmodal" id="modal-cancel-subscription" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">Cancel subscription</h2>
+
+          <button class="modal__close" data-hystclose aria-label="Close modal">
+            <svg class="modal__close-icon" width="32" height="32" aria-hidden="true" data-micromodal-close>
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal__content">
+          <form id="form-cancel-subscription" class="form form--modal js-form">
+
+            <input type="hidden" name="subject" value="Cancel subscription">
+
+            <div class="form__row">
+              <label class="visually-hidden" for="fcs-email">Email</label>
+              <input class="form-field" type="email" id="fcs-email" name="email" placeholder="Email address of subscription" required>
+            </div>
+
+            <div class="form__row">
+              <label class="visually-hidden" for="fcs-digits">Last 4 digits of card</label>
+              <input class="form-field" type="text" id="fcs-digits" name="cardDigits" data-rule="card" data-count="4" maxlength="4" placeholder="Last 4 digits of card" required>
+            </div>
+
+            <div class="form__text">
+              <p>Please provide email address and last four digits of the card you subscribned with to cancel your subscription.</p>
+
+              <p>If you have any question please contacts us at support@location-tracking-apps.com</p>
+            </div>
+
+            <footer class="form__actions">
+              <button class="button form__submit" type="submit">Cancel</button>
+            </footer>
+
+            <div class="form__soccess">
+              <h2 class="form__soccess-title">Thank you for submitting the form.</h2>
+              <p class="form__soccess-text">Your information has been successfully received.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

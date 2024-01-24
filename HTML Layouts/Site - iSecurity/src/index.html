@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <title>iSecurity</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="iSecurity">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#eeeeee">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/favicons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicons/manifest.webmanifest">
+
+  <link rel="stylesheet" href="css/hystmodal.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body">
+
+  <div class="wrapper">
+    <header class="header container container--xl">
+      <a href="/" class="logo">
+        <img class="logo__img" src="img/logo.svg" width="56" height="56" alt="Logo">
+
+        <p class="logo__text">iSecurity</p>
+      </a>
+
+      <nav class="header__menu menu">
+        <button class="menu-button js-menu-toggle" type="button" aria-expanded="false" aria-controls="menu-list" aria-label="Menu">
+          <svg class="menu-button__icon" width="32" height="32" aria-hidden="true">
+            <use class="menu-button__icon-menu" href="img/sprite.svg#menu"></use>
+            <use class="menu-button__icon-close" href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <ul class="menu__list is-closed js-menu" id="menu-list">
+          <li class="menu__item">
+            <a class="menu__link" href="/about.html">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/page.html">Terms of Services</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/page.html">Privacy policy</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/page.html">Subscription Terms</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/page.html">Money Back policy</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/page.html">Cookie policy</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#" data-hystmodal="#modal-subject">Contact us</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#" data-hystmodal="#modal-cancel-subscription">Cancel Subscription</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main page__content page__content--home">
+      <main class="container">
+        <div class="tariffs">
+          <div class="tariffs__card">
+            <img class="tariffs__image" src="img/tarrifs.svg" width="232" height="150" aria-hidden="true" alt="">
+
+            <h1 class="tariffs__title">Activate <span>iSecurity PRO</span></h1>
+
+            <div class="tariffs__compare table-wrapper">
+              <table class="tariffs-table table">
+                <thead>
+                  <tr>
+                    <th><span class="visually-hidden">Option</span></th>
+                    <th>Basic</th>
+                    <th>Pro</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Web protectoin</td>
+                    <td>
+                      <p class="table__icon table__icon--disabled">
+                        <svg class="" width="14" height="14" aria-hidden="true">
+                          <use href="img/sprite.svg#cross"></use>
+                        </svg>
+                        <span class="visually-hidden">not available</span>
+                      </p>
+                    </td>
+                    <td>
+                      <p class="table__icon table__icon--enabled">
+                        <svg class="" width="14" height="14" aria-hidden="true">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>
+                        <span class="visually-hidden">not available</span>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Private Vault Pro</td>
+                    <td>
+                      <p class="table__icon table__icon--disabled">
+                        <svg class="" width="14" height="14" aria-hidden="true">
+                          <use href="img/sprite.svg#cross"></use>
+                        </svg>
+                        <span class="visually-hidden">not available</span>
+                      </p>
+                    </td>
+                    <td>
+                      <p class="table__icon table__icon--enabled">
+                        <svg class="" width="14" height="14" aria-hidden="true">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>
+                        <span class="visually-hidden">not available</span>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Secure Browser Pro</td>
+                    <td>
+                      <p class="table__icon table__icon--disabled">
+                        <svg class="" width="14" height="14" aria-hidden="true">
+                          <use href="img/sprite.svg#cross"></use>
+                        </svg>
+                        <span class="visually-hidden">not available</span>
+                      </p>
+                    </td>
+                    <td>
+                      <p class="table__icon table__icon--enabled">
+                        <svg class="" width="14" height="14" aria-hidden="true">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>
+                        <span class="visually-hidden">not available</span>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Password Manager Pro</td>
+                    <td>
+                      <p class="table__icon table__icon--disabled">
+                        <svg class="" width="14" height="14" aria-hidden="true">
+                          <use href="img/sprite.svg#cross"></use>
+                        </svg>
+                        <span class="visually-hidden">not available</span>
+                      </p>
+                    </td>
+                    <td>
+                      <p class="table__icon table__icon--enabled">
+                        <svg class="" width="14" height="14" aria-hidden="true">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>
+                        <span class="visually-hidden">not available</span>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>No Ads and limits</td>
+                    <td>
+                      <p class="table__icon table__icon--disabled">
+                        <svg class="" width="14" height="14" aria-hidden="true">
+                          <use href="img/sprite.svg#cross"></use>
+                        </svg>
+                        <span class="visually-hidden">not available</span>
+                      </p>
+                    </td>
+                    <td>
+                      <p class="table__icon table__icon--enabled">
+                        <svg class="" width="14" height="14" aria-hidden="true">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>
+                        <span class="visually-hidden">not available</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="tariffs__footer">
+            <div class="tariffs__actions">
+              <button class="tariffs__actions-button activate-button button" type="button">Try for free</button>
+
+              <label class="tariffs__actions-checkbox form-checkbox" for="agreements">
+                <input class="form-checkbox__input js-agreements" type="checkbox" name="agreements" id="agreements" checked>
+                <span>I agree with <a href="/page.html">Terms of Services</a> & <a href="/page.html">Subscription Policy</a></span>
+              </label>
+            </div>
+
+            <p class="tariffs__descr">
+              3 days free trial, then auto-renewable $29.99/monthly. <br>
+              You can <a href="#" data-hystmodal="#modal-cancel-subscription">cancel your subscription</a> at any time.
+            </p>
+
+            <div class="js-show-on-scroll collapse">
+              <p class="tariffs__subdescr">
+                * By continuing you agree that if you don’t cancel at least 24 hours prior to the end of the 3-days trial, you will automatically be charged due to subscription plan chosen above every mentioned plan’s period until you cancel it. To avoid being charged cancel your subscription by [Press the button in the mail or inside the mobile application. Or just write to us by <a href="mailto:">mail</a> or in the <a href="#" data-hystmodal="#modal-subject">support form</a>.<br>
+                If you are unsure how to cancel, visit our <a href="/page.html">TERMS AND CONDITIONS OF USE</a>, <a href="/page.html">SUBSCRIPTION TERMS</a>, <a href="/page.html">MONEY-BACK POLICY</a>. Find more about applicable refunds limitations in our Terms of Services.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="previews">
+          <div class="previews__slider swiper slider">
+            <div class="swiper-wrapper slider__wrapper">
+              <div class="swiper-slide slider__item">
+                <div class="previews__slide">
+                  <h2 class="previews__slide-title">and Much More</h2>
+                  <picture>
+                    <source srcset="img/screenshots/more-tablet.png" media="(min-width: 768px)">
+                    <img class="previews__slide-image" src="img/screenshots/more.png" alt="">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="swiper-slide slider__item">
+                <div class="previews__slide">
+                  <h2 class="previews__slide-title">Total Protection</h2>
+                  <picture>
+                    <source srcset="img/screenshots/protection-tablet.png" media="(min-width: 768px)">
+                    <img class="previews__slide-image" src="img/screenshots/protection.png" alt="">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="swiper-slide slider__item">
+                <div class="previews__slide">
+                  <h2 class="previews__slide-title">Web Security</h2>
+                  <picture>
+                    <source srcset="img/screenshots/web-tablet.png" media="(min-width: 768px)">
+                    <img class="previews__slide-image" src="img/screenshots/web.png" alt="">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="swiper-slide slider__item">
+                <div class="previews__slide">
+                  <h2 class="previews__slide-title">Secure Browser</h2>
+                  <picture>
+                    <source srcset="img/screenshots/browser-tablet.png" media="(min-width: 768px)">
+                    <img class="previews__slide-image" src="img/screenshots/browser.png" alt="">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="swiper-slide slider__item">
+                <div class="previews__slide">
+                  <h2 class="previews__slide-title">Secret Vault</h2>
+                  <picture>
+                    <source srcset="img/screenshots/vault-tablet.png" media="(min-width: 768px)">
+                    <img class="previews__slide-image" src="img/screenshots/vault.png" alt="">
+                  </picture>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination slider__pagination"></div>
+          </div>
+
+          <div class="previews__features features">
+            <div class="features__item">
+              <img class="features__icon" src="img/logo.svg" width="56" height="56" alt="">
+              <p class="features__text"><span>iSecurity:</span> Total Protection</p>
+            </div>
+
+            <div class="features__item">
+              <img class="features__icon" src="img/logo.svg" width="56" height="56" alt="">
+              <p class="features__text"><span>Web Protection:</span> Ultimate Ad Blocker</p>
+            </div>
+
+            <div class="features__item">
+              <img class="features__icon" src="img/logo.svg" width="56" height="56" alt="">
+              <p class="features__text"><span>Secret Photo Vault:</span> <br>
+                Lock your photos and videos</p>
+            </div>
+
+            <div class="features__item">
+              <img class="features__icon" src="img/logo.svg" width="56" height="56" alt="">
+              <p class="features__text"><span>Private Browser:</span><br>
+                Anonymous & Secure</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer container">
+      <div class="footer__content">
+        <a href="/" class="footer__logo logo logo--vertical">
+          <img class="logo__img" src="img/logo-2.png" srcset="img/logo-2@2x.png 2x" width="56" height="56" alt="Logo">
+
+          <p class="logo__text">iSecurity: Total Protection</p>
+        </a>
+
+        <button class="footer__button activate-button button" type="button">Try for free</button>
+
+        <p class="footer__copy">© <span class="js-current-year"></span> GoodLab</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- subject -->
+  <div class="modal hystmodal" id="modal-subject" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">Support Form</h2>
+
+          <button class="modal__close" data-hystclose aria-label="Close modal">
+            <svg class="modal__close-icon" width="32" height="32" aria-hidden="true" data-micromodal-close>
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal__content">
+          <form id="form-subject" class="form form--modal" action="#">
+            <div class="form__row">
+              <div class="form-checkbox-list">
+                <label class="form-checkbox-list__item form-checkbox" for="subscription">
+                  <input type="radio" class="form-checkbox__input" id="subscription" name="subject" value="subscription">
+                  <span>Subscription</span>
+                </label>
+
+                <label class="form-checkbox-list__item form-checkbox" for="cancel-subscription">
+                  <input type="radio" class="form-checkbox__input" id="cancel-subscription" name="subject" value="cancel-subscription">
+                  <span>Cancel Subscription</span>
+                </label>
+
+                <label class="form-checkbox-list__item form-checkbox" for="question">
+                  <input type="radio" class="form-checkbox__input" id="question" name="subject" value="question" checked>
+                  <span>Question</span>
+                </label>
+              </div>
+            </div>
+
+            <footer class="form__actions">
+              <button class="button form__submit" type="submit">Next</button>
+            </footer>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- question -->
+  <div class="modal hystmodal" id="modal-question" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">Support Form</h2>
+
+          <button class="modal__close" data-hystclose aria-label="Close modal">
+            <svg class="modal__close-icon" width="32" height="32" aria-hidden="true" data-micromodal-close>
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal__content">
+          <form id="form-question" class="form form--modal js-form">
+
+            <input type="hidden" name="subject" value="Question">
+
+            <div class="form__row">
+              <label class="form__label" for="fq-first-name">Name</label>
+              <input class="form-field" type="text" id="fq-first-name" name="first-name">
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="fq-email">Email</label>
+              <input class="form-field" type="email" id="fq-email" name="email" required>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="fq-message">Message</label>
+              <textarea class="form-field form-field--textarea" id="fq-message" name="message" cols="10" rows="2"></textarea>
+            </div>
+
+            <footer class="form__actions">
+              <button class="button form__submit" type="submit" disabled>Send</button>
+            </footer>
+
+            <div class="form__soccess">
+              <h2 class="form__soccess-title">Thank you for submitting the form.</h2>
+              <p class="form__soccess-text">Your information has been successfully received.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- subscription -->
+  <div class="modal hystmodal" id="modal-subscription" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">Subscription</h2>
+
+          <button class="modal__close" data-hystclose aria-label="Close modal">
+            <svg class="modal__close-icon" width="32" height="32" aria-hidden="true" data-micromodal-close>
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal__content">
+          <form id="form-subscription" class="form form--modal js-form">
+
+            <input type="hidden" name="subject" value="Subscription">
+
+            <div class="form__row">
+              <label class="form__label" for="fs-first-name">Name</label>
+              <input class="form-field" type="text" id="fs-first-name" name="first-name">
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="fs-email">Email</label>
+              <input class="form-field" type="email" id="fs-email" name="email" required>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="fs-message">Message</label>
+              <textarea class="form-field form-field--textarea" id="fs-message" name="message" cols="10" rows="2"></textarea>
+            </div>
+
+            <footer class="form__actions">
+              <button class="button form__submit" type="submit" disabled>Send</button>
+            </footer>
+
+            <div class="form__soccess">
+              <h2 class="form__soccess-title">Thank you for submitting the form.</h2>
+              <p class="form__soccess-text">Your information has been successfully received.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- cancel-subscription -->
+  <div class="modal hystmodal" id="modal-cancel-subscription" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">Cancel subscription</h2>
+
+          <button class="modal__close" data-hystclose aria-label="Close modal">
+            <svg class="modal__close-icon" width="32" height="32" aria-hidden="true" data-micromodal-close>
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal__content">
+          <form id="form-cancel-subscription" class="form form--modal js-form">
+
+            <input type="hidden" name="subject" value="Cancel subscription">
+
+            <div class="form__row">
+              <label class="visually-hidden" for="fcs-email">Email</label>
+              <input class="form-field" type="email" id="fcs-email" name="email" placeholder="Email address of subscription" required>
+            </div>
+
+            <div class="form__row">
+              <label class="visually-hidden" for="fcs-digits">Last 4 digits of card</label>
+              <input class="form-field" type="text" id="fcs-digits" name="cardDigits" data-rule="card" data-count="4" maxlength="4" placeholder="Last 4 digits of card" required>
+            </div>
+
+            <div class="form__text">
+              <p>Please provide email address and last four digits of the card you subscribned with to cancel your subscription.</p>
+
+              <p>If you have any question please contacts us at support@location-tracking-apps.com</p>
+            </div>
+
+            <footer class="form__actions">
+              <button class="button form__submit" type="submit">Cancel</button>
+            </footer>
+
+            <div class="form__soccess">
+              <h2 class="form__soccess-title">Thank you for submitting the form.</h2>
+              <p class="form__soccess-text">Your information has been successfully received.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

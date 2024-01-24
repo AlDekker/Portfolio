@@ -1,0 +1,37 @@
+/* table */
+
+.table-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+/* table-icon */
+
+.table__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.table__icon--disabled {
+  background: var(--color-bg-disabled);
+}
+
+
+.table__icon--enabled {
+  background: var(--color-bg-accent);
+}
+
+.table__icon svg {
+  max-width: 100%;
+  height: auto;
+}

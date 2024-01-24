@@ -1,0 +1,17 @@
+/* collapse */
+
+.collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: all .25s ease-in;
+}
+
+.collapse.is-visible {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.collapse > * {
+  min-height: 0;
+}

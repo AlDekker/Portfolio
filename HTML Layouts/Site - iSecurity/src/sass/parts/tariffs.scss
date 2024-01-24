@@ -1,0 +1,227 @@
+/* tariffs */
+
+.tariffs {
+  display: grid;
+  gap: 30px;
+}
+
+/* tariffs__card */
+
+.tariffs__card {
+  padding: 26px 25px 16px;
+  background-color: var(--color-bg-card);
+  border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+  .tariffs__card {
+    padding: 54px 80px 70px;
+  }
+}
+
+/* tariffs__image */
+
+.tariffs__image {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+@media (min-width: 768px) {
+  .tariffs__image {
+    width: 373px;
+    margin-bottom: 36px;
+  }
+}
+
+/* tariffs__title */
+
+.tariffs__title {
+  margin-bottom: 2px;
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.tariffs__title span {
+  color: var(--color-text-accent);
+}
+
+@media (min-width: 768px) {
+  .tariffs__title {
+    margin-top: 15px;
+    font-size: 40px;
+  }
+}
+
+/* tariffs__compare */
+
+.tariffs__compare {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .tariffs__compare {
+    margin-top: 26px;
+  }
+}
+
+/* tariffs-table */
+
+.tariffs-table {
+  margin: 0 auto;
+}
+
+.tariffs-table thead {
+  font-size: 12px;
+  text-align: center;
+}
+
+.tariffs-table thead th {
+  padding: 6px 12px 0;
+}
+
+.tariffs-table thead th:nth-child(2) {
+  color: var(--color-text-disabled);
+  font-weight: 500;
+}
+
+.tariffs-table thead th:nth-child(3) {
+  color: var(--color-text-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tariffs-table tbody {
+  font-size: 14px;
+}
+
+.tariffs-table tbody td:first-child {
+  width: 85%;
+  padding-right: 4px;
+  padding-left: 8px;
+  color: var(--color-text-accent);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.tariffs-table tbody td:not(:first-child) {
+  text-align: center;
+}
+
+.tariffs-table td:not(:first-child) {
+  padding: 10px 12px;
+}
+
+.tariffs-table tr:not(:last-of-type) td {
+  border-bottom: 1px solid var(--color-bg-disabled-opacity);
+}
+
+.tariffs-table th:nth-child(3),
+.tariffs-table td:nth-child(3) {
+  background-color: var(--color-bg-accent-opacity);
+}
+
+.tariffs-table th:nth-child(3) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tariffs-table tr:last-of-type td:nth-child(3) {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .tariffs-table thead {
+    font-size: 15px;
+  }
+
+  .tariffs-table tbody td:first-child {
+    font-size: 20px;
+  }
+
+  .tariffs-table td:not(:first-child) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+/* tariffs__footer */
+
+.tariffs__footer {
+  display: grid;
+  gap: 15px;
+}
+
+/* tariffs__actions */
+
+.tariffs__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.tariffs__actions-button {
+  width: 100%;
+  max-width: 354px;
+}
+
+.tariffs__actions-checkbox {
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .tariffs__actions {
+    gap: 30px;
+  }
+
+  .tariffs__actions-checkbox {
+    font-size: inherit;
+  }
+}
+
+/* tariffs__descr */
+
+.tariffs__descr {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+  transition: all .25s ease-in;
+}
+
+.tariffs__subdescr a,
+.tariffs__descr a {
+  color: var(--color-text-accent);
+  text-decoration: underline;
+  transition: all .25s ease;
+}
+
+.tariffs__subdescr a:hover,
+.tariffs__descr a:hover {
+  text-decoration: none;
+  opacity: .8;
+}
+
+.tariffs__subdescr {
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .tariffs__descr {
+    font-size: inherit;
+  }
+
+  .tariffs__subdescr {
+    margin-top: 25px;
+    font-size: 20px;
+  }
+}
+
+

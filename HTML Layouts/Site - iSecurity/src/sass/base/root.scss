@@ -1,0 +1,29 @@
+/* Root */
+
+:root {
+  /* colors */
+  --color-bg-accent: #3562ff;
+  --color-bg-accent-opacity: rgb(53 98 255 / 20%);
+  --color-bg-primary: #eee;
+  --color-bg-disabled: #b9b9b9;
+  --color-bg-disabled-opacity: rgb(185 185 185 / 20%);
+  --color-bg-menu: #dcdcdc;
+  --color-bg-card: #fff;
+  --color-text-accent: #3562ff;
+  --color-text-primary: #002863;
+  --color-text-inverse: #fff;
+  --color-text-disabled: #b9b9b9;
+
+  /* text */
+  --text-font-main: 'SF Pro Display', sans-serif;
+  --text-font-accent: serif;
+  --text-size-main: 16px;
+  --text-line-height-main: normal;
+
+  /* sizes */
+  --container-width: 600px;
+  --container-padding: 30px;
+  --header-height: 70px;
+}
+
+
