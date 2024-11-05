@@ -12,7 +12,7 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-root-import": "^6.6.0",
-    "browser-sync": "^2.26.14",
+    "browser-sync": "^3.0.3",
     "del": "^6.0.0",
     "dev-ip": "^1.0.1",
     "gulp": "^4.0.2",
